@@ -1,0 +1,102 @@
+{
+  "name": "Legacy supplied simulated corpus",
+  "samples": 236575,
+  "X_shape": [
+    236575,
+    240
+  ],
+  "y_shape": [
+    236575,
+    6
+  ],
+  "units": {
+    "position": "km",
+    "velocity": "km/s",
+    "LOS": "unit Cartesian vector"
+  },
+  "samples_per_arc": 40,
+  "elapsed_seconds": 39,
+  "chunks": [
+    {
+      "file": "block_000.npz",
+      "start": 0,
+      "stop": 25000,
+      "sha256": "a8961a990351ffdfe6312aad636629928919440667c2f9e666f2e71571d36e0b",
+      "bytes": 12168646
+    },
+    {
+      "file": "block_001.npz",
+      "start": 25000,
+      "stop": 50000,
+      "sha256": "87e83463007d0efcda376466987119aabec719de8ce3dd1b0755c5f93ff3dad9",
+      "bytes": 12161509
+    },
+    {
+      "file": "block_002.npz",
+      "start": 50000,
+      "stop": 75000,
+      "sha256": "630bd07f7e03a280198e657c9da3d6b3a3fb101166971c089f6672b420f388a0",
+      "bytes": 12147478
+    },
+    {
+      "file": "block_003.npz",
+      "start": 75000,
+      "stop": 100000,
+      "sha256": "3a4834cbe42adcff8b770970c949ee3c85e0f035d0e597b31498ede41e7c3f48",
+      "bytes": 12130333
+    },
+    {
+      "file": "block_004.npz",
+      "start": 100000,
+      "stop": 125000,
+      "sha256": "2a5ac9f76485854b43968e36f62051b86095693bb72fcc49216164462b417d85",
+      "bytes": 12122743
+    },
+    {
+      "file": "block_005.npz",
+      "start": 125000,
+      "stop": 150000,
+      "sha256": "7cb6f9ceab54a5f33cbb8c32390ae660f7e3b779d9198524a543d764c2bca8f0",
+      "bytes": 12136693
+    },
+    {
+      "file": "block_006.npz",
+      "start": 150000,
+      "stop": 175000,
+      "sha256": "359eeb538ad75f9affcc3b8e857e4eaad36d95810bfe62663036bd4badedfcf3",
+      "bytes": 12171131
+    },
+    {
+      "file": "block_007.npz",
+      "start": 175000,
+      "stop": 200000,
+      "sha256": "bccad698fc43f5b80c40eb6a4ef1dfa48f677d8ec03f9e38b46d5683af0c5216",
+      "bytes": 12198938
+    },
+    {
+      "file": "block_008.npz",
+      "start": 200000,
+      "stop": 225000,
+      "sha256": "866b2d5f221f5184aa2b25b75812ab6beb12b83ea395f522be76d95db5a5085b",
+      "bytes": 12276909
+    },
+    {
+      "file": "block_009.npz",
+      "start": 225000,
+      "stop": 236575,
+      "sha256": "4c8c05f23bb734cd36d9e7f39acbfe204b98464fb22e8f0ed93a76a36fb55805",
+      "bytes": 5810965
+    }
+  ],
+  "source_array_sha256": {
+    "dataset_X_block_0000.npy": "c982d4e353ed67627ab683618578775c88872083499b7c1efbdebde7477259fc",
+    "dataset_y_block_0000.npy": "a0c272e61fdf60f14f361963946fa404227d4b57fb61d7c54f1407267da6db34"
+  },
+  "limitations": [
+    "This is the 236575-sample supplied snapshot, not the 15576497-sample corpus described in historical manuscript tables.",
+    "Original target-orbit identity labels and orbit-definition JSON were not supplied. No orbit-disjoint split can be asserted for this snapshot.",
+    "Legacy normalization statistics were computed across the supplied corpus and are retained for checkpoint compatibility only; they must not be used to claim an independent normalized test.",
+    "The legacy checkpoint was selected using the original test-loader workflow; it is not an independently selected external-test model.",
+    "Historical named-solver response-model outputs are not included as executable baseline results."
+  ]
+}
