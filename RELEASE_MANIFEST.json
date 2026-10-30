@@ -62,8 +62,8 @@
     },
     {
       "file": "data/legacy_simulation/manifest.json",
-      "bytes": 3340,
-      "sha256": "4262bf4e878e734058009abee5f1680a6abc2382e289885a14cfc50c5a7b1bf6"
+      "bytes": 2862,
+      "sha256": "ca35c22e622d143f3480bc3dcf9598ec843ff71ec1c450cb7c5169b67d6e38a7"
     },
     {
       "file": "data/legacy_simulation/norm_stats_legacy.npz",
@@ -572,8 +572,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 2536,
-      "sha256": "3974091a13a41395ecbb984b38bb2ad7727336a33de52e88af14b4e14cdce019"
+      "bytes": 2880,
+      "sha256": "c260840b64d87cbf088af7f3a6569bd2bf062b39fc0fd46a28fe05c81feb8e8a"
     },
     {
       "file": "requirements.txt",
@@ -582,8 +582,8 @@
     },
     {
       "file": "scripts/evaluate_saved.py",
-      "bytes": 837,
-      "sha256": "3682be0042cc4b34ead6270d69462e7310d0d786bae2debf41597d40be623adb"
+      "bytes": 928,
+      "sha256": "29f60ef89a6154d12991a7439338367447262c6989d33098d8e27b9e99358b6b"
     },
     {
       "file": "scripts/export_legacy.py",
@@ -597,8 +597,8 @@
     },
     {
       "file": "scripts/run_learning.py",
-      "bytes": 8718,
-      "sha256": "b7a82d4652ea224e73fe3cd5052aed2f0b114844a6edf2bd4ec76cb48e4edd89"
+      "bytes": 9397,
+      "sha256": "5f5567cc8d8557cc4dc71d6a21becbbde62dcfb169f32e58adf08a2c05ef49b4"
     },
     {
       "file": "scripts/run_spline2025.py",
@@ -612,8 +612,8 @@
     },
     {
       "file": "scripts/verify_release.py",
-      "bytes": 1986,
-      "sha256": "257f47cbd03e9e513c85dbdfce8ec5605706712051667fc5dc83de7f900f6487"
+      "bytes": 2965,
+      "sha256": "d5f9933be1006931b285ba5260195b9a53ef845df04ad55cb55d1fc8648ccb2a"
     }
   ],
   "scope": "data and model code",
