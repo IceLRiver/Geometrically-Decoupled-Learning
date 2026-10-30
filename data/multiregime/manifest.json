@@ -1,0 +1,102 @@
+{
+  "arcs": 120000,
+  "orbits": 90,
+  "regime_counts": {
+    "LEO": 40000,
+    "MEO": 40000,
+    "high-altitude": 40000
+  },
+  "split_codes": {
+    "0": "train",
+    "1": "validation",
+    "2": "test"
+  },
+  "split_counts": {
+    "train": 79980,
+    "validation": 19995,
+    "test": 20025
+  },
+  "cadence_s": 1,
+  "elapsed_s": 39,
+  "noise_arcsec": [
+    0,
+    1,
+    3,
+    5
+  ],
+  "chunks": [
+    {
+      "file": "part_00.npz",
+      "arcs": 10664,
+      "bytes": 9782879,
+      "sha256": "f30ea067a65aa5b03b2720562b4e36a59c474e63d2def076c9fe0f0cc3ec00fc"
+    },
+    {
+      "file": "part_01.npz",
+      "arcs": 10664,
+      "bytes": 9802804,
+      "sha256": "1ea6021f718c2268f25fb1c5aba923e4ad283351ce112733bfb6f8ca7fe163fb"
+    },
+    {
+      "file": "part_02.npz",
+      "arcs": 10664,
+      "bytes": 9836498,
+      "sha256": "8c29379e910fad4e00c7c48e84ee0eebf1c44ea2cae3bff44650797adfc6d6cf"
+    },
+    {
+      "file": "part_03.npz",
+      "arcs": 10674,
+      "bytes": 9830833,
+      "sha256": "1ff68b14d7c111194ed208d5b0e1e8e1def17dc2c8652541bba2f62dcbffcf8a"
+    },
+    {
+      "file": "part_04.npz",
+      "arcs": 10664,
+      "bytes": 9776889,
+      "sha256": "7f6b83db947761daca26e5b28710e30c5f68d8e42825c3c2e868177c12d7dc93"
+    },
+    {
+      "file": "part_05.npz",
+      "arcs": 10664,
+      "bytes": 9754141,
+      "sha256": "c078d828d169cfbaeb9bc154d62352298d34a423eb68c71f0ed42a83308e5152"
+    },
+    {
+      "file": "part_06.npz",
+      "arcs": 10664,
+      "bytes": 9786374,
+      "sha256": "ddf672024cdd4334a49efd7e961b25add32864f5ac905959c01ea28bc5b34de6"
+    },
+    {
+      "file": "part_07.npz",
+      "arcs": 10674,
+      "bytes": 9746949,
+      "sha256": "f1672834caff03a6156273d5e9f161e03af5458b95815c017a07b7f08dad3c25"
+    },
+    {
+      "file": "part_08.npz",
+      "arcs": 10664,
+      "bytes": 9685317,
+      "sha256": "64d185b6752d3e0b571d526cc6270f23c406e6b43672a69ebaaf27493253a40a"
+    },
+    {
+      "file": "part_09.npz",
+      "arcs": 10664,
+      "bytes": 9650197,
+      "sha256": "e1507295a7e73724556bdf92e8f7d7963c8ddaed5b95b883544cdbf6b03ceef9"
+    },
+    {
+      "file": "part_10.npz",
+      "arcs": 10664,
+      "bytes": 9658895,
+      "sha256": "e11d940391b5222b78c59562027de8d1413f4e1e8b4d164ec5ba9af0ece70584"
+    },
+    {
+      "file": "part_11.npz",
+      "arcs": 2676,
+      "bytes": 2429076,
+      "sha256": "11e5ef7aaa72a656be9ab441fe60c82c9d784df84bb852b9532aa0562e8882c2"
+    }
+  ],
+  "usage": "Additional coverage dataset; excluded from the previously executed compact benchmark metrics."
+}
