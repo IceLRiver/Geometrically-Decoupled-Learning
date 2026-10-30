@@ -44,6 +44,14 @@ python scripts/run_learning.py --dataset synthetic --epochs 120
 python scripts/run_spline2025.py --dataset synthetic
 ```
 
+Train the model and its controls on the coverage data:
+
+```bash
+python scripts/run_learning.py --dataset coverage --epochs 120
+```
+
+After training, use `python scripts/evaluate_saved.py --dataset coverage` to evaluate its saved checkpoint. Coverage checkpoints and training results are written to separate `evidence/coverage_*` paths.
+
 ## Model
 
 The model predicts range, reconstructs position on the measured line of sight, and estimates velocity conditioned on the reconstructed position. The orbit-physics KAN uses learnable periodic bases and a gated residual network. `models/orbit_physkan.py` contains the width-128 architecture; `scripts/run_learning.py` includes the compact model and its ablations.

@@ -71,13 +71,26 @@ def evaluate(model,X,y):
         for metric,value in [('mean',np.mean(a)),('rmse',np.sqrt(np.mean(a*a))),('median',np.median(a)),('p95',np.quantile(a,.95))]: stats[key+'_'+metric]=float(value)
     return stats,p,v
 
+def load_observations(dataset):
+    if dataset=='synthetic':
+        path=ROOT/'evidence/synthetic_arcs.npz'
+        data=np.load(path);X=data['X'].astype('float32');y=data['y'].astype('float32')
+        meta=json.loads((ROOT/'evidence/synthetic_arcs_meta.json').read_text(encoding='utf-8'))
+        return X,y,meta,hashlib.sha256(path.read_bytes()).hexdigest()
+    folder=ROOT/'data/multiregime';path=folder/'manifest.json';manifest=json.loads(path.read_text())
+    inputs=[];targets=[];meta=[]
+    for chunk in manifest['chunks']:
+        with np.load(folder/chunk['file']) as data:
+            inputs.append(data['X']);targets.append(data['y'])
+            meta.extend({'target':int(oid),'split':['train','val','test'][int(code)]} for oid,code in zip(data['orbit_id'],data['split']))
+    return np.concatenate(inputs),np.concatenate(targets),meta,hashlib.sha256(path.read_bytes()).hexdigest()
+
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument('--dataset',choices=['synthetic'],default='synthetic'); ap.add_argument('--epochs',type=int,default=120); args=ap.parse_args()
-    data=np.load(ROOT/'evidence'/f'{args.dataset}_arcs.npz'); X=data['X'].astype('float32'); y=data['y'].astype('float32')
-    meta=json.loads((ROOT/'evidence'/f'{args.dataset}_arcs_meta.json').read_text(encoding='utf-8'))
+    ap=argparse.ArgumentParser(); ap.add_argument('--dataset',choices=['synthetic','coverage'],default='synthetic'); ap.add_argument('--epochs',type=int,default=120); args=ap.parse_args()
+    X,y,meta,input_hash=load_observations(args.dataset)
     tr=np.flatnonzero([m['split']=='train' for m in meta]); va=np.flatnonzero([m['split']=='val' for m in meta]); te=np.flatnonzero([m['split']=='test' for m in meta])
     assert not (set(meta[i]['target'] for i in tr)&set(meta[i]['target'] for i in te))
-    manifest={'dataset':args.dataset,'train_indices':tr.tolist(),'validation_indices':va.tolist(),'test_indices':te.tolist(),'seeds':[42,43,44], 'epochs_max':args.epochs,'patience':25,'batch_size':64,'learning_rate':.001,'optimizer':'AdamW','device':DEVICE,'hardware':torch.cuda.get_device_name() if DEVICE=='cuda' else 'CPU','torch_version':torch.__version__,'input_sha256':hashlib.sha256((ROOT/'evidence'/f'{args.dataset}_arcs.npz').read_bytes()).hexdigest()}
+    manifest={'dataset':args.dataset,'train_indices':tr.tolist(),'validation_indices':va.tolist(),'test_indices':te.tolist(),'seeds':[42,43,44], 'epochs_max':args.epochs,'patience':25,'batch_size':64,'learning_rate':.001,'optimizer':'AdamW','device':DEVICE,'hardware':torch.cuda.get_device_name() if DEVICE=='cuda' else 'CPU','torch_version':torch.__version__,'input_sha256':input_hash}
     (ROOT/'evidence'/f'{args.dataset}_split.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
     rho=np.linalg.norm(y[:,:3]-X[:,-1,:3],axis=1,keepdims=True)
     camv=(X[:,-1,:3]-X[:,-2,:3]); dr=((y[:,3:]-camv)*X[:,-1,3:]).sum(1,keepdims=True)

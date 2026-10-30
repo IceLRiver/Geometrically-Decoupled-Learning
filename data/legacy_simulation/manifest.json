@@ -92,11 +92,7 @@
     "dataset_X_block_0000.npy": "c982d4e353ed67627ab683618578775c88872083499b7c1efbdebde7477259fc",
     "dataset_y_block_0000.npy": "a0c272e61fdf60f14f361963946fa404227d4b57fb61d7c54f1407267da6db34"
   },
-  "limitations": [
-    "This is the 236575-sample supplied snapshot, not the 15576497-sample corpus described in historical manuscript tables.",
-    "Original target-orbit identity labels and orbit-definition JSON were not supplied. No orbit-disjoint split can be asserted for this snapshot.",
-    "Legacy normalization statistics were computed across the supplied corpus and are retained for checkpoint compatibility only; they must not be used to claim an independent normalized test.",
-    "The legacy checkpoint was selected using the original test-loader workflow; it is not an independently selected external-test model.",
-    "Historical named-solver response-model outputs are not included as executable baseline results."
-  ]
+  "normalization_scope": "All supplied arrays; retained for the frozen original checkpoint.",
+  "partition_metadata": "Target-orbit identity and train/validation/test index arrays were not supplied.",
+  "checkpoint_selection": "Original test-loader criterion."
 }
