@@ -30,6 +30,7 @@ Classical/physics and RBF baselines use a separate Python 3.11 environment with 
 python scripts/v4/evaluate_checkpoint.py --dataset public --checkpoint checkpoints/v4/public__GDL.pt
 python scripts/v4/evaluate_checkpoint.py --dataset simulation --checkpoint checkpoints/v4/simulation__GDL.pt
 python scripts/v4/evaluate_physics.py --dataset public --method alpha-IOD-2025 --workers 4
+python scripts/v4/evaluate_rbf.py --dataset public
 ```
 
 `models/geometric_v4.py` exposes `load_checkpoint` and observation-only `predict`. Primary configurations were selected on validation data and frozen before final test scoring. GDL uses the KAN backbone for public/real observations and the MLP backbone for the broad simulation benchmark. `evidence/v4/selected_models.json` records configurations, validation scores and checkpoint hashes. Published physics baselines are research reimplementations with observation-cadence and near-Earth adaptations detailed in the manuscript; they do not represent execution of the original authors' software.

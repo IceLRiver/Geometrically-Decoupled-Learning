@@ -16,7 +16,11 @@ def job(t):
  except Exception as e:return i,np.full(6,np.nan),dict(error=repr(e),seconds=time.perf_counter()-start)
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--dataset',choices=['public','simulation','real'],required=True);ap.add_argument('--method',choices=['Gauss','Laplace','Gooding','PIOD-2023','PIOD-2026','PIOD-2026-J2','alpha-IOD-2025'],required=True);ap.add_argument('--workers',type=int,default=4);a=ap.parse_args();X,y,_,_=load_data(a.dataset);ids=freeze_protocol()['datasets'][a.dataset]['test_primary'];pred=[];details=[]
+ implementation=a.method
+ if a.method=='PIOD-2026':
+  selected=Path(__file__).resolve().parents[2]/'evidence/v4/selected_models.json'
+  implementation=json.loads(selected.read_text())['datasets'][a.dataset]['methods']['PIOD-2026']['implementation']
  with ProcessPoolExecutor(max_workers=a.workers) as pool:
-  for i,state,d in pool.map(job,[(i,X[i],a.method) for i in ids]):pred.append(state);details.append(dict(index=i,**d))
+  for i,state,d in pool.map(job,[(i,X[i],implementation) for i in ids]):pred.append(state);details.append(dict(index=i,implementation=implementation,**d))
  out=ROOT/'evidence';np.savez_compressed(out/(a.dataset+'_'+a.method+'_predictions.npz'),indices=np.array(ids),position=np.array(pred)[:,:3],velocity=np.array(pred)[:,3:]);(out/(a.dataset+'_'+a.method+'_details.json')).write_text(json.dumps(details,indent=2));print('Saved',len(ids),'arc predictions to',out)
 if __name__=='__main__':main()
