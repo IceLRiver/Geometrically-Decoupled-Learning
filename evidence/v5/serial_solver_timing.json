@@ -1,0 +1,362 @@
+[
+  {
+    "dataset": "public",
+    "method": "Gauss",
+    "implementation": "Gauss",
+    "median_ms": 3.1790000502951443,
+    "per_arc_ms": [
+      1392.6641999860294,
+      3.1790000502951443,
+      2.9900000081397593
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "public",
+    "method": "Laplace",
+    "implementation": "Laplace",
+    "median_ms": 2.653000003192574,
+    "per_arc_ms": [
+      2.887300041038543,
+      2.653000003192574,
+      2.295800019055605
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "public",
+    "method": "Gooding",
+    "implementation": "Gooding",
+    "median_ms": 556.2150999903679,
+    "per_arc_ms": [
+      556.2150999903679,
+      618.9084000070579,
+      535.7459000078961
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "public",
+    "method": "PIOD-2023",
+    "implementation": "PIOD-2023",
+    "median_ms": 722.5224999710917,
+    "per_arc_ms": [
+      797.4590999656357,
+      697.6387000177056,
+      722.5224999710917
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "public",
+    "method": "alpha-IOD-2025",
+    "implementation": "alpha-IOD-2025",
+    "median_ms": 6083.514800004195,
+    "per_arc_ms": [
+      6234.614800021518,
+      6083.514800004195,
+      5923.82299999008
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "public",
+    "method": "PIOD-2026",
+    "implementation": "PIOD-2026-J2",
+    "median_ms": 703.8561000372283,
+    "per_arc_ms": [
+      889.8732000379823,
+      662.6094000530429,
+      703.8561000372283
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "simulation",
+    "method": "Gauss",
+    "implementation": "Gauss",
+    "median_ms": 9.470799996051937,
+    "per_arc_ms": [
+      9.842699975706637,
+      9.470799996051937,
+      8.869400015100837
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "simulation",
+    "method": "Laplace",
+    "implementation": "Laplace",
+    "median_ms": 6.308600015472621,
+    "per_arc_ms": [
+      6.931099982466549,
+      6.308600015472621,
+      6.031700002495199
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "simulation",
+    "method": "Gooding",
+    "implementation": "Gooding",
+    "median_ms": 546.7017000191845,
+    "per_arc_ms": [
+      546.7017000191845,
+      644.5822999812663,
+      410.6597999925725
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "simulation",
+    "method": "PIOD-2023",
+    "implementation": "PIOD-2023",
+    "median_ms": 797.4517000257038,
+    "per_arc_ms": [
+      797.4517000257038,
+      939.6278000203893,
+      719.9489999911748
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "simulation",
+    "method": "alpha-IOD-2025",
+    "implementation": "alpha-IOD-2025",
+    "median_ms": 6518.00560002448,
+    "per_arc_ms": [
+      5790.706300002057,
+      6609.77229999844,
+      6518.00560002448
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "simulation",
+    "method": "PIOD-2026",
+    "implementation": "PIOD-2026-J2",
+    "median_ms": 805.7783000404015,
+    "per_arc_ms": [
+      805.7783000404015,
+      918.743500020355,
+      713.0610999884084
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "real",
+    "method": "Gauss",
+    "implementation": "Gauss",
+    "median_ms": 3.747600014321506,
+    "per_arc_ms": [
+      3.747600014321506,
+      3.9407999720424414,
+      2.9440000071190298
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "real",
+    "method": "Laplace",
+    "implementation": "Laplace",
+    "median_ms": 2.3018000065349042,
+    "per_arc_ms": [
+      2.5228000013157725,
+      2.3018000065349042,
+      2.1733000176027417
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "real",
+    "method": "Gooding",
+    "implementation": "Gooding",
+    "median_ms": 1465.5759999877773,
+    "per_arc_ms": [
+      914.1393000027165,
+      1465.5759999877773,
+      1776.0891999932937
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "real",
+    "method": "PIOD-2023",
+    "implementation": "PIOD-2023",
+    "median_ms": 630.6164999841712,
+    "per_arc_ms": [
+      679.64759998722,
+      608.1872000358999,
+      630.6164999841712
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "real",
+    "method": "alpha-IOD-2025",
+    "implementation": "alpha-IOD-2025",
+    "median_ms": 8082.841499999631,
+    "per_arc_ms": [
+      7297.285399981774,
+      10447.237999993376,
+      8082.841499999631
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "real",
+    "method": "PIOD-2026",
+    "implementation": "PIOD-2026",
+    "median_ms": 639.4470000523143,
+    "per_arc_ms": [
+      640.8097000094131,
+      639.4470000523143,
+      613.8190000201575
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "legacy",
+    "method": "Gauss",
+    "implementation": "Gauss",
+    "median_ms": 8.467800042126328,
+    "per_arc_ms": [
+      8.780999982263893,
+      8.467800042126328,
+      8.309900003951043
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "legacy",
+    "method": "Laplace",
+    "implementation": "Laplace",
+    "median_ms": 6.052600045222789,
+    "per_arc_ms": [
+      7.026100007351488,
+      6.052600045222789,
+      5.790899973362684
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "legacy",
+    "method": "Gooding",
+    "implementation": "Gooding",
+    "median_ms": 628.7611000007018,
+    "per_arc_ms": [
+      628.7611000007018,
+      995.2055999892764,
+      522.9309999849647
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "legacy",
+    "method": "PIOD-2023",
+    "implementation": "PIOD-2023",
+    "median_ms": 856.5715000149794,
+    "per_arc_ms": [
+      856.5715000149794,
+      1119.837800040841,
+      612.1192999999039
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "legacy",
+    "method": "alpha-IOD-2025",
+    "implementation": "alpha-IOD-2025",
+    "median_ms": 4860.046399990097,
+    "per_arc_ms": [
+      4860.046399990097,
+      4228.606599965133,
+      6372.729099995922
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "legacy",
+    "method": "PIOD-2026",
+    "implementation": "PIOD-2026",
+    "median_ms": 873.2989999698475,
+    "per_arc_ms": [
+      873.2989999698475,
+      1140.111499989871,
+      674.815500038676
+    ],
+    "arcs": 3,
+    "execution": "serial CPU, one BLAS thread; validation observations, no file I/O"
+  },
+  {
+    "dataset": "public",
+    "method": "RBFNN-2024",
+    "median_ms": 0.36419997923076153,
+    "per_arc_ms": [
+      0.7059000199660659,
+      0.36419997923076153,
+      0.30830001924186945
+    ],
+    "arcs": 3,
+    "execution": "Serial CPU; checkpoint loading and file I/O excluded."
+  },
+  {
+    "dataset": "simulation",
+    "method": "RBFNN-2024",
+    "median_ms": 0.36990002263337374,
+    "per_arc_ms": [
+      1.0881999623961747,
+      0.36990002263337374,
+      0.3457000129856169
+    ],
+    "arcs": 3,
+    "execution": "Serial CPU; checkpoint loading and file I/O excluded."
+  },
+  {
+    "dataset": "real",
+    "method": "RBFNN-2024",
+    "median_ms": 0.32539997482672334,
+    "per_arc_ms": [
+      0.457499991171062,
+      0.32539997482672334,
+      0.2940000267699361
+    ],
+    "arcs": 3,
+    "execution": "Serial CPU; checkpoint loading and file I/O excluded."
+  },
+  {
+    "dataset": "legacy",
+    "method": "RBFNN-2024",
+    "median_ms": 0.3247000277042389,
+    "per_arc_ms": [
+      0.6529999664053321,
+      0.3247000277042389,
+      0.29500003438442945
+    ],
+    "arcs": 3,
+    "execution": "Serial CPU; checkpoint loading and file I/O excluded."
+  }
+]

@@ -1,0 +1,744 @@
+{
+  "selection": "Common validation score: position RMSE/training position scale + velocity RMSE/training velocity scale. No updated test scoring before this freeze.",
+  "frozen_unix": 1793451282.6283429,
+  "datasets": {
+    "public": {
+      "training_state_scales": [
+        7074.804212185934,
+        7.502692228089371
+      ],
+      "methods": {
+        "B-spline-KAN-2025": {
+          "model_type": "recent_regressor",
+          "validation": {
+            "position_km_rmse": 1.4896507440506765,
+            "velocity_km_s_rmse": 0.03200048761667435,
+            "common_score": 0.004475757798534593
+          },
+          "config": {
+            "dataset": "public",
+            "seed": 42,
+            "epochs": 150,
+            "lr": 0.001,
+            "batch_size": 1024,
+            "weight_decay": 0.0001,
+            "coordinates": "observer",
+            "clip_input": 6
+          },
+          "head_refit": null,
+          "width": 64,
+          "checkpoint": "checkpoints/v5/public__B-spline-KAN-2025.pt",
+          "sha256": "5fad13fdbf0f819f06153ea593796975971bf48f9a409c4b69c11fe47ad579e6"
+        },
+        "RGA-KAN-2026": {
+          "model_type": "recent_regressor",
+          "validation": {
+            "position_km_rmse": 17.744366902302335,
+            "velocity_km_s_rmse": 0.089336809997074,
+            "common_score": 0.014415407509167756
+          },
+          "config": {
+            "dataset": "public",
+            "seed": 42,
+            "epochs": 150,
+            "lr": 0.001,
+            "batch_size": 1024,
+            "weight_decay": 0.0001,
+            "coordinates": "observer",
+            "clip_input": 6
+          },
+          "head_refit": null,
+          "width": 64,
+          "checkpoint": "checkpoints/v5/public__RGA-KAN-2026.pt",
+          "sha256": "e7f09a944f88ad691dd5c6078c2c8abc44c0027d2735626f1186690ddf1cd2ac"
+        },
+        "GDL": {
+          "model_type": "primary_gdl",
+          "validation": {
+            "position_km_rmse": 1.1244566440582275,
+            "velocity_km_s_rmse": 0.023958846926689148,
+            "common_score": 0.0033523048203236206
+          },
+          "config": {
+            "dataset": "public",
+            "kind": "Geometric-KAN",
+            "width": 64,
+            "depth": 2,
+            "degree": 2,
+            "epochs": 150,
+            "seed": 42,
+            "lr": 0.001,
+            "velocity_scale": "residual",
+            "weight_decay": 0.0001,
+            "coordinates": "observer",
+            "final": false,
+            "training_schedule": "AdamW + training-only affine head refit"
+          },
+          "head_refit": {
+            "range_search": [
+              {
+                "ridge": 1e-12,
+                "validation_position_km_rmse": 1.1244566440582275
+              },
+              {
+                "ridge": 1e-10,
+                "validation_position_km_rmse": 1.1255102157592773
+              },
+              {
+                "ridge": 1e-08,
+                "validation_position_km_rmse": 1.1272698640823364
+              },
+              {
+                "ridge": 1e-06,
+                "validation_position_km_rmse": 1.1382737159729004
+              },
+              {
+                "ridge": 0.0001,
+                "validation_position_km_rmse": 1.2700409889221191
+              },
+              {
+                "ridge": 0.01,
+                "validation_position_km_rmse": 1.5173060894012451
+              },
+              {
+                "ridge": 1.0,
+                "validation_position_km_rmse": 1.6186540126800537
+              },
+              {
+                "ridge": 100.0,
+                "validation_position_km_rmse": 1.8202693462371826
+              }
+            ],
+            "velocity_search": [
+              {
+                "ridge": 1e-12,
+                "validation_velocity_km_s_rmse": 0.023958846926689148
+              },
+              {
+                "ridge": 1e-10,
+                "validation_velocity_km_s_rmse": 0.024137645959854126
+              },
+              {
+                "ridge": 1e-08,
+                "validation_velocity_km_s_rmse": 0.02432156726717949
+              },
+              {
+                "ridge": 1e-06,
+                "validation_velocity_km_s_rmse": 0.024589141830801964
+              },
+              {
+                "ridge": 0.0001,
+                "validation_velocity_km_s_rmse": 0.026620367541909218
+              },
+              {
+                "ridge": 0.01,
+                "validation_velocity_km_s_rmse": 0.030773743987083435
+              },
+              {
+                "ridge": 1.0,
+                "validation_velocity_km_s_rmse": 0.03220757097005844
+              },
+              {
+                "ridge": 100.0,
+                "validation_velocity_km_s_rmse": 0.034598108381032944
+              }
+            ],
+            "range_ridge": 1e-12,
+            "velocity_ridge": 1e-12
+          },
+          "width": 64,
+          "checkpoint": "checkpoints/v5/public__GDL.pt",
+          "sha256": "819f902b5ccad5687baf054730f03ea697132119ac882283518bd3454a256838"
+        },
+        "RBFNN-2024": {
+          "validation": {
+            "centers": 512,
+            "width_factor": 0.25,
+            "ridge": 1e-06,
+            "position_km_rmse": 26.462527337800886,
+            "velocity_km_s_rmse": 1.0010257282653765,
+            "score": 0.13716259342626422,
+            "representation": "lvlh",
+            "normalization": "minmax"
+          },
+          "config": {
+            "centers": 512,
+            "width_factor": 0.25,
+            "ridge": 1e-06,
+            "position_km_rmse": 26.462527337800886,
+            "velocity_km_s_rmse": 1.0010257282653765,
+            "score": 0.13716259342626422,
+            "representation": "lvlh",
+            "normalization": "minmax"
+          },
+          "checkpoint": "checkpoints/v5/public__RBFNN-2024.npz",
+          "sha256": "17d17fdfb93fd06ba8e46965a650a63370948cecb65bb758dc495af2671448ff"
+        },
+        "PIOD-2026": {
+          "implementation": "PIOD-2026-J2",
+          "validation": {
+            "arcs": 30,
+            "finite": 30,
+            "finite_fraction": 1.0,
+            "position_km_rmse": 18.33796476063055,
+            "position_km_mean": 15.017031267851536,
+            "position_km_median": 12.092310891994773,
+            "position_km_p95": 35.016041449461575,
+            "velocity_km_s_rmse": 0.08843450358868805,
+            "velocity_km_s_mean": 0.07001123740063284,
+            "velocity_km_s_median": 0.05097763772783456,
+            "velocity_km_s_p95": 0.1886594161010751
+          },
+          "common_selection_score": 0.014379046237818004
+        }
+      }
+    },
+    "simulation": {
+      "training_state_scales": [
+        27778.405181616396,
+        5.2885889449066115
+      ],
+      "methods": {
+        "B-spline-KAN-2025": {
+          "model_type": "recent_regressor",
+          "validation": {
+            "position_km_rmse": 7488.904087168724,
+            "velocity_km_s_rmse": 2.1755067131680095,
+            "common_score": 0.6809530898533085
+          },
+          "config": {
+            "dataset": "simulation",
+            "seed": 42,
+            "epochs": 150,
+            "lr": 0.001,
+            "batch_size": 1024,
+            "weight_decay": 0.0001,
+            "coordinates": "observer",
+            "clip_input": 6,
+            "glorot_sine": false
+          },
+          "head_refit": null,
+          "width": 32,
+          "checkpoint": "checkpoints/v5/simulation__B-spline-KAN-2025.pt",
+          "sha256": "af494bafde17ad9f4f1e7d8cdd9d20d1522d44a2495034730656ae1b5366b4af"
+        },
+        "RGA-KAN-2026": {
+          "model_type": "recent_regressor",
+          "validation": {
+            "position_km_rmse": 6376.015589838481,
+            "velocity_km_s_rmse": 2.0908447071563807,
+            "common_score": 0.6248815788190295
+          },
+          "config": {
+            "dataset": "simulation",
+            "seed": 42,
+            "epochs": 150,
+            "lr": 0.001,
+            "batch_size": 1024,
+            "weight_decay": 0.0001,
+            "coordinates": "observer",
+            "clip_input": 6,
+            "glorot_sine": true
+          },
+          "head_refit": null,
+          "width": 64,
+          "checkpoint": "checkpoints/v5/simulation__RGA-KAN-2026.pt",
+          "sha256": "f2a5a7468e4bc3db3449e92dc03b7d4d5a5dacbe3430f62af4a5542435509f99"
+        },
+        "GDL": {
+          "model_type": "primary_gdl",
+          "validation": {
+            "position_km_rmse": 3508.134521484375,
+            "velocity_km_s_rmse": 1.235069990158081,
+            "common_score": 0.3598248713672844
+          },
+          "config": {
+            "dataset": "simulation",
+            "kind": "Geometric-MLP",
+            "width": 64,
+            "depth": 2,
+            "degree": 2,
+            "epochs": 100,
+            "seed": 42,
+            "lr": 0.001,
+            "velocity_scale": "residual",
+            "weight_decay": 0.0001,
+            "coordinates": "observer",
+            "batch_size": 512,
+            "range_weight": 1.0,
+            "final": false,
+            "training_schedule": "AdamW + training-only affine head refit"
+          },
+          "head_refit": {
+            "range_search": [
+              {
+                "ridge": 1e-12,
+                "validation_position_km_rmse": 3899.689697265625
+              },
+              {
+                "ridge": 1e-10,
+                "validation_position_km_rmse": 3899.689697265625
+              },
+              {
+                "ridge": 1e-08,
+                "validation_position_km_rmse": 3899.68896484375
+              },
+              {
+                "ridge": 1e-06,
+                "validation_position_km_rmse": 3899.644775390625
+              },
+              {
+                "ridge": 0.0001,
+                "validation_position_km_rmse": 3897.08837890625
+              },
+              {
+                "ridge": 0.01,
+                "validation_position_km_rmse": 3923.61181640625
+              },
+              {
+                "ridge": 1.0,
+                "validation_position_km_rmse": 4537.88916015625
+              },
+              {
+                "ridge": 100.0,
+                "validation_position_km_rmse": 3583.39599609375
+              }
+            ],
+            "velocity_search": [
+              {
+                "ridge": 1e-12,
+                "validation_velocity_km_s_rmse": 1.2351044416427612
+              },
+              {
+                "ridge": 1e-10,
+                "validation_velocity_km_s_rmse": 1.2351044416427612
+              },
+              {
+                "ridge": 1e-08,
+                "validation_velocity_km_s_rmse": 1.2351043224334717
+              },
+              {
+                "ridge": 1e-06,
+                "validation_velocity_km_s_rmse": 1.235103964805603
+              },
+              {
+                "ridge": 0.0001,
+                "validation_velocity_km_s_rmse": 1.235069990158081
+              },
+              {
+                "ridge": 0.01,
+                "validation_velocity_km_s_rmse": 1.2362269163131714
+              },
+              {
+                "ridge": 1.0,
+                "validation_velocity_km_s_rmse": 1.253103494644165
+              },
+              {
+                "ridge": 100.0,
+                "validation_velocity_km_s_rmse": 1.264316439628601
+              }
+            ],
+            "range_ridge": 100.0,
+            "velocity_ridge": 0.0001,
+            "range_mix": 0.0
+          },
+          "width": 64,
+          "checkpoint": "checkpoints/v5/simulation__GDL.pt",
+          "sha256": "6a0733950bbaaa1fb6af9b79d1588943894a125a1644287cabda74196a464317"
+        },
+        "RBFNN-2024": {
+          "validation": {
+            "centers": 64,
+            "width_factor": 1.0,
+            "ridge": 0.1,
+            "position_km_rmse": 15309.358402383348,
+            "velocity_km_s_rmse": 5.496016008735456,
+            "score": 1.5903542458795163,
+            "representation": "lvlh"
+          },
+          "config": {
+            "centers": 64,
+            "width_factor": 1.0,
+            "ridge": 0.1,
+            "position_km_rmse": 15309.358402383348,
+            "velocity_km_s_rmse": 5.496016008735456,
+            "score": 1.5903542458795163,
+            "representation": "lvlh"
+          },
+          "checkpoint": "checkpoints/v5/simulation__RBFNN-2024.npz",
+          "sha256": "4c2395e19a37025eeed1e6094f9e68db01d73c94e85cf0e74dbc5e8a0cb35966"
+        },
+        "PIOD-2026": {
+          "implementation": "PIOD-2026-J2",
+          "validation": {
+            "arcs": 30,
+            "finite": 30,
+            "finite_fraction": 1.0,
+            "position_km_rmse": 5674.0103070588875,
+            "position_km_mean": 2672.5157831408137,
+            "position_km_median": 460.1069864241492,
+            "position_km_p95": 12891.007801301495,
+            "velocity_km_s_rmse": 7.086105903055496,
+            "velocity_km_s_mean": 3.126572760770231,
+            "velocity_km_s_median": 0.6580431685734554,
+            "velocity_km_s_p95": 11.7745204870236
+          },
+          "common_selection_score": 1.5441456849279949
+        }
+      }
+    },
+    "real": {
+      "training_state_scales": [
+        25443.566729263646,
+        1.8538961551453534
+      ],
+      "methods": {
+        "B-spline-KAN-2025": {
+          "model_type": "recent_regressor",
+          "validation": {
+            "position_km_rmse": 181.36523314798487,
+            "velocity_km_s_rmse": 0.01091609098419803,
+            "common_score": 0.01301632616631877
+          },
+          "config": {
+            "dataset": "real",
+            "seed": 42,
+            "epochs": 150,
+            "lr": 0.001,
+            "batch_size": 1024,
+            "weight_decay": 0.0001,
+            "coordinates": "observer",
+            "clip_input": 6
+          },
+          "head_refit": null,
+          "width": 32
+        },
+        "RGA-KAN-2026": {
+          "model_type": "recent_regressor",
+          "validation": {
+            "position_km_rmse": 140.82057961073951,
+            "velocity_km_s_rmse": 0.012237486298176618,
+            "common_score": 0.012135579827758139
+          },
+          "config": {
+            "dataset": "real",
+            "seed": 42,
+            "epochs": 150,
+            "lr": 0.001,
+            "batch_size": 1024,
+            "weight_decay": 0.0001,
+            "coordinates": "observer",
+            "clip_input": 6
+          },
+          "head_refit": null,
+          "width": 64
+        },
+        "GDL": {
+          "model_type": "primary_gdl",
+          "validation": {
+            "position_km_rmse": 26.485443115234375,
+            "velocity_km_s_rmse": 0.0027143131010234356,
+            "common_score": 0.002505061325018132
+          },
+          "config": {
+            "dataset": "real",
+            "kind": "Geometric-KAN",
+            "width": 64,
+            "depth": 2,
+            "degree": 2,
+            "coordinates": "hybrid",
+            "batch_size": 128,
+            "range_weight": 10.0,
+            "lr": 0.0001,
+            "weight_decay": 0.0001,
+            "velocity_scale": "residual",
+            "seed": 42,
+            "training_schedule": "range-pretrain/velocity-warmup/joint + training-only affine head refit"
+          },
+          "head_refit": {
+            "range_search": [
+              {
+                "ridge": 1e-12,
+                "validation_position_km_rmse": 30.234209060668945
+              },
+              {
+                "ridge": 1e-10,
+                "validation_position_km_rmse": 26.485443115234375
+              },
+              {
+                "ridge": 1e-08,
+                "validation_position_km_rmse": 27.984928131103516
+              },
+              {
+                "ridge": 1e-06,
+                "validation_position_km_rmse": 82.62454986572266
+              },
+              {
+                "ridge": 0.0001,
+                "validation_position_km_rmse": 112.64253997802734
+              },
+              {
+                "ridge": 0.01,
+                "validation_position_km_rmse": 110.57946014404297
+              },
+              {
+                "ridge": 1.0,
+                "validation_position_km_rmse": 112.18824768066406
+              },
+              {
+                "ridge": 100.0,
+                "validation_position_km_rmse": 110.76960754394531
+              }
+            ],
+            "velocity_search": [
+              {
+                "ridge": 1e-12,
+                "validation_velocity_km_s_rmse": 0.019879307597875595
+              },
+              {
+                "ridge": 1e-10,
+                "validation_velocity_km_s_rmse": 0.018163522705435753
+              },
+              {
+                "ridge": 1e-08,
+                "validation_velocity_km_s_rmse": 0.017074624076485634
+              },
+              {
+                "ridge": 1e-06,
+                "validation_velocity_km_s_rmse": 0.008476067334413528
+              },
+              {
+                "ridge": 0.0001,
+                "validation_velocity_km_s_rmse": 0.0027143131010234356
+              },
+              {
+                "ridge": 0.01,
+                "validation_velocity_km_s_rmse": 0.00429352093487978
+              },
+              {
+                "ridge": 1.0,
+                "validation_velocity_km_s_rmse": 0.004535186570137739
+              },
+              {
+                "ridge": 100.0,
+                "validation_velocity_km_s_rmse": 0.004717301577329636
+              }
+            ],
+            "range_ridge": 1e-10,
+            "velocity_ridge": 0.0001
+          },
+          "width": 64
+        },
+        "RBFNN-2024": {
+          "validation": {
+            "centers": 256,
+            "width_factor": 1.0,
+            "ridge": 1e-06,
+            "position_km_rmse": 32.72241765883418,
+            "velocity_km_s_rmse": 0.012849509687109238,
+            "score": 0.008217162088289981,
+            "representation": "lvlh",
+            "normalization": "minmax"
+          },
+          "config": {
+            "centers": 256,
+            "width_factor": 1.0,
+            "ridge": 1e-06,
+            "position_km_rmse": 32.72241765883418,
+            "velocity_km_s_rmse": 0.012849509687109238,
+            "score": 0.008217162088289981,
+            "representation": "lvlh",
+            "normalization": "minmax"
+          }
+        },
+        "PIOD-2026": {
+          "implementation": "PIOD-2026",
+          "validation": {
+            "arcs": 30,
+            "finite": 30,
+            "finite_fraction": 1.0,
+            "position_km_rmse": 27642.658966268777,
+            "position_km_mean": 20037.34350295144,
+            "position_km_median": 10288.194474825728,
+            "position_km_p95": 49956.5377034208,
+            "velocity_km_s_rmse": 17.009477359405732,
+            "velocity_km_s_mean": 8.642906197171502,
+            "velocity_km_s_median": 3.0709700221462337,
+            "velocity_km_s_p95": 27.590326245839776
+          },
+          "common_selection_score": 10.261419472501
+        }
+      }
+    },
+    "legacy": {
+      "training_state_scales": [
+        13928.429540610017,
+        5.377979502070471
+      ],
+      "methods": {
+        "B-spline-KAN-2025": {
+          "model_type": "recent_regressor",
+          "validation": {
+            "position_km_rmse": 69.68782871745105,
+            "velocity_km_s_rmse": 0.039929020075935705,
+            "common_score": 0.012427818978916013
+          },
+          "config": {
+            "dataset": "legacy",
+            "seed": 42,
+            "epochs": 150,
+            "lr": 0.001,
+            "batch_size": 1024,
+            "weight_decay": 0.0001,
+            "coordinates": "observer",
+            "clip_input": 6
+          },
+          "head_refit": null,
+          "width": 64,
+          "checkpoint": "checkpoints/v5/legacy__B-spline-KAN-2025.pt",
+          "sha256": "336025bfb4bc834d52dc6c2b0951b1395b03258ec17223f22c54f3e0c8aa0cf6"
+        },
+        "RGA-KAN-2026": {
+          "model_type": "recent_regressor",
+          "validation": {
+            "position_km_rmse": 48.956944176905736,
+            "velocity_km_s_rmse": 0.020638853272004345,
+            "common_score": 0.007352552677296419
+          },
+          "config": {
+            "dataset": "legacy",
+            "seed": 42,
+            "epochs": 150,
+            "lr": 0.001,
+            "batch_size": 1024,
+            "weight_decay": 0.0001,
+            "coordinates": "observer",
+            "clip_input": 6,
+            "glorot_sine": true
+          },
+          "head_refit": null,
+          "width": 64,
+          "checkpoint": "checkpoints/v5/legacy__RGA-KAN-2026.pt",
+          "sha256": "c37ff939dba25a6530c0562a4b00a07230fd592f63fccc83a4821b66cd584d6e"
+        },
+        "GDL": {
+          "model_type": "corrected_original",
+          "validation": {
+            "position_km_rmse": 19.957601534339926,
+            "velocity_km_s_rmse": 0.07875806065336975,
+            "common_score": 0.016077412635671424
+          },
+          "config": {
+            "source_checkpoint": "best_model_4layers.pth",
+            "encoder_width": 64,
+            "encoder_depth": 4,
+            "encoder_frozen": true,
+            "seed": 42,
+            "range_conditioning": "original encoder + observation-derived kinematics",
+            "epochs": 100,
+            "batch_size": 1024,
+            "resume_from": "w64_s42.pt",
+            "lr": 0.0003,
+            "affine_refit": true
+          },
+          "head_refit": {
+            "range": {
+              "selected": {
+                "ridge": 1e-06,
+                "validation_rmse": 19.95760285929342
+              },
+              "search": [
+                {
+                  "ridge": 1e-12,
+                  "validation_rmse": 19.958413492390736
+                },
+                {
+                  "ridge": 1e-10,
+                  "validation_rmse": 19.95785156088807
+                },
+                {
+                  "ridge": 1e-08,
+                  "validation_rmse": 19.957736418865416
+                },
+                {
+                  "ridge": 1e-06,
+                  "validation_rmse": 19.95760285929342
+                },
+                {
+                  "ridge": 0.0001,
+                  "validation_rmse": 19.978379920816643
+                },
+                {
+                  "ridge": 0.01,
+                  "validation_rmse": 21.126664191617138
+                },
+                {
+                  "ridge": 1.0,
+                  "validation_rmse": 76.34005250534469
+                }
+              ]
+            },
+            "velocity": {
+              "selected": {
+                "ridge": 1e-12,
+                "validation_rmse": 0.07875836259159803
+              },
+              "search": [
+                {
+                  "ridge": 1e-12,
+                  "validation_rmse": 0.07875836259159803
+                },
+                {
+                  "ridge": 1e-10,
+                  "validation_rmse": 0.07880008161036324
+                },
+                {
+                  "ridge": 1e-08,
+                  "validation_rmse": 0.07893465082226324
+                },
+                {
+                  "ridge": 1e-06,
+                  "validation_rmse": 0.07919685707360491
+                },
+                {
+                  "ridge": 0.0001,
+                  "validation_rmse": 0.07960823319482126
+                },
+                {
+                  "ridge": 0.01,
+                  "validation_rmse": 0.12733154437837046
+                },
+                {
+                  "ridge": 1.0,
+                  "validation_rmse": 0.4371817830002161
+                }
+              ]
+            }
+          },
+          "width": 64,
+          "checkpoint": "checkpoints/v5/legacy__GDL.pt",
+          "sha256": "1748938c7da230fca99eaec468871772800f4a26cfb46d888f595e78ee1bb50c"
+        },
+        "RBFNN-2024": {
+          "validation": {
+            "centers": 512,
+            "width_factor": 0.25,
+            "ridge": 1e-06,
+            "position_km_rmse": 615.8267094770745,
+            "velocity_km_s_rmse": 0.2034054881831225,
+            "score": 0.08203704362672193,
+            "representation": "lvlh",
+            "normalization": "standard"
+          },
+          "checkpoint": "checkpoints/v5/legacy__RBFNN-2024.npz",
+          "sha256": "4093da44841339970127e4cffbda8e6bee40d661bfbbad995f2d862b2258bcfa"
+        },
+        "PIOD-2026": {
+          "implementation": "PIOD-2026"
+        }
+      }
+    }
+  },
+  "training_dtype": "float32",
+  "inference_dtype": "float64"
+}

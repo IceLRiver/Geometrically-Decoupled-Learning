@@ -1,0 +1,32 @@
+[
+  {
+    "file": "RGA_rgakan.py",
+    "url": "https://raw.githubusercontent.com/srigas/RGA-KANs/main/src/rgakan.py",
+    "sha256": "d0fda44f61674a79f39712b55adbbdb8e6880a778bb22343cf1bb9c068ebb311"
+  },
+  {
+    "file": "RGA_layer.py",
+    "url": "https://raw.githubusercontent.com/srigas/RGA-KANs/main/src/layer.py",
+    "sha256": "c8d8032aca72f056b02b1ec68827f7b357f323cff8666a5f9fadc114b0ca4efa"
+  },
+  {
+    "file": "RGA_LICENSE",
+    "url": "https://raw.githubusercontent.com/srigas/RGA-KANs/main/LICENSE",
+    "sha256": "295393aabd15f5ec8c7549863fc5955cf580e85403ce375b96c0c9d9efe11d00"
+  },
+  {
+    "file": "KAN_KANLayer.py",
+    "url": "https://raw.githubusercontent.com/KindXiaoming/pykan/master/kan/KANLayer.py",
+    "sha256": "fd1a408b0ee0a8b83eefcde193b30f7323c52172a72e21280e15430cc6742b8d"
+  },
+  {
+    "file": "KAN_spline.py",
+    "url": "https://raw.githubusercontent.com/KindXiaoming/pykan/master/kan/spline.py",
+    "sha256": "16443d4b5e14b7096d585fbd2b32a6f26d142f3b0556428a0ac9845b8563a8a0"
+  },
+  {
+    "file": "KAN_LICENSE",
+    "url": "https://raw.githubusercontent.com/KindXiaoming/pykan/master/LICENSE",
+    "sha256": "0495c35b21781aba2ab67a781a2f69b87e1a2e0ec0d880b73291e60be712c707"
+  }
+]

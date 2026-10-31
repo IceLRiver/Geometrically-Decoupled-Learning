@@ -1,0 +1,38 @@
+[
+  {
+    "method": "Original supplied checkpoint",
+    "requested": 47315,
+    "finite": 47315,
+    "finite_fraction": 1.0,
+    "position_km_rmse": 157.6070664904609,
+    "position_km_mean": 55.87534096938125,
+    "position_km_median": 23.366670776898307,
+    "position_km_p95": 216.09310010738727,
+    "velocity_km_s_rmse": 0.4912996028851863,
+    "velocity_km_s_mean": 0.4070710498832853,
+    "velocity_km_s_median": 0.3360248980183838,
+    "velocity_km_s_p95": 0.9612119680493154,
+    "normalized_state_score": 0.10266943182294486,
+    "outside_study_domain_fraction": 0.0,
+    "position_below_10km_fraction": 0.23419634365423228,
+    "position_below_100km_fraction": 0.8988481454084328
+  },
+  {
+    "method": "Refined geometric hierarchy",
+    "requested": 47315,
+    "finite": 47315,
+    "finite_fraction": 1.0,
+    "position_km_rmse": 62.77562257353195,
+    "position_km_mean": 14.137741413429278,
+    "position_km_median": 8.961695192762798,
+    "position_km_p95": 35.83849200932348,
+    "velocity_km_s_rmse": 0.08042022563787288,
+    "velocity_km_s_mean": 0.06754205278420904,
+    "velocity_km_s_median": 0.058162434831250914,
+    "velocity_km_s_p95": 0.1466677392812655,
+    "normalized_state_score": 0.019460626954809615,
+    "outside_study_domain_fraction": 0.0,
+    "position_below_10km_fraction": 0.5444573602451653,
+    "position_below_100km_fraction": 0.9947796681813379
+  }
+]
