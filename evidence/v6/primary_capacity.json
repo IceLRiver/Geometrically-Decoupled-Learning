@@ -1,0 +1,17 @@
+[
+  {
+    "dataset": "public",
+    "active_trainable": 60358,
+    "active_frozen": 0
+  },
+  {
+    "dataset": "real",
+    "active_trainable": 60742,
+    "active_frozen": 0
+  },
+  {
+    "dataset": "legacy",
+    "active_trainable": 21991,
+    "active_frozen": 87967
+  }
+]
