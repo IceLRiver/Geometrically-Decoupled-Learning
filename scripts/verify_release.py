@@ -40,5 +40,14 @@ def main():
     orbit_sets[k].update(z['orbit_id'][z['split']==k].tolist())
  assert regime_counts.tolist()==[40000,40000,40000] and split_counts.tolist()==[79980,19995,20025]
  assert not(orbit_sets[0]&orbit_sets[1] or orbit_sets[0]&orbit_sets[2] or orbit_sets[1]&orbit_sets[2])
+ public=ROOT/'data/sentinel1_poeorb';pm=json.loads((public/'manifest.json').read_text());p=public/'observations.npz';assert hashlib.sha256(p.read_bytes()).hexdigest()==pm['sha256']
+ with np.load(p) as z:
+  assert z['X'].shape==(9632,40,6) and z['y'].shape==(9632,6)
+  assert np.isfinite(z['X']).all() and np.isfinite(z['y']).all()
+  assert np.allclose(np.linalg.norm(z['X'][...,3:],axis=-1),1.,atol=1e-12)
+  assert [np.count_nonzero(z['split']==i) for i in range(3)]==[4815,2412,2405]
+  groups=[set(z['satellite'][z['split']==i]) for i in range(3)]
+  assert not(groups[0]&groups[1] or groups[0]&groups[2] or groups[1]&groups[2])
+ print('PASS: Sentinel-1 public benchmark, finite states, unit LOS, source checksum and satellite-disjoint split.')
  print(f'PASS: {len(rows)} saved-prediction runs, disjoint target splits, 2250 compact arcs, {count} legacy arcs and 120000 coverage arcs.')
 if __name__=='__main__':main()

@@ -8,6 +8,7 @@ Data and model code for **Geometrically Decoupled Learning for Space Target Moti
 |---|---|
 | Geometrically decoupled model | `models/orbit_physkan.py` |
 | Model training and evaluation | `scripts/run_learning.py`, `scripts/evaluate_saved.py` |
+| Public precise-orbit benchmark: 9,632 arcs | `data/sentinel1_poeorb/` |
 | Original model checkpoint | `checkpoints/original_orbit_physkan.pth` |
 | Observation dataset: 236,575 arcs | `data/legacy_simulation/` |
 | Compact evaluation data: 2,250 arcs | `evidence/synthetic_arcs.npz` |
@@ -21,6 +22,9 @@ Each arc contains 40 observations. Input features are observer position followed
 The compact evaluation data store `X` as `(N,40,6)` and `y` as `(N,6)`. Dataset blocks in `data/legacy_simulation/` store flattened inputs `(N,240)`. The compact evaluation data have 1,554 training, 228 validation and 468 test arcs; target orbits are disjoint across these partitions. Partition files and normalization statistics accompany the arrays.
 
 The coverage dataset balances 40,000 arcs per orbital regime and provides target-disjoint training/validation/test partitions of 79,980/19,995/20,025 arcs. Its blocks additionally store `orbit_id`, `regime`, `split`, and `noise_arcsec`; codes and counts are listed in its manifest. The saved compact model results refer to the compact evaluation data.
+
+
+The Sentinel-1 benchmark provides 9,632 arcs with terminal position and velocity references from public precise ephemerides. Its training/validation/test partitions contain 4,815/2,412/2,405 arcs from S1A--S1B/S1C/S1D respectively. The angular observations are reconstructed, rather than sensor measured. Arrays use the same `X`/`y` convention; `split` codes and source file checksums accompany the data. Contains modified Copernicus Sentinel data (2021, 2026); [source catalogue](https://step.esa.int/auxdata/orbits/Sentinel-1/POEORB/).
 
 ## Installation
 
