@@ -1,0 +1,15 @@
+{
+  "parent": "Original simulated corpus",
+  "cases": 20,
+  "levels_arcsec": [
+    0,
+    1,
+    3,
+    5
+  ],
+  "draws_per_level": 1,
+  "paired_cases": true,
+  "selection_seed": 20261102,
+  "solver_seed": "42 + original sample index, held constant across noise levels",
+  "interpretation": "Additional per-component tangent-plane perturbation; not a new independent cohort or a measurement-noise estimate for real records."
+}

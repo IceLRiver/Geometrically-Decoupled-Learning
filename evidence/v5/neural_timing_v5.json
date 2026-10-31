@@ -1,0 +1,110 @@
+[
+  {
+    "dataset": "public",
+    "method": "B-spline-KAN-2025",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 2.0351000000000674,
+    "p95_ms": 2.2797250000001767,
+    "execution": "FP64 single-arc inference: CPU observation preprocessing and synchronized CUDA computation; loading/file I/O excluded."
+  },
+  {
+    "dataset": "public",
+    "method": "RGA-KAN-2026",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 3.4356500000001233,
+    "p95_ms": 4.0355050000001835,
+    "execution": "FP64 single-arc inference: CPU observation preprocessing and synchronized CUDA computation; loading/file I/O excluded."
+  },
+  {
+    "dataset": "public",
+    "method": "GDL",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 3.8660999999997614,
+    "p95_ms": 4.169389999999629,
+    "execution": "FP64 single-arc inference: CPU observation preprocessing and synchronized CUDA computation; loading/file I/O excluded."
+  },
+  {
+    "dataset": "simulation",
+    "method": "B-spline-KAN-2025",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 2.3572000000000592,
+    "p95_ms": 2.891505000000327,
+    "execution": "FP64 single-arc inference: CPU observation preprocessing and synchronized CUDA computation; loading/file I/O excluded."
+  },
+  {
+    "dataset": "simulation",
+    "method": "RGA-KAN-2026",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 3.9431500000000064,
+    "p95_ms": 4.645434999999719,
+    "execution": "FP64 single-arc inference: CPU observation preprocessing and synchronized CUDA computation; loading/file I/O excluded."
+  },
+  {
+    "dataset": "simulation",
+    "method": "GDL",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 2.5708500000001244,
+    "p95_ms": 3.043259999999925,
+    "execution": "FP64 single-arc inference: CPU observation preprocessing and synchronized CUDA computation; loading/file I/O excluded."
+  },
+  {
+    "dataset": "real",
+    "method": "B-spline-KAN-2025",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 2.336299999999625,
+    "p95_ms": 2.6265850000000146,
+    "execution": "FP64 single-arc inference: CPU observation preprocessing and synchronized CUDA computation; loading/file I/O excluded."
+  },
+  {
+    "dataset": "real",
+    "method": "RGA-KAN-2026",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 3.8319499999999174,
+    "p95_ms": 4.31834499999999,
+    "execution": "FP64 single-arc inference: CPU observation preprocessing and synchronized CUDA computation; loading/file I/O excluded."
+  },
+  {
+    "dataset": "real",
+    "method": "GDL",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 3.6709500000000617,
+    "p95_ms": 4.456074999999603,
+    "execution": "FP64 single-arc inference: CPU observation preprocessing and synchronized CUDA computation; loading/file I/O excluded."
+  },
+  {
+    "dataset": "legacy",
+    "method": "B-spline-KAN-2025",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 2.070199999999911,
+    "p95_ms": 2.5246150000000966,
+    "execution": "FP64 single-arc inference: CPU observation preprocessing and synchronized CUDA computation; loading/file I/O excluded."
+  },
+  {
+    "dataset": "legacy",
+    "method": "RGA-KAN-2026",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 3.434550000000147,
+    "p95_ms": 4.122804999999773,
+    "execution": "FP64 single-arc inference: CPU observation preprocessing and synchronized CUDA computation; loading/file I/O excluded."
+  },
+  {
+    "dataset": "legacy",
+    "method": "GDL",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 4.928799999999622,
+    "p95_ms": 5.68328999999994,
+    "execution": "FP64 single-arc inference: CPU observation preprocessing and synchronized CUDA computation; loading/file I/O excluded."
+  }
+]

@@ -1,0 +1,562 @@
+[
+  {
+    "grouping": "regime",
+    "group": 0.0,
+    "method": "alpha-IOD-2025",
+    "arcs": 100,
+    "position_km_rmse": 20055083.26335263,
+    "velocity_km_s_rmse": 55689.27304537767
+  },
+  {
+    "grouping": "regime",
+    "group": 0.0,
+    "method": "B-spline-KAN-2025",
+    "arcs": 100,
+    "position_km_rmse": 5873.7238981815135,
+    "velocity_km_s_rmse": 2.486764229552065
+  },
+  {
+    "grouping": "regime",
+    "group": 0.0,
+    "method": "Gauss",
+    "arcs": 100,
+    "position_km_rmse": 8693.57032566458,
+    "velocity_km_s_rmse": 18.514252547815616
+  },
+  {
+    "grouping": "regime",
+    "group": 0.0,
+    "method": "GDL",
+    "arcs": 100,
+    "position_km_rmse": 2309.855000318436,
+    "velocity_km_s_rmse": 1.2271068954026119
+  },
+  {
+    "grouping": "regime",
+    "group": 0.0,
+    "method": "Gooding",
+    "arcs": 100,
+    "position_km_rmse": 15892.276570359207,
+    "velocity_km_s_rmse": 28.612259597645476
+  },
+  {
+    "grouping": "regime",
+    "group": 0.0,
+    "method": "Laplace",
+    "arcs": 100,
+    "position_km_rmse": 15605.880088395008,
+    "velocity_km_s_rmse": 38.540437555480246
+  },
+  {
+    "grouping": "regime",
+    "group": 0.0,
+    "method": "PIOD-2023",
+    "arcs": 100,
+    "position_km_rmse": 10422.924645685114,
+    "velocity_km_s_rmse": 21.249765731583427
+  },
+  {
+    "grouping": "regime",
+    "group": 0.0,
+    "method": "PIOD-2026",
+    "arcs": 100,
+    "position_km_rmse": 10384.370554005975,
+    "velocity_km_s_rmse": 21.18856860583528
+  },
+  {
+    "grouping": "regime",
+    "group": 0.0,
+    "method": "RBFNN-2024",
+    "arcs": 100,
+    "position_km_rmse": 12280.567405436921,
+    "velocity_km_s_rmse": 7.4900293027683125
+  },
+  {
+    "grouping": "regime",
+    "group": 0.0,
+    "method": "RGA-KAN-2026",
+    "arcs": 100,
+    "position_km_rmse": 5737.483926463964,
+    "velocity_km_s_rmse": 2.7596311978261245
+  },
+  {
+    "grouping": "regime",
+    "group": 1.0,
+    "method": "alpha-IOD-2025",
+    "arcs": 100,
+    "position_km_rmse": 19209755.190849323,
+    "velocity_km_s_rmse": 7413.524460601367
+  },
+  {
+    "grouping": "regime",
+    "group": 1.0,
+    "method": "B-spline-KAN-2025",
+    "arcs": 100,
+    "position_km_rmse": 8733.512464704729,
+    "velocity_km_s_rmse": 1.6312801404322732
+  },
+  {
+    "grouping": "regime",
+    "group": 1.0,
+    "method": "Gauss",
+    "arcs": 100,
+    "position_km_rmse": 9954.432873421094,
+    "velocity_km_s_rmse": 9.531746061419746
+  },
+  {
+    "grouping": "regime",
+    "group": 1.0,
+    "method": "GDL",
+    "arcs": 100,
+    "position_km_rmse": 4732.082118452847,
+    "velocity_km_s_rmse": 1.135792317896333
+  },
+  {
+    "grouping": "regime",
+    "group": 1.0,
+    "method": "Gooding",
+    "arcs": 100,
+    "position_km_rmse": 11370.915543532066,
+    "velocity_km_s_rmse": 10.003673852174947
+  },
+  {
+    "grouping": "regime",
+    "group": 1.0,
+    "method": "Laplace",
+    "arcs": 100,
+    "position_km_rmse": 24818.178638110858,
+    "velocity_km_s_rmse": 13.823054320904495
+  },
+  {
+    "grouping": "regime",
+    "group": 1.0,
+    "method": "PIOD-2023",
+    "arcs": 100,
+    "position_km_rmse": 7213.427528763438,
+    "velocity_km_s_rmse": 3.855176861908015
+  },
+  {
+    "grouping": "regime",
+    "group": 1.0,
+    "method": "PIOD-2026",
+    "arcs": 100,
+    "position_km_rmse": 7177.85070752826,
+    "velocity_km_s_rmse": 4.102750912640225
+  },
+  {
+    "grouping": "regime",
+    "group": 1.0,
+    "method": "RBFNN-2024",
+    "arcs": 100,
+    "position_km_rmse": 8844.05419476967,
+    "velocity_km_s_rmse": 4.587871357067169
+  },
+  {
+    "grouping": "regime",
+    "group": 1.0,
+    "method": "RGA-KAN-2026",
+    "arcs": 100,
+    "position_km_rmse": 6504.492204869446,
+    "velocity_km_s_rmse": 2.1604819711198435
+  },
+  {
+    "grouping": "regime",
+    "group": 2.0,
+    "method": "alpha-IOD-2025",
+    "arcs": 100,
+    "position_km_rmse": 41066872.7267196,
+    "velocity_km_s_rmse": 18345.207148591562
+  },
+  {
+    "grouping": "regime",
+    "group": 2.0,
+    "method": "B-spline-KAN-2025",
+    "arcs": 100,
+    "position_km_rmse": 10796.62920505844,
+    "velocity_km_s_rmse": 1.9700323860409175
+  },
+  {
+    "grouping": "regime",
+    "group": 2.0,
+    "method": "Gauss",
+    "arcs": 100,
+    "position_km_rmse": 192020.5703325805,
+    "velocity_km_s_rmse": 61.51460964802111
+  },
+  {
+    "grouping": "regime",
+    "group": 2.0,
+    "method": "GDL",
+    "arcs": 100,
+    "position_km_rmse": 5265.097346142965,
+    "velocity_km_s_rmse": 0.7315525800594579
+  },
+  {
+    "grouping": "regime",
+    "group": 2.0,
+    "method": "Gooding",
+    "arcs": 100,
+    "position_km_rmse": 26372.963804692256,
+    "velocity_km_s_rmse": 28.378509962900658
+  },
+  {
+    "grouping": "regime",
+    "group": 2.0,
+    "method": "Laplace",
+    "arcs": 100,
+    "position_km_rmse": 31611.633624996004,
+    "velocity_km_s_rmse": 26.216990076159888
+  },
+  {
+    "grouping": "regime",
+    "group": 2.0,
+    "method": "PIOD-2023",
+    "arcs": 100,
+    "position_km_rmse": 36554253.9562596,
+    "velocity_km_s_rmse": 20246.825082174546
+  },
+  {
+    "grouping": "regime",
+    "group": 2.0,
+    "method": "PIOD-2026",
+    "arcs": 100,
+    "position_km_rmse": 3780676.407049241,
+    "velocity_km_s_rmse": 978.3166310867239
+  },
+  {
+    "grouping": "regime",
+    "group": 2.0,
+    "method": "RBFNN-2024",
+    "arcs": 100,
+    "position_km_rmse": 20287.552771282975,
+    "velocity_km_s_rmse": 2.9806962055902604
+  },
+  {
+    "grouping": "regime",
+    "group": 2.0,
+    "method": "RGA-KAN-2026",
+    "arcs": 100,
+    "position_km_rmse": 10707.053483353318,
+    "velocity_km_s_rmse": 2.058214996923527
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 0.0,
+    "method": "alpha-IOD-2025",
+    "arcs": 73,
+    "position_km_rmse": 23472700.08166431,
+    "velocity_km_s_rmse": 65179.36390496294
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 0.0,
+    "method": "B-spline-KAN-2025",
+    "arcs": 73,
+    "position_km_rmse": 7235.138934510964,
+    "velocity_km_s_rmse": 1.9122575566993547
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 0.0,
+    "method": "Gauss",
+    "arcs": 73,
+    "position_km_rmse": 25.341012939214593,
+    "velocity_km_s_rmse": 0.019145210747236536
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 0.0,
+    "method": "GDL",
+    "arcs": 73,
+    "position_km_rmse": 4137.998183717734,
+    "velocity_km_s_rmse": 1.0899287130072732
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 0.0,
+    "method": "Gooding",
+    "arcs": 73,
+    "position_km_rmse": 794.2390843110766,
+    "velocity_km_s_rmse": 0.5852320628856613
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 0.0,
+    "method": "Laplace",
+    "arcs": 73,
+    "position_km_rmse": 7290.6856047267365,
+    "velocity_km_s_rmse": 8.717141601439883
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 0.0,
+    "method": "PIOD-2023",
+    "arcs": 73,
+    "position_km_rmse": 7.723428677025083,
+    "velocity_km_s_rmse": 0.00966493488099842
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 0.0,
+    "method": "PIOD-2026",
+    "arcs": 73,
+    "position_km_rmse": 19.84302256467639,
+    "velocity_km_s_rmse": 0.07497883644054021
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 0.0,
+    "method": "RBFNN-2024",
+    "arcs": 73,
+    "position_km_rmse": 12537.805174089237,
+    "velocity_km_s_rmse": 5.511383751160111
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 0.0,
+    "method": "RGA-KAN-2026",
+    "arcs": 73,
+    "position_km_rmse": 6321.51566731491,
+    "velocity_km_s_rmse": 2.1953176846171636
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 1.0,
+    "method": "alpha-IOD-2025",
+    "arcs": 87,
+    "position_km_rmse": 563052.755601259,
+    "velocity_km_s_rmse": 710.3331739883537
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 1.0,
+    "method": "B-spline-KAN-2025",
+    "arcs": 87,
+    "position_km_rmse": 8140.190282347497,
+    "velocity_km_s_rmse": 1.8283510211690277
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 1.0,
+    "method": "Gauss",
+    "arcs": 87,
+    "position_km_rmse": 13991.523202475963,
+    "velocity_km_s_rmse": 10.778253632150752
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 1.0,
+    "method": "GDL",
+    "arcs": 87,
+    "position_km_rmse": 3415.232618011468,
+    "velocity_km_s_rmse": 0.8070072265917013
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 1.0,
+    "method": "Gooding",
+    "arcs": 87,
+    "position_km_rmse": 15000.474895313662,
+    "velocity_km_s_rmse": 19.108324042635
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 1.0,
+    "method": "Laplace",
+    "arcs": 87,
+    "position_km_rmse": 18717.80660096246,
+    "velocity_km_s_rmse": 26.225865789393282
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 1.0,
+    "method": "PIOD-2023",
+    "arcs": 87,
+    "position_km_rmse": 805832.1584673239,
+    "velocity_km_s_rmse": 151.45981462495402
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 1.0,
+    "method": "PIOD-2026",
+    "arcs": 87,
+    "position_km_rmse": 55166.29295473922,
+    "velocity_km_s_rmse": 20.544340953281317
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 1.0,
+    "method": "RBFNN-2024",
+    "arcs": 87,
+    "position_km_rmse": 14011.810831977276,
+    "velocity_km_s_rmse": 5.23689235126345
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 1.0,
+    "method": "RGA-KAN-2026",
+    "arcs": 87,
+    "position_km_rmse": 6651.961241750953,
+    "velocity_km_s_rmse": 2.062189133166633
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 3.0,
+    "method": "alpha-IOD-2025",
+    "arcs": 70,
+    "position_km_rmse": 33704532.93918488,
+    "velocity_km_s_rmse": 7735.350438001667
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 3.0,
+    "method": "B-spline-KAN-2025",
+    "arcs": 70,
+    "position_km_rmse": 10420.15444809318,
+    "velocity_km_s_rmse": 2.6247218993331303
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 3.0,
+    "method": "Gauss",
+    "arcs": 70,
+    "position_km_rmse": 26180.693271276563,
+    "velocity_km_s_rmse": 26.33096125829647
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 3.0,
+    "method": "GDL",
+    "arcs": 70,
+    "position_km_rmse": 4898.328797533129,
+    "velocity_km_s_rmse": 1.3195930761620418
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 3.0,
+    "method": "Gooding",
+    "arcs": 70,
+    "position_km_rmse": 22754.420509405616,
+    "velocity_km_s_rmse": 25.90082774498165
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 3.0,
+    "method": "Laplace",
+    "arcs": 70,
+    "position_km_rmse": 27067.489314150298,
+    "velocity_km_s_rmse": 28.666569980683047
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 3.0,
+    "method": "PIOD-2023",
+    "arcs": 70,
+    "position_km_rmse": 20395324.532458406,
+    "velocity_km_s_rmse": 6887.083527758823
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 3.0,
+    "method": "PIOD-2026",
+    "arcs": 70,
+    "position_km_rmse": 33277.26940037059,
+    "velocity_km_s_rmse": 15.77117816341056
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 3.0,
+    "method": "RBFNN-2024",
+    "arcs": 70,
+    "position_km_rmse": 16762.839982875663,
+    "velocity_km_s_rmse": 5.242856815216662
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 3.0,
+    "method": "RGA-KAN-2026",
+    "arcs": 70,
+    "position_km_rmse": 10297.87137640608,
+    "velocity_km_s_rmse": 2.887858936967725
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 5.0,
+    "method": "alpha-IOD-2025",
+    "arcs": 70,
+    "position_km_rmse": 42426912.242748626,
+    "velocity_km_s_rmse": 22334.568072382306
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 5.0,
+    "method": "B-spline-KAN-2025",
+    "arcs": 70,
+    "position_km_rmse": 8902.1917470988,
+    "velocity_km_s_rmse": 1.8228613564779448
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 5.0,
+    "method": "Gauss",
+    "arcs": 70,
+    "position_km_rmse": 228023.97807205643,
+    "velocity_km_s_rmse": 72.02466288636452
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 5.0,
+    "method": "GDL",
+    "arcs": 70,
+    "position_km_rmse": 4781.872716383833,
+    "velocity_km_s_rmse": 0.9843491278140281
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 5.0,
+    "method": "Gooding",
+    "arcs": 70,
+    "position_km_rmse": 27222.310896595085,
+    "velocity_km_s_rmse": 36.57802382806154
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 5.0,
+    "method": "Laplace",
+    "arcs": 70,
+    "position_km_rmse": 37840.15483775117,
+    "velocity_km_s_rmse": 40.26125332426269
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 5.0,
+    "method": "PIOD-2023",
+    "arcs": 70,
+    "position_km_rmse": 38627714.163792014,
+    "velocity_km_s_rmse": 23198.27859360534
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 5.0,
+    "method": "PIOD-2026",
+    "arcs": 70,
+    "position_km_rmse": 4518256.711746342,
+    "velocity_km_s_rmse": 1169.265888536642
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 5.0,
+    "method": "RBFNN-2024",
+    "arcs": 70,
+    "position_km_rmse": 15040.808481731166,
+    "velocity_km_s_rmse": 5.445650542233588
+  },
+  {
+    "grouping": "noise_arcsec",
+    "group": 5.0,
+    "method": "RGA-KAN-2026",
+    "arcs": 70,
+    "position_km_rmse": 8277.99282162033,
+    "velocity_km_s_rmse": 2.2244504603671156
+  }
+]

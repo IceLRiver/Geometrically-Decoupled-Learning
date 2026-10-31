@@ -1,0 +1,9 @@
+{
+  "time_unix": 1793453238.803495,
+  "execution_dtype": "float64",
+  "reason": "Batch-size consistency checks revealed cancellation in FP32 calibrated basis sums. Evaluate fixed frozen parameters in FP64.",
+  "weights_reselected": false,
+  "partitions_changed": false,
+  "source_sha256": "1f5a416aceac003443943d42b32244f7960f25d2196f94c243538dcb41fd783a",
+  "release_source_sha256": "c6257bd483ae86434b3f4212a086855246f7a7245a8a8cf4bdbfc16d1f36c34c"
+}

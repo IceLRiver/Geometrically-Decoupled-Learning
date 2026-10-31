@@ -1,0 +1,282 @@
+[
+  {
+    "method": "Gauss",
+    "additional_noise_arcsec": 0,
+    "arcs": 20,
+    "position_km_rmse": 64.67757751642623,
+    "velocity_km_s_rmse": 0.07522812112007887
+  },
+  {
+    "method": "Gauss",
+    "additional_noise_arcsec": 1,
+    "arcs": 20,
+    "position_km_rmse": 1943.589955315123,
+    "velocity_km_s_rmse": 1.207628366545588
+  },
+  {
+    "method": "Gauss",
+    "additional_noise_arcsec": 3,
+    "arcs": 20,
+    "position_km_rmse": 7596.611127057716,
+    "velocity_km_s_rmse": 4.193501640338427
+  },
+  {
+    "method": "Gauss",
+    "additional_noise_arcsec": 5,
+    "arcs": 20,
+    "position_km_rmse": 9807.042570439653,
+    "velocity_km_s_rmse": 10.260556103432517
+  },
+  {
+    "method": "Laplace",
+    "additional_noise_arcsec": 0,
+    "arcs": 20,
+    "position_km_rmse": 61.99718410509578,
+    "velocity_km_s_rmse": 0.07258680968853629
+  },
+  {
+    "method": "Laplace",
+    "additional_noise_arcsec": 1,
+    "arcs": 20,
+    "position_km_rmse": 1932.3840317978747,
+    "velocity_km_s_rmse": 1.2210222912449973
+  },
+  {
+    "method": "Laplace",
+    "additional_noise_arcsec": 3,
+    "arcs": 20,
+    "position_km_rmse": 7596.278363517406,
+    "velocity_km_s_rmse": 4.194097559602242
+  },
+  {
+    "method": "Laplace",
+    "additional_noise_arcsec": 5,
+    "arcs": 20,
+    "position_km_rmse": 9813.269009377698,
+    "velocity_km_s_rmse": 10.262652318683095
+  },
+  {
+    "method": "Gooding",
+    "additional_noise_arcsec": 0,
+    "arcs": 20,
+    "position_km_rmse": 64.6683246381894,
+    "velocity_km_s_rmse": 0.07521687369514386
+  },
+  {
+    "method": "Gooding",
+    "additional_noise_arcsec": 1,
+    "arcs": 20,
+    "position_km_rmse": 1931.4881518218617,
+    "velocity_km_s_rmse": 1.2203092670003086
+  },
+  {
+    "method": "Gooding",
+    "additional_noise_arcsec": 3,
+    "arcs": 20,
+    "position_km_rmse": 11892.060865890662,
+    "velocity_km_s_rmse": 8.740914208922877
+  },
+  {
+    "method": "Gooding",
+    "additional_noise_arcsec": 5,
+    "arcs": 20,
+    "position_km_rmse": 20185.721389865932,
+    "velocity_km_s_rmse": 22.890330610231754
+  },
+  {
+    "method": "PIOD-2023",
+    "additional_noise_arcsec": 0,
+    "arcs": 20,
+    "position_km_rmse": 14.793609616013379,
+    "velocity_km_s_rmse": 0.014303402639861431
+  },
+  {
+    "method": "PIOD-2023",
+    "additional_noise_arcsec": 1,
+    "arcs": 20,
+    "position_km_rmse": 579.8242070171652,
+    "velocity_km_s_rmse": 0.4001325298561937
+  },
+  {
+    "method": "PIOD-2023",
+    "additional_noise_arcsec": 3,
+    "arcs": 20,
+    "position_km_rmse": 3786.5367646245068,
+    "velocity_km_s_rmse": 5.962460410703396
+  },
+  {
+    "method": "PIOD-2023",
+    "additional_noise_arcsec": 5,
+    "arcs": 20,
+    "position_km_rmse": 7340.382709717899,
+    "velocity_km_s_rmse": 4.1747271048364025
+  },
+  {
+    "method": "RBFNN-2024",
+    "additional_noise_arcsec": 0,
+    "arcs": 20,
+    "position_km_rmse": 748.4676273773483,
+    "velocity_km_s_rmse": 0.20675419242644538
+  },
+  {
+    "method": "RBFNN-2024",
+    "additional_noise_arcsec": 1,
+    "arcs": 20,
+    "position_km_rmse": 748.4516782824235,
+    "velocity_km_s_rmse": 0.20672003282017734
+  },
+  {
+    "method": "RBFNN-2024",
+    "additional_noise_arcsec": 3,
+    "arcs": 20,
+    "position_km_rmse": 748.1233179831894,
+    "velocity_km_s_rmse": 0.20674372059888457
+  },
+  {
+    "method": "RBFNN-2024",
+    "additional_noise_arcsec": 5,
+    "arcs": 20,
+    "position_km_rmse": 748.1773489883492,
+    "velocity_km_s_rmse": 0.20684108162663745
+  },
+  {
+    "method": "alpha-IOD-2025",
+    "additional_noise_arcsec": 0,
+    "arcs": 20,
+    "position_km_rmse": 14.610089441969688,
+    "velocity_km_s_rmse": 0.014037354239769413
+  },
+  {
+    "method": "alpha-IOD-2025",
+    "additional_noise_arcsec": 1,
+    "arcs": 20,
+    "position_km_rmse": 600.5961404187352,
+    "velocity_km_s_rmse": 0.46872671906572233
+  },
+  {
+    "method": "alpha-IOD-2025",
+    "additional_noise_arcsec": 3,
+    "arcs": 20,
+    "position_km_rmse": 4903586.300134241,
+    "velocity_km_s_rmse": 7927.19341525556
+  },
+  {
+    "method": "alpha-IOD-2025",
+    "additional_noise_arcsec": 5,
+    "arcs": 20,
+    "position_km_rmse": 664167.156479633,
+    "velocity_km_s_rmse": 382.2533408742621
+  },
+  {
+    "method": "PIOD-2026",
+    "additional_noise_arcsec": 0,
+    "arcs": 20,
+    "position_km_rmse": 14.781811621272556,
+    "velocity_km_s_rmse": 0.014283418861384413
+  },
+  {
+    "method": "PIOD-2026",
+    "additional_noise_arcsec": 1,
+    "arcs": 20,
+    "position_km_rmse": 609.1487585216672,
+    "velocity_km_s_rmse": 0.45372371084631136
+  },
+  {
+    "method": "PIOD-2026",
+    "additional_noise_arcsec": 3,
+    "arcs": 20,
+    "position_km_rmse": 8934.641106957572,
+    "velocity_km_s_rmse": 14.53268979495248
+  },
+  {
+    "method": "PIOD-2026",
+    "additional_noise_arcsec": 5,
+    "arcs": 20,
+    "position_km_rmse": 4347.329751054272,
+    "velocity_km_s_rmse": 3.492586214682975
+  },
+  {
+    "method": "B-spline-KAN-2025",
+    "additional_noise_arcsec": 0,
+    "arcs": 20,
+    "position_km_rmse": 49.91307420073655,
+    "velocity_km_s_rmse": 0.025540261173901072
+  },
+  {
+    "method": "B-spline-KAN-2025",
+    "additional_noise_arcsec": 1,
+    "arcs": 20,
+    "position_km_rmse": 329.68276143683215,
+    "velocity_km_s_rmse": 0.11559521163361779
+  },
+  {
+    "method": "B-spline-KAN-2025",
+    "additional_noise_arcsec": 3,
+    "arcs": 20,
+    "position_km_rmse": 20436.62444729265,
+    "velocity_km_s_rmse": 12.19704137719326
+  },
+  {
+    "method": "B-spline-KAN-2025",
+    "additional_noise_arcsec": 5,
+    "arcs": 20,
+    "position_km_rmse": 1305.2569551030604,
+    "velocity_km_s_rmse": 0.501830368639416
+  },
+  {
+    "method": "RGA-KAN-2026",
+    "additional_noise_arcsec": 0,
+    "arcs": 20,
+    "position_km_rmse": 44.34124144135779,
+    "velocity_km_s_rmse": 0.019718861422828606
+  },
+  {
+    "method": "RGA-KAN-2026",
+    "additional_noise_arcsec": 1,
+    "arcs": 20,
+    "position_km_rmse": 262.3594506634868,
+    "velocity_km_s_rmse": 0.0859329234767996
+  },
+  {
+    "method": "RGA-KAN-2026",
+    "additional_noise_arcsec": 3,
+    "arcs": 20,
+    "position_km_rmse": 244.26176816204594,
+    "velocity_km_s_rmse": 0.1086389968037108
+  },
+  {
+    "method": "RGA-KAN-2026",
+    "additional_noise_arcsec": 5,
+    "arcs": 20,
+    "position_km_rmse": 1003.8379513114305,
+    "velocity_km_s_rmse": 0.3576517006811762
+  },
+  {
+    "method": "GDL",
+    "additional_noise_arcsec": 0,
+    "arcs": 20,
+    "position_km_rmse": 15.674171294885626,
+    "velocity_km_s_rmse": 0.07246182076649385
+  },
+  {
+    "method": "GDL",
+    "additional_noise_arcsec": 1,
+    "arcs": 20,
+    "position_km_rmse": 76.56997464675064,
+    "velocity_km_s_rmse": 0.07644689954484629
+  },
+  {
+    "method": "GDL",
+    "additional_noise_arcsec": 3,
+    "arcs": 20,
+    "position_km_rmse": 123.54750931390673,
+    "velocity_km_s_rmse": 0.0906867813533552
+  },
+  {
+    "method": "GDL",
+    "additional_noise_arcsec": 5,
+    "arcs": 20,
+    "position_km_rmse": 278.4055596479286,
+    "velocity_km_s_rmse": 0.16588575201621494
+  }
+]

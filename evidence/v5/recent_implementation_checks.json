@@ -1,0 +1,6 @@
+{
+  "B_spline_basis_and_input_gradient_match_authors_implementation": true,
+  "Chebyshev_basis_matches_trigonometric_identity": true,
+  "RGA_gating_equations_match_authors_source": true,
+  "source_manifest": "method_sources/source_manifest.json"
+}

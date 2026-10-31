@@ -1,0 +1,32 @@
+{
+  "public": {
+    "position_km_rmse": {
+      "baseline": "B-spline-KAN-2025",
+      "reduction_percent": 19.66588044922043
+    },
+    "velocity_km_s_rmse": {
+      "baseline": "B-spline-KAN-2025",
+      "reduction_percent": 36.34316343041007
+    }
+  },
+  "simulation": {
+    "position_km_rmse": {
+      "baseline": "RGA-KAN-2026",
+      "reduction_percent": 45.95915500663379
+    },
+    "velocity_km_s_rmse": {
+      "baseline": "B-spline-KAN-2025",
+      "reduction_percent": 48.83904273321239
+    }
+  },
+  "real": {
+    "position_km_rmse": {
+      "baseline": "RBFNN-2024",
+      "reduction_percent": 10.654324229659206
+    },
+    "velocity_km_s_rmse": {
+      "baseline": "RBFNN-2024",
+      "reduction_percent": 23.814093507100665
+    }
+  }
+}

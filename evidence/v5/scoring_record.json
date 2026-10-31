@@ -1,0 +1,18 @@
+{
+  "scored_unix": 1793453351.1975443,
+  "frozen_unix": 1793451282.6283429,
+  "same_primary_arcs_for_every_method": true,
+  "methods": [
+    "Gauss",
+    "Laplace",
+    "Gooding",
+    "PIOD-2023",
+    "RBFNN-2024",
+    "alpha-IOD-2025",
+    "PIOD-2026",
+    "B-spline-KAN-2025",
+    "RGA-KAN-2026",
+    "GDL"
+  ],
+  "legacy_reproduction_disclosure": "Original checkpoint and normalization historically used the old test partition. This is retrospective reproduction, distinct from target-disjoint evaluation."
+}
