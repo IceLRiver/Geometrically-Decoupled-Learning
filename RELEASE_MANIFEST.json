@@ -146,6 +146,26 @@
       "sha256": "11e5ef7aaa72a656be9ab441fe60c82c9d784df84bb852b9532aa0562e8882c2"
     },
     {
+      "file": "data/sentinel1_poeorb/arc_metadata.json",
+      "bytes": 1522503,
+      "sha256": "6358a8fda11de232b439f0fb6d0c5b826ab343ff52177e260c63c53dc3044627"
+    },
+    {
+      "file": "data/sentinel1_poeorb/manifest.json",
+      "bytes": 1175,
+      "sha256": "8b9c5adc6084988a116bd4a84d66717f34e05aeb5618f9d94b86feeecc26db72"
+    },
+    {
+      "file": "data/sentinel1_poeorb/observations.npz",
+      "bytes": 17025035,
+      "sha256": "489cb54073f74f707db74b07a76d29b5f75d868c03c569969c46674662e28916"
+    },
+    {
+      "file": "data/sentinel1_poeorb/source_manifest.json",
+      "bytes": 9099,
+      "sha256": "5651856264ac11319c0a40c6c28b51bb232ab6ecfc2e48d153f03f9b68d71b0f"
+    },
+    {
       "file": "docs/DATA_CARD.md",
       "bytes": 448,
       "sha256": "90a2c28c87ef75eac07a8521a725d984fb5941bae26cb3b9c3cf4c8808c76370"
@@ -577,8 +597,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 2823,
-      "sha256": "5c2d9684c4d9a8373cefe035acf92e1a3935ca1698b93d8f7ac6ab9b15983b8c"
+      "bytes": 3498,
+      "sha256": "1837fdcf40a14eb2ef65fb0b60464c71d1830eec6296599adf2ab0e059ecc663"
     },
     {
       "file": "requirements.txt",
@@ -617,10 +637,10 @@
     },
     {
       "file": "scripts/verify_release.py",
-      "bytes": 2965,
-      "sha256": "d5f9933be1006931b285ba5260195b9a53ef845df04ad55cb55d1fc8648ccb2a"
+      "bytes": 3710,
+      "sha256": "259bd5f9ad249f1c89fcf9f47206a60a6af3c063c7faba6bb2a22d2445f8825f"
     }
   ],
-  "scope": "data and model code",
-  "release_date": "2026-10-30"
+  "file_count": 128,
+  "total_bytes": 253282862
 }

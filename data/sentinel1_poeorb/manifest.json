@@ -1,0 +1,50 @@
+{
+  "name": "Sentinel-1 POEORB reconstructed angles-only benchmark",
+  "arcs": 9632,
+  "shape_X": [
+    9632,
+    40,
+    6
+  ],
+  "shape_y": [
+    9632,
+    6
+  ],
+  "units": {
+    "position": "km",
+    "velocity": "km/s",
+    "LOS": "unit vector"
+  },
+  "reference_epoch": "last observation",
+  "frame": "GCRS",
+  "cadence_s": 1,
+  "elapsed_s": 39,
+  "angular_noise_arcsec": 3,
+  "observation_type": "reconstructed angles from public precise orbits and virtual ground observers; not sensor-measured angles",
+  "reference_type": "interpolated precise ephemeris position and velocity",
+  "split_codes": {
+    "0": "train",
+    "1": "validation",
+    "2": "test"
+  },
+  "split_counts": {
+    "train": 4815,
+    "validation": 2412,
+    "test": 2405
+  },
+  "target_split": {
+    "train": [
+      "S1A",
+      "S1B"
+    ],
+    "validation": [
+      "S1C"
+    ],
+    "test": [
+      "S1D"
+    ]
+  },
+  "source": "https://step.esa.int/auxdata/orbits/Sentinel-1/POEORB/",
+  "acknowledgement": "Contains modified Copernicus Sentinel data (2021, 2026).",
+  "sha256": "489cb54073f74f707db74b07a76d29b5f75d868c03c569969c46674662e28916"
+}
