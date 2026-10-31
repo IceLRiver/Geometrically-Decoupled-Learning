@@ -121,6 +121,66 @@
       "sha256": "f2a5a7468e4bc3db3449e92dc03b7d4d5a5dacbe3430f62af4a5542435509f99"
     },
     {
+      "file": "checkpoints/v6/legacy_Direct-KAN.pt",
+      "bytes": 104547,
+      "sha256": "ead5864bc57a755b1d1c582475165eeb4d9b7ff7a431609e43900367a99fc49d"
+    },
+    {
+      "file": "checkpoints/v6/legacy_FixedFrequency-KAN.pt",
+      "bytes": 105187,
+      "sha256": "39150cd8b2519108d8134220968a9427b692266f8a49fa1f62dbc9a8de60fbdc"
+    },
+    {
+      "file": "checkpoints/v6/legacy_Geometric-KAN.pt",
+      "bytes": 104763,
+      "sha256": "cb4ed492e00c28b0c489d4d1d27717210750aa86fb0103ea1ef00ff0ce006d16"
+    },
+    {
+      "file": "checkpoints/v6/legacy_Geometric-MLP.pt",
+      "bytes": 65743,
+      "sha256": "c01e0351819112e77daaf2ee952475f314e33bdd4d6615beb2b2335254e9baa0"
+    },
+    {
+      "file": "checkpoints/v6/legacy_NoRange-KAN.pt",
+      "bytes": 104619,
+      "sha256": "831dfa765b2dadae304a396efa5ee358c902b3ec670e41672322dceef44fb6bc"
+    },
+    {
+      "file": "checkpoints/v6/legacy_Original-KAN.pt",
+      "bytes": 104691,
+      "sha256": "1160933766bb7855c5724b430f37f0289762b1297598f9bf1000eb84ec57ac77"
+    },
+    {
+      "file": "checkpoints/v6/public_Direct-KAN.pt",
+      "bytes": 105259,
+      "sha256": "3dfc83b7c134f4dc87aaeab4d0c618d87261cdc7274968d42bb2fd8b3836e77d"
+    },
+    {
+      "file": "checkpoints/v6/public_FixedFrequency-KAN.pt",
+      "bytes": 105835,
+      "sha256": "bb9f379cde458de88812e374f998e4b84faf1369b08c588777825af4861c7143"
+    },
+    {
+      "file": "checkpoints/v6/public_Geometric-KAN.pt",
+      "bytes": 105475,
+      "sha256": "674bc98a79d07744cb9f6433b12462f6efcf07636053fd18f31e1accac2d5981"
+    },
+    {
+      "file": "checkpoints/v6/public_Geometric-MLP.pt",
+      "bytes": 66249,
+      "sha256": "e9a1551082b66e98717901f72c3ce4b9c0f6243a2820aa1a2633939b13193949"
+    },
+    {
+      "file": "checkpoints/v6/public_NoRange-KAN.pt",
+      "bytes": 105331,
+      "sha256": "9c2b6a1be7fe202e70646e0446ac4739d0316c45cb6b5d750030dc1f10b0cfef"
+    },
+    {
+      "file": "checkpoints/v6/public_Original-KAN.pt",
+      "bytes": 105403,
+      "sha256": "4a56b659553a35111a76175ce0b4fbe59223e2c7e9f43d9277b4e9a33dbcd18b"
+    },
+    {
       "file": "data/benchmark_protocol_v4.json",
       "bytes": 11891,
       "sha256": "ca7f480eab0b95826258a25ced1095a0e727851c0ee6791dcdca0355e50debf9"
@@ -129,6 +189,11 @@
       "file": "data/benchmark_protocol_v5.json",
       "bytes": 18117,
       "sha256": "87137ec34a65a670cc9cea1619e6d822f39f137c99f036495378beaddd306300"
+    },
+    {
+      "file": "data/benchmark_protocol_v6.json",
+      "bytes": 12841,
+      "sha256": "82e8dfb10fc76d7ca2b39556172cdb887aedd4c52356705e676b2cb9589399b4"
     },
     {
       "file": "data/controlled_angle_noise/observations.npz",
@@ -292,8 +357,8 @@
     },
     {
       "file": "docs/DATA_CARD.md",
-      "bytes": 761,
-      "sha256": "0f4be6a2a27a32b2e033d78dad0d8946a846600cc2145c0f0d201da1344cc27c"
+      "bytes": 814,
+      "sha256": "93ce95f6e0a430ac1a4a0bf6bd59df397d2bd2e704ac42a07f9644e420bde2d5"
     },
     {
       "file": "docs/third_party/KAN_LICENSE",
@@ -906,6 +971,121 @@
       "sha256": "fe9e1cfbe75b2bbe39167292627e7428af5b61d0fca2d25b6bfc5a507bc3dab4"
     },
     {
+      "file": "evidence/v6/component_api_checks.json",
+      "bytes": 2319,
+      "sha256": "18b27e0cbaa50425897b5d7e7aac90a7cb5cdcbd70e23a2ffac676516bc3ddf5"
+    },
+    {
+      "file": "evidence/v6/component_results.json",
+      "bytes": 7188,
+      "sha256": "8d5b57b697f9d12f72a4cbfa72c073d6a8b2ebd64ec8e39d9312385673201d5b"
+    },
+    {
+      "file": "evidence/v6/error_geometry.json",
+      "bytes": 9801,
+      "sha256": "f15309762b337623c6241144008875efcb16848cbd769cf5f6073828b8ee8373"
+    },
+    {
+      "file": "evidence/v6/legacy_Direct-KAN_history.json",
+      "bytes": 18537,
+      "sha256": "6e7165063bb119c9197a6e9d34dd4a24b85509ac308dfc93f516adfd56e501cd"
+    },
+    {
+      "file": "evidence/v6/legacy_FixedFrequency-KAN_history.json",
+      "bytes": 18557,
+      "sha256": "97e112220c7ccac7952b8848b097c92fb5444acce300746e0a469db620442f4d"
+    },
+    {
+      "file": "evidence/v6/legacy_Geometric-KAN_history.json",
+      "bytes": 18541,
+      "sha256": "46dff234fc8ac9876039311fc7f21cf706744040ea03bc7f34373e609f3081cf"
+    },
+    {
+      "file": "evidence/v6/legacy_Geometric-MLP_history.json",
+      "bytes": 18488,
+      "sha256": "14ed204bdd9172177fe42c6d7ae74fc2d52156bbbb5381268cd9edc2cefa8a67"
+    },
+    {
+      "file": "evidence/v6/legacy_NoRange-KAN_history.json",
+      "bytes": 4760,
+      "sha256": "e46ae9103b6821113dee862d065f0ebc84c6d0fb75db4bc49ccfe2e3c439ccde"
+    },
+    {
+      "file": "evidence/v6/legacy_Original-KAN_history.json",
+      "bytes": 18536,
+      "sha256": "1deea0cac7973e5ed351cac2f354c78fd8a1045c66e19a0fd7702af4f47bc76b"
+    },
+    {
+      "file": "evidence/v6/predictions/legacy_Direct-KAN.npz",
+      "bytes": 15252,
+      "sha256": "0e38dceae92353e74cbc456783ef6cca42c4379469d21cbfe14f57d80dec3cd7"
+    },
+    {
+      "file": "evidence/v6/predictions/legacy_FixedFrequency-KAN.npz",
+      "bytes": 15241,
+      "sha256": "c833fa32f055bcffcea41cf3e846985eacbe1470886f27437654890e16aaf5f7"
+    },
+    {
+      "file": "evidence/v6/predictions/legacy_Geometric-KAN.npz",
+      "bytes": 15235,
+      "sha256": "d161e4fd9ac18b276a02c25e12029c2caad4104870270ee99495ffd6df19cd5d"
+    },
+    {
+      "file": "evidence/v6/predictions/legacy_Geometric-MLP.npz",
+      "bytes": 15254,
+      "sha256": "4626d36a265a44d858ede9a73e65c61a2de406576cbc9b9d1471bd036d12ce1b"
+    },
+    {
+      "file": "evidence/v6/predictions/legacy_NoRange-KAN.npz",
+      "bytes": 15250,
+      "sha256": "825af6bfb63b685d5061cd0a6a204f7ad9451b4ef14c2bd19cf6bc000c5afd63"
+    },
+    {
+      "file": "evidence/v6/predictions/legacy_Original-KAN.npz",
+      "bytes": 15255,
+      "sha256": "67c1435f23f5b14bb30223e25f75701b113b361f1c3d37226239397d73bdcec3"
+    },
+    {
+      "file": "evidence/v6/predictions/public_Direct-KAN.npz",
+      "bytes": 14815,
+      "sha256": "100f2b0c48490fd519a8eb8a6ef24e3d8aa6a1a79d6f5d81e59e8054b691b6d8"
+    },
+    {
+      "file": "evidence/v6/predictions/public_FixedFrequency-KAN.npz",
+      "bytes": 14808,
+      "sha256": "9da520a5ec11cdd25a27df2877941609838bfad3f3a90ad09dc593d257a43900"
+    },
+    {
+      "file": "evidence/v6/predictions/public_Geometric-KAN.npz",
+      "bytes": 14806,
+      "sha256": "ed9534eb5f285ca1b3c5ad577006d3d607799e27104e3cf42f8ef918fb21d1d1"
+    },
+    {
+      "file": "evidence/v6/predictions/public_Geometric-MLP.npz",
+      "bytes": 14801,
+      "sha256": "d75238cdaef76bacde8c31c09b63721fe60ad7dbc455238b40b313cf408dcf46"
+    },
+    {
+      "file": "evidence/v6/predictions/public_NoRange-KAN.npz",
+      "bytes": 14794,
+      "sha256": "894d76d4780e18acd6cc4423a3b673a5a04092fa525803bc97d729ab06a79250"
+    },
+    {
+      "file": "evidence/v6/predictions/public_Original-KAN.npz",
+      "bytes": 14798,
+      "sha256": "f42b9083046bc68ecd963750d4844b7c49e7a1872e44ab50a5020cb8894eac3f"
+    },
+    {
+      "file": "evidence/v6/primary_capacity.json",
+      "bytes": 268,
+      "sha256": "3f5fd4eaf031198613d9ef54174c173b9e6de850ca50bda094480402a8cf58ce"
+    },
+    {
+      "file": "evidence/v6/results.json",
+      "bytes": 37721,
+      "sha256": "c2103e9fb4155f231b7a5c3a5bedff26a0658c0dbb40c18a06dc14880c91e17f"
+    },
+    {
       "file": "models/__init__.py",
       "bytes": 54,
       "sha256": "fb79ea3f4252a2b03847cefc53bd50ac303a463d0ab3029172d1ca9f627d9139"
@@ -927,8 +1107,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 3808,
-      "sha256": "b96ea3df1cecc0ca3abc5341efaece5723651336a79951816b360bafee6be78f"
+      "bytes": 4180,
+      "sha256": "73addf4028b33d191a2af6e8c3804146cde75f40b0855fe342473b5b88c2ab7f"
     },
     {
       "file": "requirements-orbits.txt",
@@ -1096,11 +1276,26 @@
       "sha256": "1223ee553ee7dc77c1f8eedc70113a168df48092eb7c4991297b1a86e85088d0"
     },
     {
+      "file": "scripts/v6/check_component_api.py",
+      "bytes": 1222,
+      "sha256": "6cf9ec13002cc1e0fe050d3d8203bf8fc22a4ce3b883d7e3b5c50e8c2e8972a9"
+    },
+    {
+      "file": "scripts/v6/train_simulation_ablation.py",
+      "bytes": 3787,
+      "sha256": "3daed9b1447983671263010980f27ceba9d0890411a15a34ed6e1204c693dc5c"
+    },
+    {
+      "file": "scripts/v6/verify_components.py",
+      "bytes": 892,
+      "sha256": "dd12bad12b4eb88bbf03bf3b36d71b5b1a41ac2f90a00f9453baa9c2fea2da10"
+    },
+    {
       "file": "scripts/verify_release.py",
       "bytes": 2813,
       "sha256": "2cd54dc24e1af8475701f6ffff8867c447bd63565ed93b312ad1f0cf61283a0f"
     }
   ],
-  "file_count": 220,
-  "total_bytes": 258850539
+  "file_count": 259,
+  "total_bytes": 260387833
 }

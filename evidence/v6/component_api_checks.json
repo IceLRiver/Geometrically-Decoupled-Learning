@@ -1,0 +1,74 @@
+[
+  {
+    "dataset": "public",
+    "kind": "Geometric-KAN",
+    "max_absolute_saved_state_difference": 1.8189894035458565e-12,
+    "max_absolute_single_batch_difference": 2.6645352591003757e-15
+  },
+  {
+    "dataset": "public",
+    "kind": "Direct-KAN",
+    "max_absolute_saved_state_difference": 9.094947017729282e-13,
+    "max_absolute_single_batch_difference": 4.440892098500626e-16
+  },
+  {
+    "dataset": "public",
+    "kind": "Geometric-MLP",
+    "max_absolute_saved_state_difference": 8.881784197001252e-16,
+    "max_absolute_single_batch_difference": 1.1368683772161603e-13
+  },
+  {
+    "dataset": "public",
+    "kind": "NoRange-KAN",
+    "max_absolute_saved_state_difference": 1.7763568394002505e-15,
+    "max_absolute_single_batch_difference": 0.0
+  },
+  {
+    "dataset": "public",
+    "kind": "FixedFrequency-KAN",
+    "max_absolute_saved_state_difference": 1.7763568394002505e-15,
+    "max_absolute_single_batch_difference": 0.0
+  },
+  {
+    "dataset": "public",
+    "kind": "Original-KAN",
+    "max_absolute_saved_state_difference": 4.547473508864641e-13,
+    "max_absolute_single_batch_difference": 1.7763568394002505e-15
+  },
+  {
+    "dataset": "legacy",
+    "kind": "Geometric-KAN",
+    "max_absolute_saved_state_difference": 1.8189894035458565e-12,
+    "max_absolute_single_batch_difference": 1.8189894035458565e-12
+  },
+  {
+    "dataset": "legacy",
+    "kind": "Direct-KAN",
+    "max_absolute_saved_state_difference": 1.8189894035458565e-12,
+    "max_absolute_single_batch_difference": 1.8189894035458565e-12
+  },
+  {
+    "dataset": "legacy",
+    "kind": "Geometric-MLP",
+    "max_absolute_saved_state_difference": 7.275957614183426e-12,
+    "max_absolute_single_batch_difference": 1.8189894035458565e-12
+  },
+  {
+    "dataset": "legacy",
+    "kind": "NoRange-KAN",
+    "max_absolute_saved_state_difference": 1.8189894035458565e-12,
+    "max_absolute_single_batch_difference": 8.881784197001252e-16
+  },
+  {
+    "dataset": "legacy",
+    "kind": "FixedFrequency-KAN",
+    "max_absolute_saved_state_difference": 1.8189894035458565e-12,
+    "max_absolute_single_batch_difference": 1.8189894035458565e-12
+  },
+  {
+    "dataset": "legacy",
+    "kind": "Original-KAN",
+    "max_absolute_saved_state_difference": 4.547473508864641e-13,
+    "max_absolute_single_batch_difference": 1.8189894035458565e-12
+  }
+]
