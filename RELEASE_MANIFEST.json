@@ -442,8 +442,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 3482,
-      "sha256": "1b1d404a5e7ad8f4f042219826c2d00b9709a0ed2c38dd5d6a4077fd0cb16cdd"
+      "bytes": 3534,
+      "sha256": "d9a1151a9fac6456d32be1c7aefc39cc72b4f02ed3d202c24d0ceb819c30b36a"
     },
     {
       "file": "requirements-orbits.txt",
@@ -477,8 +477,13 @@
     },
     {
       "file": "scripts/v4/evaluate_physics.py",
-      "bytes": 1781,
-      "sha256": "3c04111f4550bed38078c2e23caeb6a73dfca0477d5ea1436723cb6094ebbbe1"
+      "bytes": 2070,
+      "sha256": "e40725e513fbecb37731af0b47efe402ecaba8d63087d674694a14440167b596"
+    },
+    {
+      "file": "scripts/v4/evaluate_rbf.py",
+      "bytes": 1231,
+      "sha256": "39fedc35fcfbab946aca2012c68479b5ec85b7999e63f59e1cdc4e1f7d6ccc80"
     },
     {
       "file": "scripts/v4/fast_kan.py",
@@ -531,6 +536,6 @@
       "sha256": "9187d9ccb29ca6f267605a7deb68ddc348b0e6c07bc7753fc547b2cb122b671a"
     }
   ],
-  "file_count": 106,
-  "total_bytes": 247400902
+  "file_count": 107,
+  "total_bytes": 247402474
 }
