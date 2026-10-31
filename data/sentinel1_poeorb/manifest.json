@@ -46,5 +46,7 @@
   },
   "source": "https://step.esa.int/auxdata/orbits/Sentinel-1/POEORB/",
   "acknowledgement": "Contains modified Copernicus Sentinel data (2021, 2026).",
-  "sha256": "489cb54073f74f707db74b07a76d29b5f75d868c03c569969c46674662e28916"
+  "sha256": "489cb54073f74f707db74b07a76d29b5f75d868c03c569969c46674662e28916",
+  "data_terms": "https://cds.climate.copernicus.eu/licences/ec-sentinel",
+  "product_documentation": "https://documentation.dataspace.copernicus.eu/Data/Sentinel1.html"
 }

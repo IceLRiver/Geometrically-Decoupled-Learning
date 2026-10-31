@@ -1,0 +1,174 @@
+{
+  "all_primary_methods_same_arcs": true,
+  "alpha_cadence_source_sha256": "2506b05d4b09c53176054ce7d2513b80b0332b4c25cae712834b27ddfdd527e0",
+  "rows": [
+    {
+      "dataset": "public",
+      "method": "Gauss",
+      "implementation": "Gauss",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "public",
+      "method": "Laplace",
+      "implementation": "Laplace",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "public",
+      "method": "Gooding",
+      "implementation": "Gooding",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "public",
+      "method": "PIOD-2023",
+      "implementation": "PIOD-2023",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "public",
+      "method": "alpha-IOD-2025",
+      "implementation": "alpha-IOD-2025-cadence",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "public",
+      "method": "PIOD-2026",
+      "implementation": "PIOD-2026-J2",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "public",
+      "method": "Raw-PIOD-2026-central",
+      "implementation": "PIOD-2026",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "public",
+      "method": "Raw-PIOD-2026-J2",
+      "implementation": "PIOD-2026-J2",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "simulation",
+      "method": "Gauss",
+      "implementation": "Gauss",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "simulation",
+      "method": "Laplace",
+      "implementation": "Laplace",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "simulation",
+      "method": "Gooding",
+      "implementation": "Gooding",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "simulation",
+      "method": "PIOD-2023",
+      "implementation": "PIOD-2023",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "simulation",
+      "method": "alpha-IOD-2025",
+      "implementation": "alpha-IOD-2025-cadence",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "simulation",
+      "method": "PIOD-2026",
+      "implementation": "PIOD-2026-J2",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "simulation",
+      "method": "Raw-PIOD-2026-central",
+      "implementation": "PIOD-2026",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "simulation",
+      "method": "Raw-PIOD-2026-J2",
+      "implementation": "PIOD-2026-J2",
+      "arcs": 300,
+      "finite": 300
+    },
+    {
+      "dataset": "real",
+      "method": "Gauss",
+      "implementation": "Gauss",
+      "arcs": 122,
+      "finite": 122
+    },
+    {
+      "dataset": "real",
+      "method": "Laplace",
+      "implementation": "Laplace",
+      "arcs": 122,
+      "finite": 122
+    },
+    {
+      "dataset": "real",
+      "method": "Gooding",
+      "implementation": "Gooding",
+      "arcs": 122,
+      "finite": 122
+    },
+    {
+      "dataset": "real",
+      "method": "PIOD-2023",
+      "implementation": "PIOD-2023",
+      "arcs": 122,
+      "finite": 122
+    },
+    {
+      "dataset": "real",
+      "method": "alpha-IOD-2025",
+      "implementation": "alpha-IOD-2025-cadence",
+      "arcs": 122,
+      "finite": 122
+    },
+    {
+      "dataset": "real",
+      "method": "PIOD-2026",
+      "implementation": "PIOD-2026",
+      "arcs": 122,
+      "finite": 122
+    },
+    {
+      "dataset": "real",
+      "method": "Raw-PIOD-2026-central",
+      "implementation": "PIOD-2026",
+      "arcs": 122,
+      "finite": 122
+    },
+    {
+      "dataset": "real",
+      "method": "Raw-PIOD-2026-J2",
+      "implementation": "PIOD-2026-J2",
+      "arcs": 122,
+      "finite": 122
+    }
+  ]
+}

@@ -4,3 +4,5 @@ __pycache__/
 .env
 *.token
 .DS_Store
+
+/runs/
