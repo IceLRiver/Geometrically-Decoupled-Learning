@@ -98,5 +98,5 @@
       "sha256": "11e5ef7aaa72a656be9ab441fe60c82c9d784df84bb852b9532aa0562e8882c2"
     }
   ],
-  "usage": "Additional coverage dataset; excluded from the previously executed compact benchmark metrics."
+  "usage": "Target-disjoint multiregime training, validation and state-estimation evaluation."
 }

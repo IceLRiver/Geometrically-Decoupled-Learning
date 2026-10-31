@@ -2,60 +2,47 @@
 
 Data and model code for **Geometrically Decoupled Learning for Space Target Motion State Estimation from Short-Arc Angles-Only Observations**.
 
-## Contents
+## Datasets
 
-| Component | Location |
-|---|---|
-| Geometrically decoupled model | `models/orbit_physkan.py` |
-| Model training and evaluation | `scripts/run_learning.py`, `scripts/evaluate_saved.py` |
-| Public precise-orbit benchmark: 9,632 arcs | `data/sentinel1_poeorb/` |
-| Original model checkpoint | `checkpoints/original_orbit_physkan.pth` |
-| Observation dataset: 236,575 arcs | `data/legacy_simulation/` |
-| Compact evaluation data: 2,250 arcs | `evidence/synthetic_arcs.npz` |
-| LEO/MEO/high-altitude coverage data: 120,000 arcs | `data/multiregime/` |
-| Trained models and predictions | `evidence/synthetic_checkpoints/` |
+| Collection | Arcs | Train / validation / test |
+|---|---:|---|
+| Sentinel-1 precise-orbit benchmark | 9,632 | 4,815 / 2,412 / 2,405 |
+| Multiregime simulation benchmark | 120,000 | 79,980 / 19,995 / 20,025 |
 
-## Data format
+Each input `X` has shape `(N,40,6)`: observer position in km followed by the unit line-of-sight vector, sampled every second. Labels `y` have shape `(N,6)`: target position (km) and velocity (km/s) at the last epoch. Dataset partitions use disjoint target identities. The simulation collection covers LEO, MEO and high-altitude orbits equally, with four angular-noise levels. The Sentinel-1 benchmark uses public precise ephemerides and reconstructed angular observations. Contains modified Copernicus Sentinel data (2021, 2026); [source catalogue](https://step.esa.int/auxdata/orbits/Sentinel-1/POEORB/).
 
-Each arc contains 40 observations. Input features are observer position followed by the three components of the line-of-sight unit vector. Labels are target position and velocity at the final observation epoch. Positions are in km and velocities in km/s.
-
-The compact evaluation data store `X` as `(N,40,6)` and `y` as `(N,6)`. Dataset blocks in `data/legacy_simulation/` store flattened inputs `(N,240)`. The compact evaluation data have 1,554 training, 228 validation and 468 test arcs; target orbits are disjoint across these partitions. Partition files and normalization statistics accompany the arrays.
-
-The coverage dataset balances 40,000 arcs per orbital regime and provides target-disjoint training/validation/test partitions of 79,980/19,995/20,025 arcs. Its blocks additionally store `orbit_id`, `regime`, `split`, and `noise_arcsec`; codes and counts are listed in its manifest. The saved compact model results refer to the compact evaluation data.
-
-
-The Sentinel-1 benchmark provides 9,632 arcs with terminal position and velocity references from public precise ephemerides. Its training/validation/test partitions contain 4,815/2,412/2,405 arcs from S1A--S1B/S1C/S1D respectively. The angular observations are reconstructed, rather than sensor measured. Arrays use the same `X`/`y` convention; `split` codes and source file checksums accompany the data. Contains modified Copernicus Sentinel data (2021, 2026); [source catalogue](https://step.esa.int/auxdata/orbits/Sentinel-1/POEORB/).
+The paper evaluates all primary methods on the frozen 300 public, 300 simulation and 122 real-observation arcs. The simulation test cohort includes 100 arcs per regime. Aggregate results for all three sources are in `evidence/v4/results.csv`; public/simulation predictions and exact test indices accompany them. Sensor records are subject to the data owner's access restrictions.
 
 ## Installation
 
-Use Python 3.9 or later and install the dependencies:
+Neural training/inference requires Python 3.9 or later:
 
 ```bash
 python -m pip install -r requirements.txt
+python scripts/verify_release.py
 ```
+
+Classical/physics and RBF baselines use a separate Python 3.11 environment with `requirements-orbits.txt`.
 
 ## Evaluation
 
 ```bash
-python scripts/verify_release.py
-python scripts/evaluate_saved.py --method Geometric-KAN --seed 42
+python scripts/v4/evaluate_checkpoint.py --dataset public --checkpoint checkpoints/v4/public__GDL.pt
+python scripts/v4/evaluate_checkpoint.py --dataset simulation --checkpoint checkpoints/v4/simulation__GDL.pt
+python scripts/v4/evaluate_physics.py --dataset public --method alpha-IOD-2025 --workers 4
 ```
+
+`models/geometric_v4.py` exposes `load_checkpoint` and observation-only `predict`. Primary configurations were selected on validation data and frozen before final test scoring. GDL uses the KAN backbone for public/real observations and the MLP backbone for the broad simulation benchmark. `evidence/v4/selected_models.json` records configurations, validation scores and checkpoint hashes. Published physics baselines are research reimplementations with observation-cadence and near-Earth adaptations detailed in the manuscript; they do not represent execution of the original authors' software.
 
 ## Training
 
 ```bash
-python scripts/run_learning.py --dataset synthetic --epochs 120
-python scripts/run_spline2025.py --dataset synthetic
+python scripts/v4/train_models.py --dataset public --kind Geometric-KAN --coordinates observer --epochs 150
+python scripts/v4/train_models.py --dataset simulation --kind Geometric-MLP --coordinates observer --epochs 100 --batch-size 512
+python scripts/v4/rbf_baseline.py --lvlh --minmax
+python scripts/v4/train_matched_ablation.py
 ```
 
-Train the model and its controls on the coverage data:
+Outputs go to `runs/v4/`. The primary framework predicts range, reconstructs position on the observed LOS, and predicts velocity conditioned on that reconstruction. The KAN instance combines adaptive periodic bases with a gated residual network. Matched-capacity ablations use shared training budgets; their full results are included with the primary comparisons.
 
-```bash
-python scripts/run_learning.py --dataset coverage --epochs 120
-```
-
-After training, use `python scripts/evaluate_saved.py --dataset coverage` to evaluate its saved checkpoint. Coverage checkpoints and training results are written to separate `evidence/coverage_*` paths.
-
-## Model
-
-The model predicts range, reconstructs position on the measured line of sight, and estimates velocity conditioned on the reconstructed position. The orbit-physics KAN uses learnable periodic bases and a gated residual network. `models/orbit_physkan.py` contains the width-128 architecture; `scripts/run_learning.py` includes the compact model and its ablations.
+Original observation arrays and the original architecture remain in `data/legacy_simulation/` and `models/orbit_physkan.py`.

@@ -1,0 +1,18 @@
+{
+  "scored_unix": 1793437304.2360263,
+  "model_freeze_unix": 1793435776.1094828,
+  "primary_methods": [
+    "Gauss",
+    "Laplace",
+    "Gooding",
+    "PIOD-2023",
+    "RBFNN-2024",
+    "alpha-IOD-2025",
+    "PIOD-2026",
+    "GDL"
+  ],
+  "training_seed": 42,
+  "test_access": "Updated errors computed after model/configuration freeze.",
+  "metric_definition": "Euclidean position/velocity RMSE. S=Er/sr+Ev/sv with training-only scales.",
+  "rows": 54
+}
