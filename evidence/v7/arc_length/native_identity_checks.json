@@ -1,0 +1,26 @@
+[
+  {
+    "method": "Gauss",
+    "max_absolute_state_difference": 0.0
+  },
+  {
+    "method": "Laplace",
+    "max_absolute_state_difference": 0.0
+  },
+  {
+    "method": "Gooding",
+    "max_absolute_state_difference": 0.0
+  },
+  {
+    "method": "PIOD-2023",
+    "max_absolute_state_difference": 0.0
+  },
+  {
+    "method": "alpha-IOD-2025",
+    "max_absolute_state_difference": 0.0
+  },
+  {
+    "method": "PIOD-2026",
+    "max_absolute_state_difference": 0.0
+  }
+]

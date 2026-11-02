@@ -1151,6 +1151,11 @@
       "sha256": "fc1ced0daaae85bf64e6c8e8b2f92c1001c7e302a046e5cb0701ebeaf1796576"
     },
     {
+      "file": "evidence/v7/arc_length/native_identity_checks.json",
+      "bytes": 461,
+      "sha256": "fa608d2bf3710aefd40c12057bda2586a38741ce976baf9838896283e95d8cb8"
+    },
+    {
       "file": "evidence/v7/arc_length/physics_native.jsonl",
       "bytes": 325809,
       "sha256": "0fc8d6852b524afc6ce37b584e3e930c16f33f9b0154a607a0002fff57a350ec"
@@ -1877,8 +1882,8 @@
     },
     {
       "file": "scripts/v7/train_timeformer.py",
-      "bytes": 2204,
-      "sha256": "613359743939753e6a482956ec5b1a704ced5e34ed431055b6cc6558de4165cf"
+      "bytes": 2646,
+      "sha256": "c86c7830f135dd42fb8f2e6f0dd52360428949a334de290972cc9a50b6083c01"
     },
     {
       "file": "scripts/v7/tune_residual_heads.py",
@@ -1901,6 +1906,6 @@
       "sha256": "2cd54dc24e1af8475701f6ffff8867c447bd63565ed93b312ad1f0cf61283a0f"
     }
   ],
-  "file_count": 380,
-  "total_bytes": 264070669
+  "file_count": 381,
+  "total_bytes": 264071572
 }

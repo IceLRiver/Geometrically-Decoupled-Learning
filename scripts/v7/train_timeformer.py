@@ -24,5 +24,12 @@ for ds in ['public','legacy']:
     best=score;stale=0;torch.save(dict(state=model.state_dict(),config=dict(width=width,scales=scales,gamma=.1,dataset=ds),mu=mu,std=std,ym=ym,ys=ys,validation=row,parameters=sum(p.numel() for p in model.parameters())),OUT/(stem+'.pt'))
    else:stale+=1
    (OUT/(stem+'_history.json')).write_text(json.dumps(hist));print(json.dumps(dict(run=stem,**row)),flush=True)
+   # Recorded validation-only resource pruning of the large simulation trial.
+   # The original experiment was audited at epoch 91, not every epoch.
+   if ds=='legacy' and width==32 and scales==2 and epoch+1==91:
+    completed=[torch.load(OUT/(ds+'_'+name+'.pt'),map_location='cpu')['validation']['score'] for name in ['w16s1','w16s2']]
+    if best>1.25*min(completed):
+     print('VALIDATION-ONLY PRUNING at epoch 91',flush=True)
+     break
    if stale>=25:break
  print('DATASET VALIDATION SEARCH COMPLETE',ds,flush=True)
