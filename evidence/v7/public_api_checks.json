@@ -1,0 +1,26 @@
+[
+  {
+    "dataset": "public",
+    "method": "GDL",
+    "max_position_difference_km": 2.9899638320785016e-11,
+    "max_velocity_difference_km_s": 4.1296832620218993e-10
+  },
+  {
+    "dataset": "public",
+    "method": "TimeFormer-2026",
+    "max_position_difference_km": 3.069544618483633e-10,
+    "max_velocity_difference_km_s": 7.358558207215538e-12
+  },
+  {
+    "dataset": "legacy",
+    "method": "GDL",
+    "max_position_difference_km": 3.092281986027956e-11,
+    "max_velocity_difference_km_s": 6.994405055138486e-14
+  },
+  {
+    "dataset": "legacy",
+    "method": "TimeFormer-2026",
+    "max_position_difference_km": 3.604688208724838e-05,
+    "max_velocity_difference_km_s": 2.1073829792328524e-08
+  }
+]

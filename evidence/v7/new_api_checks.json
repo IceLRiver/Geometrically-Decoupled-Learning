@@ -1,0 +1,44 @@
+[
+  {
+    "dataset": "public",
+    "method": "GDL",
+    "max_absolute_single_batch_difference": 7.610267971358553e-11,
+    "position_tolerance_km": 1e-05,
+    "velocity_tolerance_km_s": 1e-07
+  },
+  {
+    "dataset": "public",
+    "method": "TimeFormer-2026",
+    "max_absolute_single_batch_difference": 8.230927051045e-11,
+    "position_tolerance_km": 0.0001,
+    "velocity_tolerance_km_s": 1e-06
+  },
+  {
+    "dataset": "legacy",
+    "method": "GDL",
+    "max_absolute_single_batch_difference": 9.094947017729282e-12,
+    "position_tolerance_km": 1e-05,
+    "velocity_tolerance_km_s": 1e-07
+  },
+  {
+    "dataset": "legacy",
+    "method": "TimeFormer-2026",
+    "max_absolute_single_batch_difference": 1.3146840501576662e-05,
+    "position_tolerance_km": 0.0001,
+    "velocity_tolerance_km_s": 1e-06
+  },
+  {
+    "dataset": "real",
+    "method": "GDL",
+    "max_absolute_single_batch_difference": 3.637978807091713e-12,
+    "position_tolerance_km": 1e-05,
+    "velocity_tolerance_km_s": 1e-07
+  },
+  {
+    "dataset": "real",
+    "method": "TimeFormer-2026",
+    "max_absolute_single_batch_difference": 1.7053025658242404e-13,
+    "position_tolerance_km": 0.0001,
+    "velocity_tolerance_km_s": 1e-06
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "validation": {
+    "position_km_rmse": 246.56301869906136,
+    "velocity_km_s_rmse": 0.13256593603346814,
+    "common_score": 0.042351906599893546
+  },
+  "original": false,
+  "candidates": [
+    {
+      "cross": false,
+      "ridge": 1e-10,
+      "position_km_rmse": 469.02516738305536,
+      "velocity_km_s_rmse": 0.382231187202845,
+      "common_score": 0.10474732598527145
+    },
+    {
+      "cross": false,
+      "ridge": 1e-08,
+      "position_km_rmse": 469.1020541873,
+      "velocity_km_s_rmse": 0.38228937594738716,
+      "common_score": 0.10476366593499112
+    },
+    {
+      "cross": false,
+      "ridge": 1e-06,
+      "position_km_rmse": 469.11558673583454,
+      "velocity_km_s_rmse": 0.3823326756348528,
+      "common_score": 0.10477268880524242
+    },
+    {
+      "cross": false,
+      "ridge": 0.0001,
+      "position_km_rmse": 470.3875877189543,
+      "velocity_km_s_rmse": 0.38275883553376233,
+      "common_score": 0.10494325451994198
+    },
+    {
+      "cross": false,
+      "ridge": 0.01,
+      "position_km_rmse": 582.6803919031695,
+      "velocity_km_s_rmse": 0.4020908527692497,
+      "common_score": 0.11660004588240301
+    },
+    {
+      "cross": false,
+      "ridge": 1.0,
+      "position_km_rmse": 1154.6211121748938,
+      "velocity_km_s_rmse": 0.576896751700453,
+      "common_score": 0.19016688475998353
+    },
+    {
+      "cross": true,
+      "ridge": 1e-10,
+      "position_km_rmse": 246.56301869906136,
+      "velocity_km_s_rmse": 0.13256593603346814,
+      "common_score": 0.042351906599893546
+    },
+    {
+      "cross": true,
+      "ridge": 1e-08,
+      "position_km_rmse": 246.92648161211147,
+      "velocity_km_s_rmse": 0.13278999552521883,
+      "common_score": 0.04241966403125531
+    },
+    {
+      "cross": true,
+      "ridge": 1e-06,
+      "position_km_rmse": 247.0056058109934,
+      "velocity_km_s_rmse": 0.13285386397909185,
+      "common_score": 0.04243722072075429
+    },
+    {
+      "cross": true,
+      "ridge": 0.0001,
+      "position_km_rmse": 249.0243879511812,
+      "velocity_km_s_rmse": 0.13389416717214223,
+      "common_score": 0.04277559795481051
+    },
+    {
+      "cross": true,
+      "ridge": 0.01,
+      "position_km_rmse": 323.4182544386637,
+      "velocity_km_s_rmse": 0.16983479151050726,
+      "common_score": 0.05479967373698886
+    },
+    {
+      "cross": true,
+      "ridge": 1.0,
+      "position_km_rmse": 969.7761397181887,
+      "velocity_km_s_rmse": 0.4035670239130434,
+      "common_score": 0.14466630291720317
+    }
+  ]
+}

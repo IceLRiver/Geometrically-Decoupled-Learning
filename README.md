@@ -10,40 +10,47 @@ Data and model code for **Geometrically Decoupled Learning for Space Target Moti
 | Simulation | 236,575 | 170,334 / 18,926 / 47,315; original sample split |
 | Real optical observations | 818 | 600 / 96 / 122; target-disjoint, access controlled |
 
-Each input `X` has shape `(N,40,6)`: observer position in km and unit LOS at one-second cadence. Labels `y` contain terminal position (km) and velocity (km/s). Simulation arrays in `data/legacy_simulation` are stored as `(N,240)` and are selected with the `legacy` dataset argument. Sentinel-1 uses reconstructed angles with precise ephemeris references. Contains modified Copernicus Sentinel data (2021, 2026); [source catalogue](https://step.esa.int/auxdata/orbits/Sentinel-1/POEORB/).
+Inputs contain observer positions (km) and unit LOS, with shape `(N,40,6)` and one-second cadence. Labels contain terminal position (km) and velocity (km/s). Simulation chunks in `data/legacy_simulation` use flattened `(N,240)` observations; the dataset argument is `legacy`. Sentinel-1 observations are reconstructed angles with precise ephemeris references. Contains modified Copernicus Sentinel data (2021, 2026); [source catalogue](https://step.esa.int/auxdata/orbits/Sentinel-1/POEORB/). Private sensor records remain subject to provider access conditions.
 
-`data/benchmark_protocol_v6.json` records the current common 300 public, 300 simulation and 122 real comparison indices. The original simulation checkpoint and normalization have a historical selection history; the simulation study is retrospective. `data/controlled_angle_noise` pairs 20 simulation arcs over four additional noise levels. Real sensor records remain subject to the provider's access conditions.
+The current common comparison has 300 public, 300 simulation and 122 real arcs, recorded in `data/benchmark_protocol_v7.json`. The simulation evaluation retains the original sample split and historically selected source encoder/normalization. It is a retrospective evaluation on a potentially shared target population.
 
-## Installation and evaluation
-
-Use Python 3.9¨C3.11 for neural models. Numerical orbit/RBF solvers use a separate Python 3.11 environment with `requirements-orbits.txt`.
+## Evaluate the current models
 
 ```bash
 python -m pip install -r requirements.txt
-python scripts/verify_release.py
-python scripts/v6/verify_components.py
-python scripts/v5/evaluate_checkpoint.py --dataset public --method GDL
-python scripts/v5/evaluate_checkpoint.py --dataset legacy --method GDL --full-test
-python scripts/v5/evaluate_checkpoint.py --dataset legacy --method B-spline-KAN-2025
-python scripts/v5/evaluate_checkpoint.py --dataset public --method RGA-KAN-2026
-python scripts/v5/evaluate_physics.py --dataset legacy --method XGEO-PIOD --workers 4
+python scripts/v7/verify_results.py
+python scripts/v7/check_api.py
+python scripts/v7/evaluate_checkpoint.py --dataset public --method GDL
+python scripts/v7/evaluate_checkpoint.py --dataset legacy --method TimeFormer-2026
 ```
 
-`models/geometric_v5.py` exposes observation-only `load_model(checkpoint_path)` and `predict_states(bundle, X)`. Evaluation scripts use `--dataset legacy` for the retained simulation benchmark. Training uses FP32; final inference uses FP64 to stabilize calibrated basis sums. Current aggregate results and the rerun component study are in `evidence/v6/`; the unchanged primary frozen weights and full-test predictions are in `checkpoints/v5/` and `evidence/v5/`.
+`models/geometric_v7.py` provides `load_model(dataset, method, device)` and `predict_states(bundle, X)`. Prediction accepts observations only. Current checkpoints are in `checkpoints/v7`; aggregate metrics and public/simulation predictions are in `evidence/v7`. Earlier comparison weights remain unchanged.
 
-All ten primary methods share identical comparison arcs. Table entries identify PIOD (2023), RBFNN (2024), ¦Á-IOD (2025), XGEO-PIOD (2026), KAN (2025), RGA-KAN (2026), and the present GDL study (2026). Classical comparisons are Gauss, Laplace and Gooding-type. Physics-based rows are documented task reimplementations. [B-spline KAN](https://github.com/KindXiaoming/pykan) and [RGA-KAN](https://doi.org/10.1016/j.cma.2026.118761) are adapted to supervised terminal-state regression.
+| Method | Public position / velocity RMSE | Simulation position / velocity RMSE | Real position / velocity RMSE |
+|---|---:|---:|---:|
+| GDL | 0.424 km / 0.0197 km/s | 23.08 km / 0.0165 km/s | 119.52 km / 0.0107 km/s |
+| TimeFormer (2026), state adaptation | 12.66 km / 0.3556 km/s | 242.50 km / 0.1230 km/s | 145.35 km / 0.0153 km/s |
+
+Eleven primary methods share identical cohorts. Literature methods are PIOD (2023), RBFNN (2024), Î±-IOD (2025), KAN (2025), XGEO-PIOD (2026), RGA-KAN (2026) and [TimeFormer (2026)](https://www.sciencedirect.com/science/article/pii/S0957417425046548), plus GDL and three classical solvers. KAN and TimeFormer comparisons are documented six-state regression adaptations. `docs/METHODS_V7.md` describes the adaptation and training settings.
 
 ## Training
 
+Current training scripts consume the released observation arrays. Outputs go to `runs/v7` (override `ORBIT_RUN_ROOT` to choose another directory). The simulation model uses the supplied four-block frozen encoder and width-128 range/range-rate heads. Public/real GDL use their geometric backbone with training-only residual-head fitting. Final inference uses FP64.
+
 ```bash
-python scripts/v5/train_recent.py --datasets public legacy
-python scripts/v5/train_recent.py --datasets public legacy --methods RGA-KAN-2026 --widths 64 --glorot-sine
-python scripts/v5/refit_recent_heads.py
-python scripts/v4/train_models.py --dataset public --kind Geometric-KAN --coordinates observer --epochs 150
-python scripts/v5/train_original_correction.py --epochs 148 --widths 64
-python scripts/v5/train_original_correction.py --resume --epochs 100 --widths 64
-python scripts/v5/refit_corrected_heads.py
-python scripts/v6/train_simulation_ablation.py
+python scripts/v7/cache_observer_features.py
+python scripts/v7/train_observer_heads.py
+python scripts/v7/train_observer_heads.py --full-observations
+python scripts/v7/tune_velocity_balance.py
+python scripts/v7/tune_velocity_balance.py --stronger
+python scripts/v7/refit_observer_heads.py
+python scripts/v7/tune_residual_heads.py
+python scripts/v7/train_timeformer.py
+python scripts/v7/refit_timeformer.py
 ```
 
-Outputs are written to `runs/`. The primary simulation model retains a supplied four-block encoder and refines geometric heads: full-test position RMSE is 62.78 km, with median 8.96 km. The controlled component study trains smaller width-32, one-block variants from scratch without head calibration. Its errors and capacity counts therefore describe a different training budget, rather than the pretrained primary model. The directional-density and parameter-efficiency analyses use saved predictions from the current three datasets.
+The six width-32 from-scratch component variants retain their previous common optimizer budget; their artifacts are in `evidence/v6` and `checkpoints/v6`. The full-model reference uses a larger training/capacity budget and is identified separately. Parameter--error comparisons use only the simulation cohort and include all primary methods plus the component variants.
+
+## Observation duration
+
+The fixed-model study compares 9, 19, 29 and 39 seconds on 20 matched arcs per source. Classical/physics solvers use native measured samples. Fixed-size learned inputs interpolate the shorter measured subarc to 40 computational entries and use its physical cadence; interpolation adds no independent measurements. All original 39-second comparison predictions are preserved. GDL degrades markedly below its 39-second training span, so the duration results do not establish robustness to arbitrary input lengths. Full values are in `evidence/v7/arc_length.csv`.

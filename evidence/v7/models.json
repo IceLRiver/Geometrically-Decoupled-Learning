@@ -1,0 +1,48 @@
+{
+  "datasets": {
+    "public": {
+      "GDL": {
+        "kind": "residual_standard",
+        "checkpoint": "checkpoints/v7/public__GDL.pt",
+        "sha256": "cda5a7c230972a5aa41aef3f3463c98b585010c193a250408d98ec795bbfcb7e",
+        "validation": {
+          "position_km_rmse": 0.36228241230149416,
+          "velocity_km_s_rmse": 0.017363844060622097,
+          "common_score": 0.0023655558526427755
+        }
+      },
+      "TimeFormer-2026": {
+        "kind": "timeformer",
+        "checkpoint": "checkpoints/v7/public__TimeFormer-2026.pt",
+        "sha256": "65a67a1636061b465671ed8c864be2a16946e7952984df41298e9edb90ea8297",
+        "validation": {
+          "position_km_rmse": 11.253263124318655,
+          "velocity_km_s_rmse": 0.30711522499249766,
+          "common_score": 0.04252461408603598
+        }
+      }
+    },
+    "legacy": {
+      "GDL": {
+        "kind": "corrected_observer_rate",
+        "checkpoint": "checkpoints/v7/legacy__GDL.pt",
+        "sha256": "0df8d67422995397ebef4c99d82dc32a2e1076ebf3d308a2155a39bafa268dfa",
+        "validation": {
+          "position_km_rmse": 19.772938984999257,
+          "velocity_km_s_rmse": 0.0163717415668053,
+          "common_score": 0.004463827999496949
+        }
+      },
+      "TimeFormer-2026": {
+        "kind": "timeformer",
+        "checkpoint": "checkpoints/v7/legacy__TimeFormer-2026.pt",
+        "sha256": "df95869140bb940ad347ce406c06094a7e7e7dac06db084cd6a8a1c5cad2389d",
+        "validation": {
+          "position_km_rmse": 208.63796793832216,
+          "velocity_km_s_rmse": 0.11251630674982935,
+          "common_score": 0.03590095769881143
+        }
+      }
+    }
+  }
+}

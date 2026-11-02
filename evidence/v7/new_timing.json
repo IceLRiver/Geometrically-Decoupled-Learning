@@ -1,0 +1,56 @@
+[
+  {
+    "dataset": "public",
+    "method": "GDL",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 3.9608499999999047,
+    "p95_ms": 6.026205000000101,
+    "execution": "FP64 single-arc inference: CPU preprocessing and synchronized CUDA; loading/file I/O excluded."
+  },
+  {
+    "dataset": "public",
+    "method": "TimeFormer-2026",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 4.017600000000288,
+    "p95_ms": 4.230090000000097,
+    "execution": "FP64 single-arc inference: CPU preprocessing and synchronized CUDA; loading/file I/O excluded."
+  },
+  {
+    "dataset": "legacy",
+    "method": "GDL",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 5.300850000000246,
+    "p95_ms": 5.524074999999784,
+    "execution": "FP64 single-arc inference: CPU preprocessing and synchronized CUDA; loading/file I/O excluded."
+  },
+  {
+    "dataset": "legacy",
+    "method": "TimeFormer-2026",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 3.737199999999996,
+    "p95_ms": 4.102899999999821,
+    "execution": "FP64 single-arc inference: CPU preprocessing and synchronized CUDA; loading/file I/O excluded."
+  },
+  {
+    "dataset": "real",
+    "method": "GDL",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 4.170900000000088,
+    "p95_ms": 5.9966899999999335,
+    "execution": "FP64 single-arc inference: CPU preprocessing and synchronized CUDA; loading/file I/O excluded."
+  },
+  {
+    "dataset": "real",
+    "method": "TimeFormer-2026",
+    "arcs": 30,
+    "warmups": 5,
+    "median_ms": 3.3538499999998805,
+    "p95_ms": 3.6153549999999646,
+    "execution": "FP64 single-arc inference: CPU preprocessing and synchronized CUDA; loading/file I/O excluded."
+  }
+]

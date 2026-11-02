@@ -1,0 +1,39 @@
+{
+  "checkpoint": "evidence\\timeformer_refitted_fp64\\public_w32s2.pt",
+  "validation": {
+    "position_km_rmse": 11.253263124318655,
+    "velocity_km_s_rmse": 0.30711522499249766,
+    "common_score": 0.04252461408603598
+  },
+  "parameters": 81056,
+  "sha256": "65a67a1636061b465671ed8c864be2a16946e7952984df41298e9edb90ea8297",
+  "candidates": [
+    {
+      "checkpoint": "evidence\\timeformer_refitted_fp64\\public_w16s1.pt",
+      "validation": {
+        "position_km_rmse": 13.316005931320884,
+        "velocity_km_s_rmse": 0.40066529105002135,
+        "common_score": 0.0552850421781892
+      },
+      "parameters": 13792
+    },
+    {
+      "checkpoint": "evidence\\timeformer_refitted_fp64\\public_w16s2.pt",
+      "validation": {
+        "position_km_rmse": 12.358038672431809,
+        "velocity_km_s_rmse": 0.35253171695002095,
+        "common_score": 0.04873412975278337
+      },
+      "parameters": 23584
+    },
+    {
+      "checkpoint": "evidence\\timeformer_refitted_fp64\\public_w32s2.pt",
+      "validation": {
+        "position_km_rmse": 11.253263124318655,
+        "velocity_km_s_rmse": 0.30711522499249766,
+        "common_score": 0.04252461408603598
+      },
+      "parameters": 81056
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "criterion": "Adaptive validation-only pruning: at least half of the 150-epoch maximum completed and best normalized validation score exceeds the best completed candidate by 25%. No test scoring.",
+  "epochs_completed": 91,
+  "maximum_epochs": 150,
+  "candidate_best_validation_score": 0.3564209918958332,
+  "best_completed_validation_score": 0.2801419925146732,
+  "ratio": 1.2722869167040878,
+  "prune": true
+}

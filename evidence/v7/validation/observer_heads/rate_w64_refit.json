@@ -1,0 +1,81 @@
+{
+  "validation": {
+    "position_km_rmse": 16.898398118887705,
+    "velocity_km_s_rmse": 0.06437194785004371,
+    "common_score": 0.013182772002090646
+  },
+  "head_refit": {
+    "range": {
+      "selected": {
+        "ridge": 1e-06,
+        "validation_rmse": 16.898398118356273
+      },
+      "search": [
+        {
+          "ridge": 1e-12,
+          "validation_rmse": 16.900822783989206
+        },
+        {
+          "ridge": 1e-10,
+          "validation_rmse": 16.9036981760948
+        },
+        {
+          "ridge": 1e-08,
+          "validation_rmse": 16.90739550145326
+        },
+        {
+          "ridge": 1e-06,
+          "validation_rmse": 16.898398118356273
+        },
+        {
+          "ridge": 0.0001,
+          "validation_rmse": 16.903627705201533
+        },
+        {
+          "ridge": 0.01,
+          "validation_rmse": 17.622784339080827
+        },
+        {
+          "ridge": 1.0,
+          "validation_rmse": 58.4018158105021
+        }
+      ]
+    },
+    "velocity": {
+      "selected": {
+        "ridge": 1e-10,
+        "validation_rmse": 0.06418488580789057
+      },
+      "search": [
+        {
+          "ridge": 1e-12,
+          "validation_rmse": 0.0641889826232403
+        },
+        {
+          "ridge": 1e-10,
+          "validation_rmse": 0.06418488580789057
+        },
+        {
+          "ridge": 1e-08,
+          "validation_rmse": 0.06426055892560105
+        },
+        {
+          "ridge": 1e-06,
+          "validation_rmse": 0.06444794104385027
+        },
+        {
+          "ridge": 0.0001,
+          "validation_rmse": 0.06454026590738036
+        },
+        {
+          "ridge": 0.01,
+          "validation_rmse": 0.07841088546437433
+        },
+        {
+          "ridge": 1.0,
+          "validation_rmse": 0.29221500690600877
+        }
+      ]
+    }
+  }
+}

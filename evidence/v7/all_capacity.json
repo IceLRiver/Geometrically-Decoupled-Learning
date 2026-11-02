@@ -1,0 +1,200 @@
+[
+  {
+    "dataset": "public",
+    "method": "GDL",
+    "active_learned": 63201,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "public",
+    "method": "TimeFormer-2026",
+    "active_learned": 81056,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "legacy",
+    "method": "GDL",
+    "active_learned": 223184,
+    "included_frozen": 87967
+  },
+  {
+    "dataset": "legacy",
+    "method": "TimeFormer-2026",
+    "active_learned": 81056,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "real",
+    "method": "GDL",
+    "active_learned": 64413,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "real",
+    "method": "TimeFormer-2026",
+    "active_learned": 23584,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "public",
+    "method": "B-spline-KAN-2025",
+    "active_learned": 158982,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "public",
+    "method": "RGA-KAN-2026",
+    "active_learned": 211674,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "public",
+    "method": "RBFNN-2024",
+    "active_learned": 47110,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "public",
+    "method": "Gauss",
+    "active_learned": 0,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "public",
+    "method": "Laplace",
+    "active_learned": 0,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "public",
+    "method": "Gooding",
+    "active_learned": 0,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "public",
+    "method": "PIOD-2023",
+    "active_learned": 120,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "public",
+    "method": "alpha-IOD-2025",
+    "active_learned": 303,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "public",
+    "method": "PIOD-2026",
+    "active_learned": 120,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "legacy",
+    "method": "B-spline-KAN-2025",
+    "active_learned": 158982,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "legacy",
+    "method": "RGA-KAN-2026",
+    "active_learned": 211674,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "legacy",
+    "method": "RBFNN-2024",
+    "active_learned": 47110,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "legacy",
+    "method": "Gauss",
+    "active_learned": 0,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "legacy",
+    "method": "Laplace",
+    "active_learned": 0,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "legacy",
+    "method": "Gooding",
+    "active_learned": 0,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "legacy",
+    "method": "PIOD-2023",
+    "active_learned": 120,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "legacy",
+    "method": "alpha-IOD-2025",
+    "active_learned": 303,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "legacy",
+    "method": "PIOD-2026",
+    "active_learned": 120,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "real",
+    "method": "B-spline-KAN-2025",
+    "active_learned": 79494,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "real",
+    "method": "RGA-KAN-2026",
+    "active_learned": 211674,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "real",
+    "method": "RBFNN-2024",
+    "active_learned": 23558,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "real",
+    "method": "Gauss",
+    "active_learned": 0,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "real",
+    "method": "Laplace",
+    "active_learned": 0,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "real",
+    "method": "Gooding",
+    "active_learned": 0,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "real",
+    "method": "PIOD-2023",
+    "active_learned": 120,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "real",
+    "method": "alpha-IOD-2025",
+    "active_learned": 303,
+    "included_frozen": 0
+  },
+  {
+    "dataset": "real",
+    "method": "PIOD-2026",
+    "active_learned": 120,
+    "included_frozen": 0
+  }
+]

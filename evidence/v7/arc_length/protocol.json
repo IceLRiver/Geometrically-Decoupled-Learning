@@ -1,0 +1,62 @@
+{
+  "seed": 20261102,
+  "datasets": {
+    "public": [
+      7232,
+      7302,
+      7585,
+      7608,
+      7658,
+      7683,
+      8075,
+      8172,
+      8207,
+      8413,
+      8451,
+      8482,
+      8749,
+      8861,
+      8877,
+      9127,
+      9156,
+      9166,
+      9335,
+      9468
+    ],
+    "legacy": [
+      290,
+      9077,
+      38056,
+      40767,
+      48429,
+      49298,
+      95852,
+      101075,
+      105747,
+      116895,
+      124773,
+      136039,
+      158385,
+      167401,
+      168774,
+      184816,
+      186443,
+      187672,
+      206803,
+      215999
+    ]
+  },
+  "measurement_counts": [
+    10,
+    20,
+    30,
+    40
+  ],
+  "elapsed_s": [
+    9,
+    19,
+    29,
+    39
+  ],
+  "adapter": "Physical solvers use native measured samples. Fixed-size learned inputs interpolate the final N samples to 40 entries, normalize LOS and use actual computational cadence (N-1)/39. Interpolation does not add independent measurements."
+}
