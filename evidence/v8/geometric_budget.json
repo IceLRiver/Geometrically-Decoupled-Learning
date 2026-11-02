@@ -1,0 +1,23 @@
+[
+  {
+    "dataset": "public",
+    "range_error_rmse_km": 0.42242446376095194,
+    "angular_error_rmse_km": 0.0367303135112518,
+    "total_position_rmse_km": 0.4240182787246806,
+    "max_decomposition_closure_km": 3.204557619723355e-12
+  },
+  {
+    "dataset": "legacy",
+    "range_error_rmse_km": 23.080075899923905,
+    "angular_error_rmse_km": 0.00013537132550857608,
+    "total_position_rmse_km": 23.080075900320956,
+    "max_decomposition_closure_km": 4.573576343383647e-12
+  },
+  {
+    "dataset": "real",
+    "range_error_rmse_km": 119.521290128726,
+    "angular_error_rmse_km": 0.06291371607760389,
+    "total_position_rmse_km": 119.52130720671721,
+    "max_decomposition_closure_km": 1.9092156484938288e-11
+  }
+]

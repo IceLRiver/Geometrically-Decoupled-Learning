@@ -1,4 +1,4 @@
-﻿method,additional_noise_arcsec,requested,finite,finite_fraction,position_km_rmse,position_km_mean,position_km_median,position_km_p95,velocity_km_s_rmse,velocity_km_s_mean,velocity_km_s_median,velocity_km_s_p95,normalized_state_score,outside_study_domain_fraction
+method,additional_noise_arcsec,requested,finite,finite_fraction,position_km_rmse,position_km_mean,position_km_median,position_km_p95,velocity_km_s_rmse,velocity_km_s_mean,velocity_km_s_median,velocity_km_s_p95,normalized_state_score,outside_study_domain_fraction
 Gauss,0,20,20,1.0,64.67757751642623,25.02182856776269,7.6574582423514865,55.125910512462056,0.07522812112007887,0.026931377929418375,0.009481087626890223,0.06531453043607216,0.018631741190806028,0.0
 Gauss,1,20,20,1.0,1943.589955315123,1418.9143680693128,1217.8542332682964,3536.948068552174,1.207628366545588,0.9862755229998253,0.8511821886866148,2.49174149337065,0.36409178387253255,0.0
 Gauss,3,20,20,1.0,7596.611127057716,3948.7357498190504,2169.930629565352,10782.81790896697,4.193501640338427,2.742358462097937,1.4933349679035426,10.375495917724045,1.3251573916100492,0.0

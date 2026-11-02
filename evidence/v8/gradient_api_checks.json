@@ -1,0 +1,20 @@
+[
+  {
+    "dataset": "public",
+    "reference_api_max_position_difference_km": 1.9326762412674725e-11,
+    "reference_api_max_velocity_difference_km_s": 3.763211964269431e-12,
+    "analysis": "Gradients arriving at the first-stage latent representation, for a training-scale-normalized diagnostic loss. Not a claim about the norm of all encoder-parameter gradients."
+  },
+  {
+    "dataset": "legacy",
+    "reference_api_max_position_difference_km": 3.2741809263825417e-11,
+    "reference_api_max_velocity_difference_km_s": 1.0702549957386509e-13,
+    "analysis": "Gradients arriving at the first-stage latent representation, for a training-scale-normalized diagnostic loss. Not a claim about the norm of all encoder-parameter gradients."
+  },
+  {
+    "dataset": "real",
+    "reference_api_max_position_difference_km": 1.8189894035458565e-11,
+    "reference_api_max_velocity_difference_km_s": 4.884981308350689e-15,
+    "analysis": "Gradients arriving at the first-stage latent representation, for a training-scale-normalized diagnostic loss. Not a claim about the norm of all encoder-parameter gradients."
+  }
+]

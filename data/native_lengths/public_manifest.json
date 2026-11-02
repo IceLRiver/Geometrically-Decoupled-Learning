@@ -1,0 +1,13 @@
+{
+  "dataset": "public",
+  "total": 9632,
+  "description": "Processed 20-point prefixes; concatenate with the unchanged released 40-point observations. No data-construction software is included.",
+  "chunks": [
+    {
+      "file": "public_000000_009632.npz",
+      "start": 0,
+      "end": 9632,
+      "sha256": "66ebbe08a3b7bb9a18f40c7f5844484eeb9408e77aba3c40f1b95b0b85bfacf5"
+    }
+  ]
+}

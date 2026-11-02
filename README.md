@@ -12,14 +12,14 @@ Data and model code for **Geometrically Decoupled Learning for Space Target Moti
 
 Inputs contain observer positions (km) and unit LOS, with shape `(N,40,6)` and one-second cadence. Labels contain terminal position (km) and velocity (km/s). Simulation chunks in `data/legacy_simulation` use flattened `(N,240)` observations; the dataset argument is `legacy`. Sentinel-1 observations are reconstructed angles with precise ephemeris references. Contains modified Copernicus Sentinel data (2021, 2026); [source catalogue](https://step.esa.int/auxdata/orbits/Sentinel-1/POEORB/). Private sensor records remain subject to provider access conditions.
 
-The current common comparison has 300 public, 300 simulation and 122 real arcs, recorded in `data/benchmark_protocol_v7.json`. The simulation evaluation retains the original sample split and historically selected source encoder/normalization. It is a retrospective evaluation on a potentially shared target population.
+The current common comparison has 300 public, 300 simulation and 122 real arcs, recorded in `data/benchmark_protocol_v8.json`. The simulation evaluation retains the original sample split and historically selected source encoder/normalization. It is a retrospective evaluation on a potentially shared target population.
 
 ## Evaluate the current models
 
 ```bash
 python -m pip install -r requirements.txt
-python scripts/v7/verify_results.py
-python scripts/v7/check_api.py
+python scripts/v8/verify_results.py
+python scripts/v8/check_api.py
 python scripts/v7/evaluate_checkpoint.py --dataset public --method GDL
 python scripts/v7/evaluate_checkpoint.py --dataset legacy --method TimeFormer-2026
 ```
@@ -49,8 +49,26 @@ python scripts/v7/train_timeformer.py
 python scripts/v7/refit_timeformer.py
 ```
 
-The six width-32 from-scratch component variants retain their previous common optimizer budget; their artifacts are in `evidence/v6` and `checkpoints/v6`. The full-model reference uses a larger training/capacity budget and is identified separately. Parameter--error comparisons use only the simulation cohort and include all primary methods plus the component variants.
+The six width-32 from-scratch component variants retain their previous common optimizer budget; their artifacts are in `evidence/v6` and `checkpoints/v6`. The full-model reference uses a larger training/capacity budget and is identified separately. The current paper reports component errors, joint success, geometric diagnostics and downstream position prediction.
 
 ## Observation duration
 
-The fixed-model study compares 9, 19, 29 and 39 seconds on 20 matched arcs per source. Classical/physics solvers use native measured samples. Fixed-size learned inputs interpolate the shorter measured subarc to 40 computational entries and use its physical cadence; interpolation adds no independent measurements. All original 39-second comparison predictions are preserved. GDL degrades markedly below its 39-second training span, so the duration results do not establish robustness to arbitrary input lengths. Full values are in `evidence/v7/arc_length.csv`.
+The current study uses 10, 20, 40 and 60 native one-second observations (9, 19, 39 and 59 seconds elapsed). Thirty matched arcs per source are selected by availability. The established 40-point checkpoints and predictions are unchanged. Other lengths use frozen representations and validation-selected, training-only output-head adaptation. These are length-specific estimators, not zero-shot robustness of a single fixed model. The 20-point simulation condition has slightly lower position error for KAN; GDL has the lowest predefined joint score in all twelve source/length conditions among the four representations.
+
+Processed 20-point prefixes and availability masks are in `data/native_lengths`; they concatenate with the original 40 observations. `models/geometric_v8.py` provides `predict_states(dataset, method, X, measurements, device)`. Selected output heads are in `checkpoints/v8`. `evidence/v8` contains current aggregate results, uncertainty intervals, runtime, anonymous error/success curves, and public/simulation predictions.
+
+```bash
+python scripts/v8/evaluate_physics.py --dataset public --method PIOD-2023 --limit 1
+python scripts/v8/duration_features.py
+python scripts/v8/fit_duration_heads.py
+python scripts/v8/fit_rate_variants.py
+python scripts/v8/fit_anchor_variants.py
+```
+
+Output fitting writes to `runs/v8`. The selected public/simulation duration heads can be evaluated independently on CPU. The original 40-point training scripts above remain available.
+
+## Current comparisons
+
+The revised PIOD-family solvers use damped SVD and admissibility checks. Validation selects geometric or frozen RBF initialization, and the real-data task adaptations additionally use local range/velocity priors. These hybrid task implementations are explicitly identified in the paper; they are not original-author software results. Only PIOD-family primary results are updated in this revision; all eight other primary estimators remain fixed. Full settings are in `docs/METHODS_V8.md` and `evidence/v8/models.json`.
+
+Future-position errors use identical propagation from the fixed terminal estimates, without new observations. Coverage accompanies conditional errors. Real-data aggregate evidence is included; raw sensor records, per-target states and real-data checkpoints are not distributed. The public precise-orbit benchmark comprises reconstructed angular observations, not publicly measured optical angles.

@@ -1,0 +1,17 @@
+[
+  {
+    "dataset": "public",
+    "position_lowest": true,
+    "velocity_lowest": true
+  },
+  {
+    "dataset": "legacy",
+    "position_lowest": true,
+    "velocity_lowest": true
+  },
+  {
+    "dataset": "real",
+    "position_lowest": true,
+    "velocity_lowest": true
+  }
+]

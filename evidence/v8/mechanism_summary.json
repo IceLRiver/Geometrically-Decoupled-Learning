@@ -1,0 +1,26 @@
+[
+  {
+    "dataset": "public",
+    "gradient_ratio_median": 1.0102784892337033,
+    "curvature_gain_median": 5.387813475543878,
+    "curvature_gain_p25": 4.163692031675661,
+    "curvature_gain_p75": 9.621776091764472,
+    "opposing_gradient_fraction": 0.5
+  },
+  {
+    "dataset": "legacy",
+    "gradient_ratio_median": 5.811240821322883,
+    "curvature_gain_median": 168.06703782390588,
+    "curvature_gain_p25": 116.51975458674202,
+    "curvature_gain_p75": 374.2559398393347,
+    "opposing_gradient_fraction": 0.375
+  },
+  {
+    "dataset": "real",
+    "gradient_ratio_median": 3603.6959245043827,
+    "curvature_gain_median": 4473.808787102552,
+    "curvature_gain_p25": 3058.986838520653,
+    "curvature_gain_p75": 6625.265891911542,
+    "opposing_gradient_fraction": 0.4375
+  }
+]

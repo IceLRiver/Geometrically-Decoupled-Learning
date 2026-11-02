@@ -1,4 +1,4 @@
-﻿dataset,method,elapsed_s,measured_samples,requested,finite,finite_fraction,position_km_rmse,position_km_mean,position_km_median,position_km_p95,velocity_km_s_rmse,velocity_km_s_mean,velocity_km_s_median,velocity_km_s_p95,normalized_state_score,outside_study_domain_fraction
+dataset,method,elapsed_s,measured_samples,requested,finite,finite_fraction,position_km_rmse,position_km_mean,position_km_median,position_km_p95,velocity_km_s_rmse,velocity_km_s_mean,velocity_km_s_median,velocity_km_s_p95,normalized_state_score,outside_study_domain_fraction
 public,Gauss,9,10,20,20,1.0,2470.3020352617455,1314.8754869901136,511.36456209106643,4399.40925437623,9.061620480912913,5.269038740921834,3.165379900957115,17.563920934407488,1.5569514748760065,0.2
 public,Gauss,19,20,20,20,1.0,310.79940005555716,204.4280675918547,131.69429164656384,579.7363873158561,1.1909127891395765,0.8204477129489511,0.5275295892790662,2.5633666767365435,0.20266185258995975,0.0
 public,Gauss,29,30,20,20,1.0,98.46495356300404,79.08925172161636,65.49186901866528,203.97352414522024,0.3489345657268076,0.30290885594798855,0.28184680763325587,0.5766366904984332,0.06042560717959623,0.0

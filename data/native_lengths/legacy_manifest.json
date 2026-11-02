@@ -1,0 +1,79 @@
+{
+  "dataset": "legacy",
+  "total": 236575,
+  "description": "Processed 20-point prefixes; concatenate with the unchanged released 40-point observations. No data-construction software is included.",
+  "chunks": [
+    {
+      "file": "legacy_000000_020000.npz",
+      "start": 0,
+      "end": 20000,
+      "sha256": "6c8a16c8e163addc1871788bd6eae1447a4760d266f6f6a68e086ff2084da5cd"
+    },
+    {
+      "file": "legacy_020000_040000.npz",
+      "start": 20000,
+      "end": 40000,
+      "sha256": "d00aa693d21572c429d05afd3db1dd155e39d8c30c233c1c86adf2e11f844082"
+    },
+    {
+      "file": "legacy_040000_060000.npz",
+      "start": 40000,
+      "end": 60000,
+      "sha256": "d8094981529e065ae6dd7d5bb2d40116b04cee283d64dda3b51bf8b8c99e3d13"
+    },
+    {
+      "file": "legacy_060000_080000.npz",
+      "start": 60000,
+      "end": 80000,
+      "sha256": "076840547ab4f9be07a5d74beaebb4200e0645bc481c0ec7a0871fcd5c01763c"
+    },
+    {
+      "file": "legacy_080000_100000.npz",
+      "start": 80000,
+      "end": 100000,
+      "sha256": "b72168cc3b4f634fd58e932ec4a97317a51de0bb9c8e36da4ba2dd906d02dc1d"
+    },
+    {
+      "file": "legacy_100000_120000.npz",
+      "start": 100000,
+      "end": 120000,
+      "sha256": "50d2935d2362f090c917e1d878e6055e13fe1d3f36c091d2fe3e4e33e4e56563"
+    },
+    {
+      "file": "legacy_120000_140000.npz",
+      "start": 120000,
+      "end": 140000,
+      "sha256": "67d5da205963b9eddb87dad5e3a9fce0cd1ee677ab04bc2be4fd744d18eb714c"
+    },
+    {
+      "file": "legacy_140000_160000.npz",
+      "start": 140000,
+      "end": 160000,
+      "sha256": "2f821d96f092d6a7722bd3b9d35d9ab446711e4313db5027438e54a63a853ea4"
+    },
+    {
+      "file": "legacy_160000_180000.npz",
+      "start": 160000,
+      "end": 180000,
+      "sha256": "2819288d8d98e880199a022bd8ab18c8636be2e9431800d5e1ba1cc1cdc2e039"
+    },
+    {
+      "file": "legacy_180000_200000.npz",
+      "start": 180000,
+      "end": 200000,
+      "sha256": "2438a1a15f674fe5bddf71f028ea4707738ce576211e2c67729cdba3dca48241"
+    },
+    {
+      "file": "legacy_200000_220000.npz",
+      "start": 200000,
+      "end": 220000,
+      "sha256": "4fdcb3f0f89905a3f1bf40f0385220c351494b6b26064f97b27f83dd70db121d"
+    },
+    {
+      "file": "legacy_220000_236575.npz",
+      "start": 220000,
+      "end": 236575,
+      "sha256": "cb0eac347643358fcba123d8f93bee87b6069e4aa25ea33e1224d1731cff1af5"
+    }
+  ]
+}

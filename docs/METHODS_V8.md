@@ -1,0 +1,19 @@
+# Current evaluation and model settings
+
+The primary comparison contains eleven methods on identical 300 public, 300 simulation and 122 private real arcs. The 40-point GDL models, all non-PIOD comparison models and their primary predictions retain the established coefficients. Numerical settings are frozen before scoring. `evidence/v8/models.json` records public/simulation selected configurations, hashes and validation scores.
+
+## PIOD-family task implementations
+
+The revised PIOD, alpha-IOD and XGEO-PIOD implementations retain analytic trajectory derivatives and the corresponding angular/physics residuals, with damped SVD and observation-domain checks. PIOD uses observation-span time units, giving the verified T^2/RE dynamics scale. Alpha follows source Table VI for its inner budget, ABC coarse search, 100 accepted ELM fits, ALFA and loss/norm outlier filters, with a recorded attempt cap. XGEO uses the stated near-Earth central/J2 adaptation. No unobserved SRP or drag parameters are invented.
+
+Validation compares geometric and frozen training-only RBF initialization. Public PIOD uses damping 1, and public alpha/XGEO use .01. Simulation PIOD/XGEO use RBF initialization and damping .01; simulation alpha uses geometric/ABC initialization and damping 1. Real-data task implementations additionally select local range and velocity neighborhoods around the inferred initialization. These hybrid additions are explicitly marked in the paper and must not be attributed to original-author software. Rejecting a refinement may return its initializer; coverage and fallback accounting are reported. No test-reference error enters inference.
+
+## Length-specific readouts
+
+The four representations are GDL, B-spline KAN, RGA-KAN and TimeFormer. Each uses a frozen backbone, training-only output fitting and validation selection at 10, 20 and 60 observations. The original 40-point model remains the anchor and has a different fitting history. Interpolating a native subarc to 40 computational entries supplies no additional observations. GDL predicts scalar range and conditional velocity; the other heads predict six state components. Common observed-feature, quadratic-feature and ridge alternatives are evaluated. GDL additionally evaluates scalar range rate and degree-2/3/4 native derivatives. The released fit scripts write to runs/v8. Only public and simulation processed arrays/checkpoints are distributed.
+
+Native prefixes concatenate with the established final forty samples. Availability masks and source-specific train/validation/test partitions are retained. Thirty common primary-test arcs per source are selected by availability before test errors are computed. Public early samples use the same precise-orbit references; simulation early samples are reference-consistent continuations; real early samples are actual earlier records. The simulation continuation is not a perfectly uniform-noise control. Complete component errors include the 20-point simulation condition where KAN has lower position error. This experiment compares usable length-specific configurations, not zero-shot transfer or an identical-budget causal duration effect.
+
+## Additional evidence
+
+The predefined joint criterion normalizes position and velocity RMSE by training-state scales. Joint success varies both thresholds together. Paired bootstrap uses public UTC-day blocks, simulation samples and real target identities. Future positions are propagated from fixed states with one common one-second RK4 scheme, central/J2 for public and real and two-body for simulation. Conditional future errors accompany coverage; real future-reference availability leaves 116 common arcs. No future measurements or refitting enter state estimates. These checks do not remove reference/force-model uncertainty, historical simulation selection or the limited number of real test identities.

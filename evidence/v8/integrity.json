@@ -1,0 +1,10 @@
+{
+  "fixed_40_files_unchanged": 6,
+  "unchanged_primary_prediction_files": 24,
+  "all_40_duration_cases_exact_primary_subsets": true,
+  "paired_noise_zero_exact": true,
+  "settings_frozen_before_scoring": true,
+  "primary_complete_rows": 33,
+  "publication_allowlist_checked": true,
+  "audited_unix": 1793636927.5007277
+}

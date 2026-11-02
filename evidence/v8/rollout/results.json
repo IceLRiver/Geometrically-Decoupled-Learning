@@ -1,0 +1,992 @@
+[
+  {
+    "dataset": "public",
+    "method": "Gauss",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 298,
+    "position_rmse_km": 203.23296488124063,
+    "full_coverage": false,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "Gauss",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 298,
+    "position_rmse_km": 256.22153844133186,
+    "full_coverage": false,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "Gauss",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 297,
+    "position_rmse_km": 295.0429570017468,
+    "full_coverage": false,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "Laplace",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 298,
+    "position_rmse_km": 203.77646695811984,
+    "full_coverage": false,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "Laplace",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 298,
+    "position_rmse_km": 256.87575477892545,
+    "full_coverage": false,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "Laplace",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 297,
+    "position_rmse_km": 296.12534520105436,
+    "full_coverage": false,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "Gooding",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 2241.352408326586,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "Gooding",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 1964.790850244895,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "Gooding",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 2383.041763982643,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "PIOD-2023",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 49.883302407500935,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "PIOD-2023",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 62.13651015865814,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "PIOD-2023",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 76.46807354382189,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "RBFNN-2024",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 33.75827201440659,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "RBFNN-2024",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 78.61157537825123,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "RBFNN-2024",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 123.28576685564609,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "alpha-IOD-2025",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 46.88380302575444,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "alpha-IOD-2025",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 55.99208567784123,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "alpha-IOD-2025",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 68.87304713963266,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "B-spline-KAN-2025",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 3.437879127601417,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "B-spline-KAN-2025",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 8.169809743705803,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "B-spline-KAN-2025",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 12.98562500481417,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "PIOD-2026",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 49.65443140214602,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "PIOD-2026",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 61.79238249277406,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "PIOD-2026",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 75.91990613623017,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "RGA-KAN-2026",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 35.74904026265496,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "RGA-KAN-2026",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 51.926729133399306,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "RGA-KAN-2026",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 73.29834955195241,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "TimeFormer-2026",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 30.198790858628957,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "TimeFormer-2026",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 71.3289917036255,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "TimeFormer-2026",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 112.4531550938916,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "GDL",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 1.274892733649697,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "GDL",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 3.5749888202235125,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "public",
+    "method": "GDL",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 5.869636380634515,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "legacy",
+    "method": "Gauss",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 139.92660243754867,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "Gauss",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 135.3045960965633,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "Gauss",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 132.02718946751537,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "Laplace",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 139.27003498251375,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "Laplace",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 134.68299307430922,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "Laplace",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 131.42259336144832,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "Gooding",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 139.99303435899049,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "Gooding",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 137.13468639499857,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "Gooding",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 135.92615351849898,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "PIOD-2023",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 71.4576069910098,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "PIOD-2023",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 58.28638689157091,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "PIOD-2023",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 53.260621468702716,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "RBFNN-2024",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 553.5933811545484,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "RBFNN-2024",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 557.321008588659,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "RBFNN-2024",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 564.1235325129379,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "alpha-IOD-2025",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 501.0320258597061,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "alpha-IOD-2025",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 505.55366237582655,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "alpha-IOD-2025",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 521.412078221242,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "B-spline-KAN-2025",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 113.93778581333044,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "B-spline-KAN-2025",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 111.88349723566273,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "B-spline-KAN-2025",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 110.51056456194112,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "PIOD-2026",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 177.93645779434664,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "PIOD-2026",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 176.37847893669277,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "PIOD-2026",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 179.5951837003594,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "RGA-KAN-2026",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 45.41639592281933,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "RGA-KAN-2026",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 45.3949694218929,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "RGA-KAN-2026",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 45.47552530253774,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "TimeFormer-2026",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 239.87119833106803,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "TimeFormer-2026",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 235.74774589687607,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "TimeFormer-2026",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 233.15762259866744,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "GDL",
+    "horizon_s": 60,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 23.370236445328104,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "GDL",
+    "horizon_s": 180,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 24.128930978054548,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "legacy",
+    "method": "GDL",
+    "horizon_s": 300,
+    "requested": 300,
+    "finite": 300,
+    "position_rmse_km": 25.113649140632905,
+    "full_coverage": true,
+    "propagator": "two-body"
+  },
+  {
+    "dataset": "real",
+    "method": "Gauss",
+    "horizon_s": 60,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 1818.1014342388107,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "Gauss",
+    "horizon_s": 180,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 1820.1707887265102,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "Gauss",
+    "horizon_s": 300,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 1822.2648004411037,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "Laplace",
+    "horizon_s": 60,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 1818.0866752733393,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "Laplace",
+    "horizon_s": 180,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 1820.159028999772,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "Laplace",
+    "horizon_s": 300,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 1822.2560525202443,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "Gooding",
+    "horizon_s": 60,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 26659.433392220217,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "Gooding",
+    "horizon_s": 180,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 26303.64363797197,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "Gooding",
+    "horizon_s": 300,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 26169.25879984015,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "PIOD-2023",
+    "horizon_s": 60,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 144.3253309500463,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "PIOD-2023",
+    "horizon_s": 180,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 144.4272837012087,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "PIOD-2023",
+    "horizon_s": 300,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 144.53367906603967,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "RBFNN-2024",
+    "horizon_s": 60,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 145.21272150181605,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "RBFNN-2024",
+    "horizon_s": 180,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 145.25846310657667,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "RBFNN-2024",
+    "horizon_s": 300,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 145.31845631041463,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "alpha-IOD-2025",
+    "horizon_s": 60,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 139.11441817573834,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "alpha-IOD-2025",
+    "horizon_s": 180,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 139.1693671909681,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "alpha-IOD-2025",
+    "horizon_s": 300,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 139.23394501081478,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "B-spline-KAN-2025",
+    "horizon_s": 60,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 196.95643664719248,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "B-spline-KAN-2025",
+    "horizon_s": 180,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 197.14982866568624,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "B-spline-KAN-2025",
+    "horizon_s": 300,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 197.34979178723785,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "PIOD-2026",
+    "horizon_s": 60,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 144.32309985856335,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "PIOD-2026",
+    "horizon_s": 180,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 144.4217239581938,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "PIOD-2026",
+    "horizon_s": 300,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 144.5248913374156,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "RGA-KAN-2026",
+    "horizon_s": 60,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 197.44780235847153,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "RGA-KAN-2026",
+    "horizon_s": 180,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 197.731590433237,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "RGA-KAN-2026",
+    "horizon_s": 300,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 198.02021804306045,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "TimeFormer-2026",
+    "horizon_s": 60,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 144.4732633666337,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "TimeFormer-2026",
+    "horizon_s": 180,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 143.966195318431,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "TimeFormer-2026",
+    "horizon_s": 300,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 143.4717785526125,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "GDL",
+    "horizon_s": 60,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 122.31583246874148,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "GDL",
+    "horizon_s": 180,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 122.44261582622927,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  },
+  {
+    "dataset": "real",
+    "method": "GDL",
+    "horizon_s": 300,
+    "requested": 116,
+    "finite": 116,
+    "position_rmse_km": 122.57363266139168,
+    "full_coverage": true,
+    "propagator": "central+J2"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "horizons_seconds": [
+    60,
+    180,
+    300
+  ],
+  "cohort_selection": "Complete reference availability and no flagged maneuver through300s; identical cohort for all methods/horizons, no error-based selection.",
+  "datasets": {
+    "public": {
+      "total": 300,
+      "valid": 300
+    },
+    "legacy": {
+      "total": 300,
+      "valid": 300
+    },
+    "real": {
+      "total": 122,
+      "valid": 116
+    }
+  }
+}

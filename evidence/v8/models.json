@@ -1,0 +1,822 @@
+{
+  "frozen_unix": 1793631983.247068,
+  "duration_scope": "Four amortized learned representations, identical frozen backbones and training/validation-only output-head adaptation at each non-anchor length. The 40-point saved predictions are reused exactly. No per-arc physics solver is included in this representation-adaptation question.",
+  "duration_frozen_unix": 1793631983.247068,
+  "physics_frozen_unix": 1793632893.498854,
+  "primary_scope": "Corrected PIOD-family task implementations, with explicit training-only RBF initializers and local state priors when validation selected. Other eight primary estimators including 40-point GDL remain byte-identical.",
+  "physics": {
+    "public": {
+      "PIOD-2023": {
+        "config": {
+          "initialization": "RBFNN",
+          "rank_tol": 1e-10,
+          "damping": 1.0
+        },
+        "validation": {
+          "position_km_rmse": 15.789718133470668,
+          "velocity_km_s_rmse": 0.07490310535615455,
+          "common_score": 0.012215321042718226
+        },
+        "candidates": [
+          {
+            "config": {
+              "initialization": "RBFNN",
+              "rank_tol": 1e-10,
+              "damping": 100.0
+            },
+            "validation": {
+              "position_km_rmse": 16.14932595600725,
+              "velocity_km_s_rmse": 0.07608946898323678,
+              "common_score": 0.012424275465893541
+            }
+          },
+          {
+            "config": {
+              "initialization": "RBFNN",
+              "rank_tol": 1e-10,
+              "damping": 1.0
+            },
+            "validation": {
+              "position_km_rmse": 15.789718133470668,
+              "velocity_km_s_rmse": 0.07490310535615455,
+              "common_score": 0.012215321042718226
+            }
+          }
+        ]
+      },
+      "alpha-IOD-2025": {
+        "config": {
+          "initialization": "RBFNN",
+          "rank_tol": 1e-10,
+          "damping": 0.01
+        },
+        "validation": {
+          "position_km_rmse": 74.22248534051144,
+          "velocity_km_s_rmse": 0.18695584992757266,
+          "common_score": 0.03540960278932933
+        },
+        "candidates": [
+          {
+            "config": {
+              "initialization": "RBFNN",
+              "rank_tol": 1e-10,
+              "damping": 1.0
+            },
+            "validation": {
+              "position_km_rmse": 76.8633396743708,
+              "velocity_km_s_rmse": 0.20165148108910744,
+              "common_score": 0.03774159313004774
+            }
+          },
+          {
+            "config": {
+              "initialization": "RBFNN",
+              "rank_tol": 1e-10,
+              "damping": 0.01
+            },
+            "validation": {
+              "position_km_rmse": 74.22248534051144,
+              "velocity_km_s_rmse": 0.18695584992757266,
+              "common_score": 0.03540960278932933
+            }
+          }
+        ]
+      },
+      "PIOD-2026": {
+        "config": {
+          "initialization": "RBFNN",
+          "rank_tol": 1e-10,
+          "damping": 0.01,
+          "j2": true
+        },
+        "validation": {
+          "position_km_rmse": 15.736111272019018,
+          "velocity_km_s_rmse": 0.07031360508503585,
+          "common_score": 0.011596030105075648
+        },
+        "candidates": [
+          {
+            "config": {
+              "initialization": "RBFNN",
+              "rank_tol": 1e-10,
+              "damping": 0.01
+            },
+            "validation": {
+              "position_km_rmse": 16.338487647869748,
+              "velocity_km_s_rmse": 0.07243155389246814,
+              "common_score": 0.011963465840288966
+            }
+          },
+          {
+            "config": {
+              "initialization": "RBFNN",
+              "rank_tol": 1e-10,
+              "damping": 0.01,
+              "trust_radius": 100.0
+            },
+            "validation": {
+              "position_km_rmse": 16.338487647869748,
+              "velocity_km_s_rmse": 0.07243155389246814,
+              "common_score": 0.011963465840288966
+            }
+          },
+          {
+            "config": {
+              "initialization": "RBFNN",
+              "rank_tol": 1e-10,
+              "damping": 0.01,
+              "j2": true
+            },
+            "validation": {
+              "position_km_rmse": 15.736111272019018,
+              "velocity_km_s_rmse": 0.07031360508503585,
+              "common_score": 0.011596030105075648
+            }
+          }
+        ]
+      }
+    },
+    "legacy": {
+      "PIOD-2023": {
+        "config": {
+          "initialization": "RBFNN",
+          "rank_tol": 1e-10,
+          "damping": 0.01
+        },
+        "validation": {
+          "position_km_rmse": 17.10359827564667,
+          "velocity_km_s_rmse": 0.01549816133854633,
+          "common_score": 0.004109744561899329
+        },
+        "candidates": [
+          {
+            "config": {
+              "initialization": "RBFNN",
+              "rank_tol": 1e-10,
+              "damping": 100.0
+            },
+            "validation": {
+              "position_km_rmse": 17.12773922138671,
+              "velocity_km_s_rmse": 0.015502990411530183,
+              "common_score": 0.0041123757100943615
+            }
+          },
+          {
+            "config": {
+              "initialization": "RBFNN",
+              "rank_tol": 1e-10,
+              "damping": 0.01
+            },
+            "validation": {
+              "position_km_rmse": 17.10359827564667,
+              "velocity_km_s_rmse": 0.01549816133854633,
+              "common_score": 0.004109744561899329
+            }
+          }
+        ]
+      },
+      "alpha-IOD-2025": {
+        "config": {
+          "initialization": "geometry",
+          "rank_tol": 1e-10,
+          "damping": 1.0
+        },
+        "validation": {
+          "position_km_rmse": 251.0853357186713,
+          "velocity_km_s_rmse": 0.1998664359191738,
+          "common_score": 0.055190675429553734
+        },
+        "candidates": [
+          {
+            "config": {
+              "initialization": "RBFNN",
+              "rank_tol": 1e-10,
+              "damping": 0.01
+            },
+            "validation": {
+              "position_km_rmse": 347.887132747885,
+              "velocity_km_s_rmse": 0.3966519450913694,
+              "common_score": 0.0987315930279274
+            }
+          },
+          {
+            "config": {
+              "initialization": "geometry",
+              "rank_tol": 1e-10,
+              "damping": 1.0
+            },
+            "validation": {
+              "position_km_rmse": 251.0853357186713,
+              "velocity_km_s_rmse": 0.1998664359191738,
+              "common_score": 0.055190675429553734
+            }
+          }
+        ]
+      },
+      "PIOD-2026": {
+        "config": {
+          "initialization": "RBFNN",
+          "rank_tol": 1e-10,
+          "damping": 0.01,
+          "j2": true
+        },
+        "validation": {
+          "position_km_rmse": 41.57502029305771,
+          "velocity_km_s_rmse": 0.02804691696947776,
+          "common_score": 0.008200043834979047
+        },
+        "candidates": [
+          {
+            "config": {
+              "initialization": "RBFNN",
+              "rank_tol": 1e-10,
+              "damping": 0.01
+            },
+            "validation": {
+              "position_km_rmse": 41.67390559428035,
+              "velocity_km_s_rmse": 0.028249113554915568,
+              "common_score": 0.008244740493143693
+            }
+          },
+          {
+            "config": {
+              "initialization": "RBFNN",
+              "rank_tol": 1e-10,
+              "damping": 1.0
+            },
+            "validation": {
+              "position_km_rmse": 49.3393134347113,
+              "velocity_km_s_rmse": 0.03266887452207066,
+              "common_score": 0.009616908623473532
+            }
+          },
+          {
+            "config": {
+              "initialization": "RBFNN",
+              "rank_tol": 1e-10,
+              "damping": 0.01,
+              "j2": true
+            },
+            "validation": {
+              "position_km_rmse": 41.57502029305771,
+              "velocity_km_s_rmse": 0.02804691696947776,
+              "common_score": 0.008200043834979047
+            }
+          }
+        ]
+      }
+    }
+  },
+  "duration": {
+    "public": {
+      "10": {
+        "GDL": {
+          "checkpoint": "checkpoints/v8/public_10_GDL_anchor.pt",
+          "sha256": "3ae9d6864510764606d35a81be828ca16998a8ab7b04f66e8e19d81a63891e48",
+          "validation": {
+            "position_km_rmse": 0.5974892792677841,
+            "velocity_km_s_rmse": 0.02390354140405394,
+            "common_score": 0.003270448315714643
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_10_GDL.pt",
+              "sha256": "42f766d19fba9aaf1ec5cf00b6fad25dc8dca64ab41f2e87cf5d0dfa885a56a3",
+              "validation": {
+                "position_km_rmse": 0.5974892792677841,
+                "velocity_km_s_rmse": 0.03266433472576847,
+                "common_score": 0.004438134934781188
+              }
+            },
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_10_GDL_anchor.pt",
+              "sha256": "3ae9d6864510764606d35a81be828ca16998a8ab7b04f66e8e19d81a63891e48",
+              "validation": {
+                "position_km_rmse": 0.5974892792677841,
+                "velocity_km_s_rmse": 0.02390354140405394,
+                "common_score": 0.003270448315714643
+              }
+            },
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_10_GDL_rate.pt",
+              "sha256": "9b4f4cd90c3523fca32d913206c1445169fbedb8ed3ca3a900769009b38e5351",
+              "validation": {
+                "position_km_rmse": 0.5974892792677841,
+                "velocity_km_s_rmse": 0.024295391412622998,
+                "common_score": 0.0033226762355941237
+              }
+            }
+          ]
+        },
+        "B-spline-KAN-2025": {
+          "checkpoint": "checkpoints/v8/public_10_B-spline-KAN-2025.pt",
+          "sha256": "592c18429534baea5718fd22d6542bc470cbccec43ca457bdcf72383eb88d4bc",
+          "validation": {
+            "position_km_rmse": 1.2169186808757306,
+            "velocity_km_s_rmse": 0.03859871167337416,
+            "common_score": 0.005316655548015973
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_10_B-spline-KAN-2025.pt",
+              "sha256": "592c18429534baea5718fd22d6542bc470cbccec43ca457bdcf72383eb88d4bc",
+              "validation": {
+                "position_km_rmse": 1.2169186808757306,
+                "velocity_km_s_rmse": 0.03859871167337416,
+                "common_score": 0.005316655548015973
+              }
+            }
+          ]
+        },
+        "RGA-KAN-2026": {
+          "checkpoint": "checkpoints/v8/public_10_RGA-KAN-2026.pt",
+          "sha256": "f6723315f140023cba9bb6c616c64478600a75d9f996746c8605a92be5c93ac7",
+          "validation": {
+            "position_km_rmse": 9.975428647465566,
+            "velocity_km_s_rmse": 0.2880710700507055,
+            "common_score": 0.03980568694304299
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_10_RGA-KAN-2026.pt",
+              "sha256": "f6723315f140023cba9bb6c616c64478600a75d9f996746c8605a92be5c93ac7",
+              "validation": {
+                "position_km_rmse": 9.975428647465566,
+                "velocity_km_s_rmse": 0.2880710700507055,
+                "common_score": 0.03980568694304299
+              }
+            }
+          ]
+        },
+        "TimeFormer-2026": {
+          "checkpoint": "checkpoints/v8/public_10_TimeFormer-2026.pt",
+          "sha256": "85b89e346d5f376f853dedff537faf8f5077fba27908c352e622baf6efdbc912",
+          "validation": {
+            "position_km_rmse": 31.678577512139086,
+            "velocity_km_s_rmse": 0.7552080401617279,
+            "common_score": 0.10513593405306063
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_10_TimeFormer-2026.pt",
+              "sha256": "85b89e346d5f376f853dedff537faf8f5077fba27908c352e622baf6efdbc912",
+              "validation": {
+                "position_km_rmse": 31.678577512139086,
+                "velocity_km_s_rmse": 0.7552080401617279,
+                "common_score": 0.10513593405306063
+              }
+            }
+          ]
+        }
+      },
+      "20": {
+        "GDL": {
+          "checkpoint": "checkpoints/v8/public_20_GDL_anchor.pt",
+          "sha256": "252dbf4d36f930c1a75b48e6222a4be1a850c9a9011bd97cefc596c0d219c653",
+          "validation": {
+            "position_km_rmse": 0.5881342754754568,
+            "velocity_km_s_rmse": 0.019607287108793815,
+            "common_score": 0.0026964976638859293
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_20_GDL.pt",
+              "sha256": "143cb2b24c94ecf2f3829c0ba0962c6f6b47b208af5ab4fec67aef9f1d0c85ba",
+              "validation": {
+                "position_km_rmse": 0.5881342754754568,
+                "velocity_km_s_rmse": 0.022106208416288433,
+                "common_score": 0.003029567611516047
+              }
+            },
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_20_GDL_anchor.pt",
+              "sha256": "252dbf4d36f930c1a75b48e6222a4be1a850c9a9011bd97cefc596c0d219c653",
+              "validation": {
+                "position_km_rmse": 0.5881342754754568,
+                "velocity_km_s_rmse": 0.019607287108793815,
+                "common_score": 0.0026964976638859293
+              }
+            },
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_20_GDL_rate.pt",
+              "sha256": "f404573cac5337912df44d1b207f4f4a5f2526c903ade3bb09a736dbecf59076",
+              "validation": {
+                "position_km_rmse": 0.5881342754754568,
+                "velocity_km_s_rmse": 0.02272081275861906,
+                "common_score": 0.003111485451625442
+              }
+            }
+          ]
+        },
+        "B-spline-KAN-2025": {
+          "checkpoint": "checkpoints/v8/public_20_B-spline-KAN-2025.pt",
+          "sha256": "b75b1a739e234bb106b67799969864517f57ef6caaadb20206e51ff1fc8d55d8",
+          "validation": {
+            "position_km_rmse": 1.1944158340177136,
+            "velocity_km_s_rmse": 0.027686280441321334,
+            "common_score": 0.003859006116200976
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_20_B-spline-KAN-2025.pt",
+              "sha256": "b75b1a739e234bb106b67799969864517f57ef6caaadb20206e51ff1fc8d55d8",
+              "validation": {
+                "position_km_rmse": 1.1944158340177136,
+                "velocity_km_s_rmse": 0.027686280441321334,
+                "common_score": 0.003859006116200976
+              }
+            }
+          ]
+        },
+        "RGA-KAN-2026": {
+          "checkpoint": "checkpoints/v8/public_20_RGA-KAN-2026.pt",
+          "sha256": "71ab95818833d72307d6742d20ad82c5850cb186870b9b1f89a9637e69eb3226",
+          "validation": {
+            "position_km_rmse": 7.9143470995440515,
+            "velocity_km_s_rmse": 0.23970866513471295,
+            "common_score": 0.03306835316166022
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_20_RGA-KAN-2026.pt",
+              "sha256": "71ab95818833d72307d6742d20ad82c5850cb186870b9b1f89a9637e69eb3226",
+              "validation": {
+                "position_km_rmse": 7.9143470995440515,
+                "velocity_km_s_rmse": 0.23970866513471295,
+                "common_score": 0.03306835316166022
+              }
+            }
+          ]
+        },
+        "TimeFormer-2026": {
+          "checkpoint": "checkpoints/v8/public_20_TimeFormer-2026.pt",
+          "sha256": "f646dbfde999aea446dd3f9788a6fa2182898c0bb6d5e86248091689b02809ed",
+          "validation": {
+            "position_km_rmse": 19.946726119810414,
+            "velocity_km_s_rmse": 0.6680713820804899,
+            "common_score": 0.09186362389896491
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_20_TimeFormer-2026.pt",
+              "sha256": "f646dbfde999aea446dd3f9788a6fa2182898c0bb6d5e86248091689b02809ed",
+              "validation": {
+                "position_km_rmse": 19.946726119810414,
+                "velocity_km_s_rmse": 0.6680713820804899,
+                "common_score": 0.09186362389896491
+              }
+            }
+          ]
+        }
+      },
+      "60": {
+        "GDL": {
+          "checkpoint": "checkpoints/v8/public_60_GDL_anchor.pt",
+          "sha256": "9225b6ddca2b0982b1071a1564ae8a146edc5b500cd129b659385bfe60b77d80",
+          "validation": {
+            "position_km_rmse": 0.5907792811773199,
+            "velocity_km_s_rmse": 0.012614356647359043,
+            "common_score": 0.001764815372804383
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_60_GDL.pt",
+              "sha256": "5a117752f5251282e9835406aafff59b30d5f3f0a9ec4c3645e5deb131db80b3",
+              "validation": {
+                "position_km_rmse": 0.5907792811773199,
+                "velocity_km_s_rmse": 0.020138044461147073,
+                "common_score": 0.0027676137797042494
+              }
+            },
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_60_GDL_anchor.pt",
+              "sha256": "9225b6ddca2b0982b1071a1564ae8a146edc5b500cd129b659385bfe60b77d80",
+              "validation": {
+                "position_km_rmse": 0.5907792811773199,
+                "velocity_km_s_rmse": 0.012614356647359043,
+                "common_score": 0.001764815372804383
+              }
+            },
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_60_GDL_rate.pt",
+              "sha256": "5b483778eca4f3caaa9663947ae97e0d23b25be3a53906b9db7771ca477fbcc9",
+              "validation": {
+                "position_km_rmse": 0.5907792811773199,
+                "velocity_km_s_rmse": 0.15436278588896746,
+                "common_score": 0.020657824033204406
+              }
+            }
+          ]
+        },
+        "B-spline-KAN-2025": {
+          "checkpoint": "checkpoints/v8/public_60_B-spline-KAN-2025.pt",
+          "sha256": "0f678ee6ec2a95b90ee8cb87405810dcaecc78a071b50ebff12e92a0bcc1cc83",
+          "validation": {
+            "position_km_rmse": 1.2218624488238616,
+            "velocity_km_s_rmse": 0.01578763953381883,
+            "common_score": 0.0022769694358170064
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_60_B-spline-KAN-2025.pt",
+              "sha256": "0f678ee6ec2a95b90ee8cb87405810dcaecc78a071b50ebff12e92a0bcc1cc83",
+              "validation": {
+                "position_km_rmse": 1.2218624488238616,
+                "velocity_km_s_rmse": 0.01578763953381883,
+                "common_score": 0.0022769694358170064
+              }
+            }
+          ]
+        },
+        "RGA-KAN-2026": {
+          "checkpoint": "checkpoints/v8/public_60_RGA-KAN-2026.pt",
+          "sha256": "9829720301f66a785976585fb91e106409c5e59501e71d65158f00ac1be15df4",
+          "validation": {
+            "position_km_rmse": 6.320465686582441,
+            "velocity_km_s_rmse": 0.16119657486500727,
+            "common_score": 0.022378541016730452
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_60_RGA-KAN-2026.pt",
+              "sha256": "9829720301f66a785976585fb91e106409c5e59501e71d65158f00ac1be15df4",
+              "validation": {
+                "position_km_rmse": 6.320465686582441,
+                "velocity_km_s_rmse": 0.16119657486500727,
+                "common_score": 0.022378541016730452
+              }
+            }
+          ]
+        },
+        "TimeFormer-2026": {
+          "checkpoint": "checkpoints/v8/public_60_TimeFormer-2026.pt",
+          "sha256": "2cb4baeaf5356a4f42b92cf020504ab010728c04d2edfd6ca7f3e789e46e27ff",
+          "validation": {
+            "position_km_rmse": 15.846685034388175,
+            "velocity_km_s_rmse": 0.3983184072548719,
+            "common_score": 0.05532993968291753
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/public_60_TimeFormer-2026.pt",
+              "sha256": "2cb4baeaf5356a4f42b92cf020504ab010728c04d2edfd6ca7f3e789e46e27ff",
+              "validation": {
+                "position_km_rmse": 15.846685034388175,
+                "velocity_km_s_rmse": 0.3983184072548719,
+                "common_score": 0.05532993968291753
+              }
+            }
+          ]
+        }
+      }
+    },
+    "legacy": {
+      "10": {
+        "GDL": {
+          "checkpoint": "checkpoints/v8/legacy_10_GDL.pt",
+          "sha256": "4ac254b8b55271e610f9d58f344356db050d5ca4fa7c3949b94320f2739717fd",
+          "validation": {
+            "position_km_rmse": 131.34785953412393,
+            "velocity_km_s_rmse": 0.04937277202201811,
+            "common_score": 0.01861074179032557
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/legacy_10_GDL.pt",
+              "sha256": "4ac254b8b55271e610f9d58f344356db050d5ca4fa7c3949b94320f2739717fd",
+              "validation": {
+                "position_km_rmse": 131.34785953412393,
+                "velocity_km_s_rmse": 0.04937277202201811,
+                "common_score": 0.01861074179032557
+              }
+            }
+          ]
+        },
+        "B-spline-KAN-2025": {
+          "checkpoint": "checkpoints/v8/legacy_10_B-spline-KAN-2025.pt",
+          "sha256": "d3504c1d3757915a78e95f71a94299fab5b8cdc9a447bdaf45b7f561ea8188b3",
+          "validation": {
+            "position_km_rmse": 192.18765098978452,
+            "velocity_km_s_rmse": 0.08013982456725438,
+            "common_score": 0.028699702852485874
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/legacy_10_B-spline-KAN-2025.pt",
+              "sha256": "d3504c1d3757915a78e95f71a94299fab5b8cdc9a447bdaf45b7f561ea8188b3",
+              "validation": {
+                "position_km_rmse": 192.18765098978452,
+                "velocity_km_s_rmse": 0.08013982456725438,
+                "common_score": 0.028699702852485874
+              }
+            }
+          ]
+        },
+        "RGA-KAN-2026": {
+          "checkpoint": "checkpoints/v8/legacy_10_RGA-KAN-2026.pt",
+          "sha256": "189455026c4f4385cf4fd19d01993a52077b6efd1c958227b8d09760e2d452ee",
+          "validation": {
+            "position_km_rmse": 307.2140324440546,
+            "velocity_km_s_rmse": 0.13494861510813702,
+            "common_score": 0.04714942625387615
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/legacy_10_RGA-KAN-2026.pt",
+              "sha256": "189455026c4f4385cf4fd19d01993a52077b6efd1c958227b8d09760e2d452ee",
+              "validation": {
+                "position_km_rmse": 307.2140324440546,
+                "velocity_km_s_rmse": 0.13494861510813702,
+                "common_score": 0.04714942625387615
+              }
+            }
+          ]
+        },
+        "TimeFormer-2026": {
+          "checkpoint": "checkpoints/v8/legacy_10_TimeFormer-2026.pt",
+          "sha256": "8fc73b3bd8e851be07a698c3b303b01bad4066989da270be220495be198bdd23",
+          "validation": {
+            "position_km_rmse": 309.2194524911551,
+            "velocity_km_s_rmse": 0.14543254697668645,
+            "common_score": 0.049242824934838725
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/legacy_10_TimeFormer-2026.pt",
+              "sha256": "8fc73b3bd8e851be07a698c3b303b01bad4066989da270be220495be198bdd23",
+              "validation": {
+                "position_km_rmse": 309.2194524911551,
+                "velocity_km_s_rmse": 0.14543254697668645,
+                "common_score": 0.049242824934838725
+              }
+            }
+          ]
+        }
+      },
+      "20": {
+        "GDL": {
+          "checkpoint": "checkpoints/v8/legacy_20_GDL.pt",
+          "sha256": "d50b2db39ae967a5a1d4504fa20e571824c42042a67f90378b6533ae3a6ae6f1",
+          "validation": {
+            "position_km_rmse": 86.03736218397894,
+            "velocity_km_s_rmse": 0.03377502407263989,
+            "common_score": 0.012457348419145314
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/legacy_20_GDL.pt",
+              "sha256": "d50b2db39ae967a5a1d4504fa20e571824c42042a67f90378b6533ae3a6ae6f1",
+              "validation": {
+                "position_km_rmse": 86.03736218397894,
+                "velocity_km_s_rmse": 0.03377502407263989,
+                "common_score": 0.012457348419145314
+              }
+            }
+          ]
+        },
+        "B-spline-KAN-2025": {
+          "checkpoint": "checkpoints/v8/legacy_20_B-spline-KAN-2025.pt",
+          "sha256": "6014afdfca2fc6f08ca10e0962a5b4d94769d002d66df95584c3304600d63a4b",
+          "validation": {
+            "position_km_rmse": 120.11234872264146,
+            "velocity_km_s_rmse": 0.06334943963591629,
+            "common_score": 0.020402951147583025
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/legacy_20_B-spline-KAN-2025.pt",
+              "sha256": "6014afdfca2fc6f08ca10e0962a5b4d94769d002d66df95584c3304600d63a4b",
+              "validation": {
+                "position_km_rmse": 120.11234872264146,
+                "velocity_km_s_rmse": 0.06334943963591629,
+                "common_score": 0.020402951147583025
+              }
+            }
+          ]
+        },
+        "RGA-KAN-2026": {
+          "checkpoint": "checkpoints/v8/legacy_20_RGA-KAN-2026.pt",
+          "sha256": "bdcfd8aa1a48298b86f637ac6ac37f2f4ef77825aba3541ad0ba8ffdd58a04c6",
+          "validation": {
+            "position_km_rmse": 218.2741133913824,
+            "velocity_km_s_rmse": 0.1110176432058367,
+            "common_score": 0.036314123921490776
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/legacy_20_RGA-KAN-2026.pt",
+              "sha256": "bdcfd8aa1a48298b86f637ac6ac37f2f4ef77825aba3541ad0ba8ffdd58a04c6",
+              "validation": {
+                "position_km_rmse": 218.2741133913824,
+                "velocity_km_s_rmse": 0.1110176432058367,
+                "common_score": 0.036314123921490776
+              }
+            }
+          ]
+        },
+        "TimeFormer-2026": {
+          "checkpoint": "checkpoints/v8/legacy_20_TimeFormer-2026.pt",
+          "sha256": "3a224291f3da40e1570f9a3807f01e35d864114bc5344380cfe171e1836e93c2",
+          "validation": {
+            "position_km_rmse": 221.11335910630248,
+            "velocity_km_s_rmse": 0.11899284579626838,
+            "common_score": 0.03800090587134154
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/legacy_20_TimeFormer-2026.pt",
+              "sha256": "3a224291f3da40e1570f9a3807f01e35d864114bc5344380cfe171e1836e93c2",
+              "validation": {
+                "position_km_rmse": 221.11335910630248,
+                "velocity_km_s_rmse": 0.11899284579626838,
+                "common_score": 0.03800090587134154
+              }
+            }
+          ]
+        }
+      },
+      "60": {
+        "GDL": {
+          "checkpoint": "checkpoints/v8/legacy_60_GDL.pt",
+          "sha256": "1ed1e7822bd4573cd6d653fa6ab4553527e73b2cde47ae0311631706d7a427ea",
+          "validation": {
+            "position_km_rmse": 68.94795695992768,
+            "velocity_km_s_rmse": 0.02786205998194208,
+            "common_score": 0.01013092738949032
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/legacy_60_GDL.pt",
+              "sha256": "1ed1e7822bd4573cd6d653fa6ab4553527e73b2cde47ae0311631706d7a427ea",
+              "validation": {
+                "position_km_rmse": 68.94795695992768,
+                "velocity_km_s_rmse": 0.02786205998194208,
+                "common_score": 0.01013092738949032
+              }
+            }
+          ]
+        },
+        "B-spline-KAN-2025": {
+          "checkpoint": "checkpoints/v8/legacy_60_B-spline-KAN-2025.pt",
+          "sha256": "696df785c282ce33d25a145c195b016a999e9c9597cdc566c07175b53ee6ee40",
+          "validation": {
+            "position_km_rmse": 71.89241014916095,
+            "velocity_km_s_rmse": 0.037695499540517624,
+            "common_score": 0.012170789744545722
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/legacy_60_B-spline-KAN-2025.pt",
+              "sha256": "696df785c282ce33d25a145c195b016a999e9c9597cdc566c07175b53ee6ee40",
+              "validation": {
+                "position_km_rmse": 71.89241014916095,
+                "velocity_km_s_rmse": 0.037695499540517624,
+                "common_score": 0.012170789744545722
+              }
+            }
+          ]
+        },
+        "RGA-KAN-2026": {
+          "checkpoint": "checkpoints/v8/legacy_60_RGA-KAN-2026.pt",
+          "sha256": "647d9e97b9e2c779bc43183180a6aa6ebeb9088955f87ca682655e64cb1d58dc",
+          "validation": {
+            "position_km_rmse": 205.80839050369255,
+            "velocity_km_s_rmse": 0.1102060611748145,
+            "common_score": 0.035268231474536935
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/legacy_60_RGA-KAN-2026.pt",
+              "sha256": "647d9e97b9e2c779bc43183180a6aa6ebeb9088955f87ca682655e64cb1d58dc",
+              "validation": {
+                "position_km_rmse": 205.80839050369255,
+                "velocity_km_s_rmse": 0.1102060611748145,
+                "common_score": 0.035268231474536935
+              }
+            }
+          ]
+        },
+        "TimeFormer-2026": {
+          "checkpoint": "checkpoints/v8/legacy_60_TimeFormer-2026.pt",
+          "sha256": "8bdb5b77951a305ccb3cf583d1869c66f7ef624d8ad861be417ea4d84ebb8baa",
+          "validation": {
+            "position_km_rmse": 212.35590009051924,
+            "velocity_km_s_rmse": 0.1151808729589016,
+            "common_score": 0.03666334748283316
+          },
+          "candidates": [
+            {
+              "checkpoint": "pr_v8/evidence/duration/adapted/legacy_60_TimeFormer-2026.pt",
+              "sha256": "8bdb5b77951a305ccb3cf583d1869c66f7ef624d8ad861be417ea4d84ebb8baa",
+              "validation": {
+                "position_km_rmse": 212.35590009051924,
+                "velocity_km_s_rmse": 0.1151808729589016,
+                "common_score": 0.03666334748283316
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
