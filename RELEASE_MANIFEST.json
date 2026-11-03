@@ -592,8 +592,8 @@
     },
     {
       "file": "docs/DATA_CARD.md",
-      "bytes": 1014,
-      "sha256": "4e5ddd9786ff3fcf739ea7f16da4fbc5e0483e6a485ae852ad11191e7cd631a8"
+      "bytes": 1007,
+      "sha256": "2fa432f13603c79c3b6779a9e54cff78ac3b572aa486c33ca5ae4f58abf5edb4"
     },
     {
       "file": "docs/METHODS_V7.md",
@@ -2307,8 +2307,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 6527,
-      "sha256": "f52769d4874b934a99e5184f99f8df6dd70ccd1acde5a27216ecddb929d161e4"
+      "bytes": 6453,
+      "sha256": "b6eeb4b95d175d9ef94fe04a63a4e59a5d3fc393243a61a3598f34b19d3ecc61"
     },
     {
       "file": "requirements-orbits.txt",
@@ -2657,6 +2657,6 @@
     }
   ],
   "file_count": 531,
-  "total_bytes": 388376596,
+  "total_bytes": 388376515,
   "release_date": "2026-11-03"
 }
